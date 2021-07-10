@@ -8,8 +8,5 @@ trigger:
   at: 06:00:00
 condition: []
 action:
-- service: hassio.addon_stdin
-  data:
-    addon: a0d7b954_ssh
-    input: /config/ha_gitpush.sh
+- service: shell_command.pushtogit
 mode: single

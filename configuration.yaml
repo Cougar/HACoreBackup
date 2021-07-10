@@ -58,10 +58,6 @@ influxdb:
 tts:
   - platform: google_translate
 
-# SpeedTest
-speedtestdotnet:
-  server_id: 14236
-
 # Device Tracking
 device_tracker:
   - platform: ping
@@ -108,3 +104,7 @@ cover split: !include_dir_list ./ha_covers
 
 climate: !include climate.yaml
 climate split: !include_dir_list ./ha_climates
+
+# Shell commands
+shell_command:
+  pushtogit: bash /config/ha_gitpush.sh
