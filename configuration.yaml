@@ -83,43 +83,6 @@ nest:
   # Provide the full path exactly as shown under "Subscription name" in Google Cloud Console
   subscriber_id: !secret nest_subscriberid
 
-
-fan:
-  - platform: mqtt
-    name: "Kitchen Fan"
-    state_topic: "stat/treatlife_f4cfa27f650c/POWER1"
-    command_topic: "cmnd/treatlife_f4cfa27f650c/POWER1"
-    speed_state_topic: "stat/treatlife_f4cfa27f650c/speed"
-    speed_command_topic: "cmnd/treatlife_f4cfa27f650c/tuyasend4"
-    availability_topic: "tele/treatlife_f4cfa27f650c/LWT"
-    payload_available: "Online"
-    payload_not_available: "Offline"    
-    payload_on: "ON"
-    payload_off: "OFF"
-    payload_low_speed: "3,1"
-    payload_medium_speed: "3,2"
-    payload_high_speed: "3,3"
-    speeds:
-      - low
-      - medium
-      - high
-
-light:
-  - platform: mqtt
-    name: "Kitchen Light"
-    state_topic: "stat/treatlife_f4cfa27f650c/RESULT"
-    value_template: "{{ value_json.POWER2 }}"
-    command_topic: "cmnd/treatlife_f4cfa27f650c/POWER2"
-    availability_topic: "tele/treatlife_f4cfa27f650c/LWT"
-    brightness_state_topic: "stat/treatlife_f4cfa27f650c/RESULT"
-    brightness_command_topic: "cmnd/treatlife_f4cfa27f650c/Dimmer"
-    brightness_scale: 100
-    brightness_value_template: "{{ value_json.Dimmer }}"
-    payload_on: "ON"
-    payload_off: "OFF"
-    payload_available: "Online"
-    payload_not_available: "Offline"
-
 # YAML Configuration Files
 automation: !include automations.yaml
 automation split: !include_dir_list ./ha_automations
