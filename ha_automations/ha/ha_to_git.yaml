@@ -1,0 +1,15 @@
+id: ha_config_to_git
+alias: HA config push to git
+description: ''
+trigger:
+- platform: time
+  at: '18:00:00'
+- platform: time
+  at: 06:00:00
+condition: []
+action:
+- service: hassio.addon_stdin
+  data:
+    addon: a0d7b954_ssh
+    input: /config/ha_gitpush.sh
+mode: single

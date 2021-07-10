@@ -1,0 +1,14 @@
+id: light_garage_on
+alias: Lights - Garage Lights On
+description: ''
+trigger:
+- platform: state
+  entity_id: switch.sonoff_c82b96dbafe7
+  to: 'on'
+condition: []
+action:
+- type: turn_on
+  device_id: 9d21f65cd9648ae74beef3aa314e982d
+  entity_id: switch.garage_workbench
+  domain: switch
+mode: single

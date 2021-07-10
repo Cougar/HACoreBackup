@@ -1,0 +1,31 @@
+bmccarty:
+  name: bmccarty
+  mac:
+  icon:
+  picture:
+  track: true
+  gravatar: bkmccarty@gmail.com
+amccarty:
+  name: amccarty
+  mac:
+  icon: mdi:face-woman
+  picture:
+  track: true
+tesla3:
+  name: tesla3
+  mac:
+  icon: mdi:car-electric
+  picture:
+  track: true
+lmccarty:
+  name: lmccarty
+  mac:
+  icon: mdi:human-male
+  picture:
+  track: true
+mmccarty:
+  name: mmccarty
+  mac:
+  icon: mdi:human-male
+  picture:
+  track: true

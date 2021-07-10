@@ -1,0 +1,7 @@
+platform: mqtt
+unique_id: aqualink_spa_temp
+state_topic: "aqualinkd/Temperature/Spa"
+name: "Spa Temp"
+value_template: "{{ value_json }}"    
+unit_of_measurement: "°F"  
+device_class: temperature

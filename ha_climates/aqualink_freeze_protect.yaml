@@ -1,0 +1,22 @@
+platform: mqtt
+unique_id: aqualink_freeze_protect
+name: Freeze Protect
+modes:
+  - "off"
+  - "cool"
+send_if_off: true
+initial: 36
+power_command_topic: "aqualinkd/Freeze_Protect/set"
+payload_on: "1"
+payload_off: "0"
+current_temperature_topic: "aqualinkd/Temperature/Air"
+min_temp: 34
+max_temp: 42
+mode_command_topic: "aqualinkd/Freeze_Protect/set"
+mode_state_topic: "aqualinkd/Freeze_Protect/enabled"
+mode_state_template: >-
+  {% set values = { '0':'off', '1':'cool'} %}
+  {{ values[value] if value in values.keys() else 'off' }}
+temperature_command_topic: "aqualinkd/Freeze_Protect/setpoint/set"
+temperature_state_topic: "aqualinkd/Freeze_Protect/setpoint"
+temperature_state_template: "{{ value_json }}"

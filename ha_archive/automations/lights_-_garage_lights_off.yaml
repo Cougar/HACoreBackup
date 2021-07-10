@@ -1,0 +1,14 @@
+id: light_garage_off
+alias: Lights - Garage Lights Off
+description: ''
+trigger:
+- platform: state
+  to: 'off'
+  entity_id: switch.sonoff_c82b96dbafe7
+condition: []
+action:
+- type: turn_off
+  device_id: 9d21f65cd9648ae74beef3aa314e982d
+  entity_id: switch.garage_workbench
+  domain: switch
+mode: single

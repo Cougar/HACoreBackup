@@ -1,0 +1,21 @@
+id: Amber_Office_Bloom_Off
+alias: Amber Office Bloom Off
+description: ''
+trigger:
+- platform: time
+  at: '22:00:00'
+condition:
+- condition: device
+  type: is_off
+  device_id: 6bb5fd190203838a17e11ea696ec47e5
+  entity_id: light.amber_office_overhead_level
+  domain: light
+- condition: state
+  entity_id: binary_sensor.main_floor_occupancy
+  state: 'off'
+action:
+- type: turn_off
+  device_id: 1d2178564d70a0dfd9aeb2271ec3e75e
+  entity_id: light.amber_office_bloom
+  domain: light
+mode: single

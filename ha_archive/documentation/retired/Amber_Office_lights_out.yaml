@@ -1,0 +1,18 @@
+id: Amber_Office_lights_out
+alias: Amber Office lights out
+description: ''
+trigger:
+- platform: device
+  type: turned_off
+  device_id: 6bb5fd190203838a17e11ea696ec47e5
+  entity_id: light.amber_office_overhead_level
+  domain: light
+condition: []
+action:
+- service: light.turn_on
+  data:
+    entity_id: light.amber_office_bloom
+    color_name: red
+    brightness: 75
+  entity_id: light.amber_office_bloom
+mode: single

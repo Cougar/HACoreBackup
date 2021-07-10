@@ -1,0 +1,11 @@
+platform: mqtt
+unique_id: garage_car_door
+name: "garage_car_door"
+state_topic: "stat/shelly_8caab5c511a7/POWER"
+command_topic: "cmnd/shelly_8caab5c511a7/POWER"
+payload_on: "ON"
+payload_off: "OFF"
+value_template: "{{ value_json.POWER }}"
+optimistic: false
+qos: 1
+retain: false
