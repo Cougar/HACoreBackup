@@ -68,7 +68,6 @@ device_tracker:
       amccarty: 192.168.7.41
       tesla3: 192.168.7.211
       lmccarty: 192.168.7.182
-      mmccarty: 192.168.7.103
 
 # Example configuration.yaml entry
 nest:
