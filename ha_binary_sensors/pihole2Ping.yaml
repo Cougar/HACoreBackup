@@ -1,6 +1,0 @@
-platform: ping
-name: "pihole2_ping_test"
-host: 192.168.6.14
-count: 2
-scan_interval: 30
-

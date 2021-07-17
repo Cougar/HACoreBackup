@@ -60,14 +60,8 @@ tts:
 
 # Device Tracking
 device_tracker:
-  - platform: ping
-    interval_seconds: 30
-    consider_home: 600
-    hosts:
-      bmccarty: 192.168.7.40
-      amccarty: 192.168.7.41
-      tesla3: 192.168.7.211
-      lmccarty: 192.168.7.182
+  - platform: nmap_tracker
+    hosts: 192.168.6.0/23
 
 # Example configuration.yaml entry
 nest:
@@ -106,4 +100,4 @@ climate split: !include_dir_list ./ha_climates
 
 # Shell commands
 shell_command:
-  pushtogit: bash /config/ha_gitpush.sh
+  pushtogit: bash /config/ha_shell/ha_gitpush.sh

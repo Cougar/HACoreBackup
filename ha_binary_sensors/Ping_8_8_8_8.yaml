@@ -1,0 +1,5 @@
+platform: ping
+name: "Ping_8_8_8_8_test"
+host: 8.8.8.8
+count: 2
+scan_interval: 30
