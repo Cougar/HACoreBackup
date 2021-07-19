@@ -1,5 +1,15 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
+frontend:
+  themes:
+    Google Dark Theme:
+      app-header-background-color: "#171717"
+      app-header-text-color: "#BDC1C6"
+      # .. rest of theme here
+    Google Light Theme:
+      app-header-background-color: "#F8F8F8"
+      app-header-text-color: "#424242"
+      # .. rest of theme here
 
 # HomeAssistant Core
 homeassistant:
@@ -23,6 +33,21 @@ http:
 mobile_app:
 discovery:
 python_script:
+sun:
+recorder:
+logbook:
+  exclude:
+    entities:
+      - sensor.date
+      - sensor.date_time
+      - sensor.date_time_iso
+      - sensor.date_time_utc
+iperf3:
+  hosts:
+    - host: iperf.scottlinux.com
+
+fastdotcom:
+  scan_interval: '00:05:01'
 
 # Dashboard
 # lovelace:
@@ -60,8 +85,12 @@ tts:
 
 # Device Tracking
 device_tracker:
-  - platform: nmap_tracker
-    hosts: 192.168.6.0/23
+  - platform: ping
+    interval_seconds: 30
+    consider_home: 600
+    hosts:
+      bmccarty: 192.168.6.228
+      tesla3: 192.168.6.227
 
 # Example configuration.yaml entry
 nest:

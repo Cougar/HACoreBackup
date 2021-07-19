@@ -1,0 +1,5 @@
+platform: mqtt
+unique_id: timer_waterheaterpump
+name: "timer_waterheaterpump"
+state_topic: "timer/WaterHeaterPump"
+value_template: "{{ ( value | float / 60 ) | round(2) }}"
