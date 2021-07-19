@@ -1,0 +1,12 @@
+platform: mqtt
+unique_id: aqualink_spa_light
+name: "Spa Light"
+state_topic: "aqualinkd/Aux_3"
+command_topic: "aqualinkd/Aux_3/set"
+json_attributes_topic: "aqualinkd/Aux_3/delay"
+json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+qos: 1
+payload_on: "1"
+payload_off: "0"
+retain: false
+icon: mdi:lightbulb

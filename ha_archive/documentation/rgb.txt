@@ -1,0 +1,17 @@
+rgb_color:
+  - 255
+  - 191
+  - 0
+
+  rgb_color:
+  - 255
+  - 52
+  - 24
+
+entity_id: light.hue_lightstrip_1
+color_name: orange
+brightness: 255
+
+entity_id: light.hue_lightstrip_1
+color_name: red
+brightness: 75

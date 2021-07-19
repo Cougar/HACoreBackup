@@ -1,0 +1,22 @@
+platform: mqtt
+unique_id: aqualink_pool_heater
+name: Pool Heater
+modes:
+  - "off"
+  - "heat"
+send_if_off: true
+initial: 83
+power_command_topic: "aqualinkd/Pool_Heater/set"
+payload_on: "1"
+payload_off: "0"
+current_temperature_topic: "aqualinkd/Temperature/Pool"
+min_temp: 70
+max_temp: 90
+mode_command_topic: "aqualinkd/Pool_Heater/set"
+mode_state_topic: "aqualinkd/Pool_Heater/enabled"
+mode_state_template: >-
+  {% set values1 = { '0':'off', '1':'heat'} %}
+  {{ values1[value] if value in values1.keys() else 'off' }}
+temperature_command_topic: "aqualinkd/Pool_Heater/setpoint/set"
+temperature_state_topic: "aqualinkd/Pool_Heater/setpoint"
+temperature_state_template: "{{ value_json }}"

@@ -1,0 +1,93 @@
+substitutions:
+  esphome_name: tempsensor01
+esphome:
+  name: ${esphome_name}
+  platform: ESP32
+  board: mhetesp32devkit
+wifi:
+  ssid: !secret esphome_wifi_ssid
+  password: !secret esphome_wifi_pass
+  manual_ip:
+    # Set this to the IP of the ESP
+    static_ip: 192.168.7.53
+    # Set this to the IP address of the router. Often ends with .1
+    gateway: 192.168.7.1
+    # The subnet of the network. 255.255.255.0 works for most home networks.
+    subnet: 255.255.255.0
+logger:
+  level: debug
+api:
+  reboot_timeout: 60min
+  password: !secret esphome_api_pass
+ota:
+  password: !secret esphome_ota_pass
+time:
+  - platform: homeassistant
+  
+esp32_ble_tracker:
+switch:
+  - platform: gpio
+    name: "${esphome_name}-Onboard-LED"
+    pin: 2
+    inverted: True
+  - platform: restart
+    name: ${esphome_name}-restart
+    id: restart_switch
+sensor:
+  - platform: uptime
+    name: "${esphome_name}_Uptime Sensor"
+    
+  - platform: wifi_signal
+    name: "${esphome_name} WiFi Signal"
+    update_interval: 60s
+    
+  - platform: xiaomi_lywsd03mmc
+    mac_address: A4:C1:38:97:6B:BB
+    bindkey: "d958abc04deb7fff1bb7bd751b5b1c93"
+    temperature:
+      name: "Amber Office Temperature"
+    humidity:
+      name: "Amber Office Humidity"
+    battery_level:
+      name: "Amber Office Battery Level"
+  
+  - platform: xiaomi_lywsd03mmc
+    mac_address: A4:C1:38:ED:B2:36
+    bindkey: "3a9de462f0d7c37b7c712b8036e75779"
+    temperature:
+      name: "Dad Room Temperature"
+    humidity:
+      name: "Dad Room Humidity"
+    battery_level:
+      name: "Dad Room Battery Level"
+  
+  - platform: xiaomi_lywsd03mmc
+    mac_address: A4:C1:38:E4:F3:85
+    bindkey: "58cc8eed4d810b5fec1a24384ce8cdd5"
+    temperature:
+      name: "Aidan Room Temperature"
+    humidity:
+      name: "Aidan Room Humidity"
+    battery_level:
+      name: "Aidan Room Battery Level"    
+      
+  - platform: xiaomi_lywsd03mmc
+    mac_address: A4:C1:38:B0:38:4D
+    bindkey: "82b518bbb801b03306812049a350edeb"
+    temperature:
+      name: "Loft Temperature"
+    humidity:
+      name: "Loft Humidity"
+    battery_level:
+      name: "Loft Battery Level"    
+
+  - platform: xiaomi_lywsd03mmc
+    mac_address: A4:C1:38:8B:D3:26
+    bindkey: "6b6ac002fa72eaaa8d4d360f4ad3ed56"
+    temperature:
+      name: "5 Temperature"
+    humidity:
+      name: "5 Humidity"
+    battery_level:
+      name: "5 Battery Level"    
+

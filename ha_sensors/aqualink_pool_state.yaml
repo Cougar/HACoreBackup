@@ -1,0 +1,6 @@
+platform: mqtt
+unique_id: aqualink_pool_state
+state_topic: "aqualinkd/Service_Mode"
+name: "Aqualink Mode"
+value_template: "{{ value }}"    
+icon: mdi:wrench

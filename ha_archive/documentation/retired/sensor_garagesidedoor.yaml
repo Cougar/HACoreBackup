@@ -1,0 +1,8 @@
+platform: mqtt
+name: "Garage_Side_Door_Sensor"
+state_topic: "stat/nodemcu_8caab5632ffc/DoorStatus"
+availability_topic: "tele/nodemcu_8caab5632ffc/LWT"
+payload_available: "Online"
+payload_not_available: "Offline"
+device_class: door
+qos: 1

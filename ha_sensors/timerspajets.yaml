@@ -1,0 +1,5 @@
+platform: mqtt
+unique_id: timer_spajets
+name: "timer_spajets"
+state_topic: "timer/SpaJetTimer"
+value_template: "{{ ( value | float / 60 ) | round(2) }}"

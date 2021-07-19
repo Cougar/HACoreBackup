@@ -1,0 +1,11 @@
+platform: mqtt
+unique_id: garage_side_door_status_test
+name: "garage_side_door_status_test"
+state_topic: "stat/nodemcu_84cca8b2f840/DoorStatus"
+availability_topic: "tele/nodemcu_84cca8b2f840/LWT"
+payload_on: "open"
+payload_off: "closed"
+payload_available: "Online"
+payload_not_available: "Offline"
+device_class: door   # also: window, garage_door or opening
+qos: 1

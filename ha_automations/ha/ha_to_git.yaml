@@ -1,0 +1,12 @@
+id: ha_config_to_git
+alias: HA config push to git
+description: ''
+trigger:
+- platform: time
+  at: '18:00:00'
+- platform: time
+  at: 06:00:00
+condition: []
+action:
+- service: shell_command.pushtogit
+mode: single

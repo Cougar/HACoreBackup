@@ -1,0 +1,22 @@
+platform: mqtt
+unique_id: aqualink_spa_heater
+name: Spa Heater
+modes:
+  - "off"
+  - "heat"
+send_if_off: true
+initial: 100
+power_command_topic: "aqualinkd/Spa_Heater/set"
+payload_on: "1"
+payload_off: "0"
+current_temperature_topic: "aqualinkd/Temperature/Spa"
+min_temp: 80
+max_temp: 104
+mode_command_topic: "aqualinkd/Spa_Heater/set"
+mode_state_topic: "aqualinkd/Spa_Heater/enabled"
+mode_state_template: >-
+  {% set values2 = { '0':'off', '1':'heat'} %}
+  {{ values2[value] if value in values2.keys() else 'off' }}
+temperature_command_topic: "aqualinkd/Spa_Heater/setpoint/set"
+temperature_state_topic: "aqualinkd/Spa_Heater/setpoint"
+temperature_state_template: "{{ value_json }}"

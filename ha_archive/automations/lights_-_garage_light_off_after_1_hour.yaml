@@ -1,0 +1,17 @@
+id: light_garage_off_1hr
+alias: Lights - Garage light off after 1 hour
+description: ''
+trigger:
+- platform: state
+  entity_id: switch.sonoff_c82b96dbafe7
+  to: 'on'
+  for: 01:00:00
+condition: []
+action:
+- service: switch.turn_off
+  data: {}
+  entity_id: switch.sonoff_c82b96dbafe7
+- service: switch.turn_off
+  data: {}
+  entity_id: switch.garage_overworkbench
+mode: single

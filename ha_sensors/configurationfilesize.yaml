@@ -1,0 +1,3 @@
+platform: command_line
+command: wc -l /config/configuration.yaml | awk '{ print $1 }'
+name: Config File Size

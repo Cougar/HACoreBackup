@@ -1,0 +1,5 @@
+cover.garage_door:
+  device_class: garage
+
+binary_sensor.garage_side_door_status:
+  friendly_name: Garage Side Door

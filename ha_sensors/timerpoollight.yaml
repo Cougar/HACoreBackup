@@ -1,0 +1,5 @@
+platform: mqtt
+unique_id: timer_poollight
+name: "timer_poollight"
+state_topic: "timer/PoolLightTimer"
+value_template: "{{ ( value | float / 60 ) | round(2) }}"
