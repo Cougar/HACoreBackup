@@ -17,3 +17,8 @@ tts
 node-red/**/*
 OZW_Log.txt
 *.sqlite
+*.csr
+*.key
+*.db
+*.db-shm
+*.db-wal
