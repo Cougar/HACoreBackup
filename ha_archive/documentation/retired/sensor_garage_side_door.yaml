@@ -1,4 +1,0 @@
-platform: mqtt
-unique_id: garage_side_door
-name: "garage_side_door"
-state_topic: "stat/sonoff_c82b96dbafe7/POWER"

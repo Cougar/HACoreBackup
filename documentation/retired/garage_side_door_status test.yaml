@@ -1,4 +1,0 @@
-platform: mqtt
-unique_id: garage_side_door_status_test
-name: "garage_side_door_status_test"
-state_topic: "stat/nodemcu_84cca8b2f840/DoorStatus"

@@ -1,8 +1,0 @@
-platform: mqtt
-unique_id: shelly_500291edf79c
-state_topic: "stat/shelly_500291edf79c/STATUS5"
-name: "shelly_500291edf79c_ipaddress"
-value_template: "{{ value_json.StatusNET.IPAddress }}"
-json_attributes_topic: "stat/shelly_500291edf79c/STATUS5"
-json_attributes_template: "{{ value_json.StatusNET | tojson }}"
-icon: mdi:cloud
