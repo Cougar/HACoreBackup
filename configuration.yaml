@@ -1,15 +1,7 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 frontend:
-  themes:
-    Google Dark Theme:
-      app-header-background-color: "#171717"
-      app-header-text-color: "#BDC1C6"
-      # .. rest of theme here
-    Google Light Theme:
-      app-header-background-color: "#F8F8F8"
-      app-header-text-color: "#424242"
-      # .. rest of theme here
+  themes: !include_dir_merge_named ./ha_themes
 
 # HomeAssistant Core
 homeassistant:
