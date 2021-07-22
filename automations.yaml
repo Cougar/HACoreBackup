@@ -1,0 +1,51 @@
+- id: '1626920784509'
+  alias: Toggle
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: e126a686b5d77a4a99a5bc8540c10890
+    type: action
+    subtype: toggle
+    discovery_id: 0x5c0272fffe3fbc95 action_toggle
+  condition: []
+  action:
+  - type: toggle
+    device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+    entity_id: light.hue_lightstrip_2
+    domain: light
+  mode: single
+- id: '1626920868327'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: e126a686b5d77a4a99a5bc8540c10890
+    type: action
+    subtype: brightness_up_click
+    discovery_id: 0x5c0272fffe3fbc95 action_brightness_up_click
+  condition: []
+  action:
+  - device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+    domain: light
+    entity_id: light.hue_lightstrip_2
+    type: brightness_increase
+  mode: single
+- id: '1626920884707'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: e126a686b5d77a4a99a5bc8540c10890
+    type: action
+    subtype: brightness_down_click
+    discovery_id: 0x5c0272fffe3fbc95 action_brightness_down_click
+  condition: []
+  action:
+  - device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+    domain: light
+    entity_id: light.hue_lightstrip_2
+    type: brightness_decrease
+  mode: single
