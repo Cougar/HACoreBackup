@@ -1,5 +1,5 @@
 - id: '1626920784509'
-  alias: Toggle
+  alias: IKEA -> Hue Toggle Power
   description: ''
   trigger:
   - platform: device
@@ -16,7 +16,7 @@
     domain: light
   mode: single
 - id: '1626920868327'
-  alias: New Automation
+  alias: IKEA -> Hue Brightness Up
   description: ''
   trigger:
   - platform: device
@@ -33,7 +33,7 @@
     type: brightness_increase
   mode: single
 - id: '1626920884707'
-  alias: New Automation
+  alias: IKEA -> Hue Brightness Down
   description: ''
   trigger:
   - platform: device
