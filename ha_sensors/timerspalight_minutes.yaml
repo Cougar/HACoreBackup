@@ -1,0 +1,5 @@
+platform: mqtt
+unique_id: timer_spalight_minutes
+name: "timer_spalight_minutes"
+state_topic: "timer/SpaLightTimer"
+value_template: "{{ ((value) | int /60 ) | int }}"

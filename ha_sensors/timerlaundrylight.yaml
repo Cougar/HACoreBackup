@@ -2,4 +2,4 @@ platform: mqtt
 unique_id: timer_laundrylight
 name: "timer_laundrylight"
 state_topic: "timer/LaundryLightTimer"
-value_template: "{{ ( value | float / 60 ) | round(2) }}"
+value_template: "{{ value }}"

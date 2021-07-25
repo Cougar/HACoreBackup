@@ -2,4 +2,4 @@ platform: mqtt
 unique_id: timer_spalight
 name: "timer_spalight"
 state_topic: "timer/SpaLightTimer"
-value_template: "{{ ( value | float / 60 ) | round(2) }}"
+value_template: "{{ value }}"

@@ -1,0 +1,5 @@
+platform: mqtt
+unique_id: timer_patiosinglelight_minutes
+name: "timer_patiosinglelight_minutes"
+state_topic: "timer/PatioSingle"
+value_template: "{{ ((value) | int /60 ) | int }}"

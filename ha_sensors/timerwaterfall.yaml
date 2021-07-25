@@ -2,4 +2,4 @@ platform: mqtt
 unique_id: timer_waterfall
 name: "timer_waterfall"
 state_topic: "timer/WaterFallTimer"
-value_template: "{{ ( value | float / 60 ) | round(2) }}"
+value_template: "{{ value }}"
