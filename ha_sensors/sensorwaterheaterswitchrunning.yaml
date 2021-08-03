@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  waterheaterswitchrunning: 
+    friendly_name: "WaterHeaterSwitchRunning"
+    value_template: >
+      "{{ states('sensor.waterheaterpumpswitch_energy_current')| float > 0 }}"
