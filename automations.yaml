@@ -2,12 +2,11 @@
   alias: IKEA -> Hue Toggle Power
   description: ''
   trigger:
-  - platform: device
-    domain: mqtt
-    device_id: e126a686b5d77a4a99a5bc8540c10890
-    type: action
-    subtype: toggle
-    discovery_id: 0x5c0272fffe3fbc95 action_toggle
+  - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
   condition: []
   action:
   - type: toggle
@@ -19,12 +18,11 @@
   alias: IKEA -> Hue Brightness Up
   description: ''
   trigger:
-  - platform: device
-    domain: mqtt
-    device_id: e126a686b5d77a4a99a5bc8540c10890
-    type: action
-    subtype: brightness_up_click
-    discovery_id: 0x5c0272fffe3fbc95 action_brightness_up_click
+  - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_up
   condition: []
   action:
   - device_id: b5baa12d1a26a8ad901d8df8d402b3ba
@@ -36,12 +34,11 @@
   alias: IKEA -> Hue Brightness Down
   description: ''
   trigger:
-  - platform: device
-    domain: mqtt
-    device_id: e126a686b5d77a4a99a5bc8540c10890
-    type: action
-    subtype: brightness_down_click
-    discovery_id: 0x5c0272fffe3fbc95 action_brightness_down_click
+  - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_down
   condition: []
   action:
   - device_id: b5baa12d1a26a8ad901d8df8d402b3ba
@@ -49,3 +46,18 @@
     entity_id: light.hue_lightstrip_2
     type: brightness_decrease
   mode: single
+- id: '1628146216133'
+  alias: 'Brian Office Aqara Magic Cube '
+  description: ''
+  use_blueprint:
+    path: brent/zha-aqara-magic-cube-57-actions.yaml
+    input:
+      remote: b3ce2b1c1dc23e7ec88ae1c852649300
+      cube_flip_1:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.brianofficeledbar
+      cube_flip_4:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.brianofficeledbar
