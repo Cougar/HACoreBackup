@@ -54,10 +54,63 @@
     input:
       remote: b3ce2b1c1dc23e7ec88ae1c852649300
       cube_flip_1:
-      - service: switch.turn_on
-        target:
-          entity_id: switch.brianofficeledbar
+      - type: turn_on
+        device_id: e2d5e8d43bdca56726a839ecdf20d5ac
+        entity_id: light.sengled_01_2aea0203_level_light_color_on_off
+        domain: light
+        brightness_pct: 30
+      - type: turn_on
+        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
+        entity_id: switch.brianofficeledbar
+        domain: switch
       cube_flip_4:
-      - service: switch.turn_off
-        target:
-          entity_id: switch.brianofficeledbar
+      - type: turn_off
+        device_id: e2d5e8d43bdca56726a839ecdf20d5ac
+        entity_id: light.sengled_01_2aea0203_level_light_color_on_off
+        domain: light
+      - type: turn_off
+        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
+        entity_id: switch.brianofficeledbar
+        domain: switch
+      - type: turn_off
+        device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+        entity_id: light.hue_lightstrip_2
+        domain: light
+      rotate_right:
+      - device_id: e2d5e8d43bdca56726a839ecdf20d5ac
+        domain: light
+        entity_id: light.sengled_01_2aea0203_level_light_color_on_off
+        type: brightness_increase
+      rotate_left:
+      - device_id: e2d5e8d43bdca56726a839ecdf20d5ac
+        domain: light
+        entity_id: light.sengled_01_2aea0203_level_light_color_on_off
+        type: brightness_decrease
+      flip_any: true
+      cube_flip_5:
+      - type: turn_on
+        device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+        entity_id: light.hue_lightstrip_2
+        domain: light
+        brightness_pct: 100
+      cube_flip_6:
+      - type: turn_off
+        device_id: b5baa12d1a26a8ad901d8df8d402b3ba
+        entity_id: light.hue_lightstrip_2
+        domain: light
+- id: '1628185959282'
+  alias: Left Button IKEA toggle power on Brian Office LED
+  description: ''
+  trigger:
+  - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: left
+  condition: []
+  action:
+  - type: toggle
+    device_id: 4e17e97b1f978fb30965feb2ea46c2b5
+    entity_id: switch.brianofficeledbar
+    domain: switch
+  mode: single
