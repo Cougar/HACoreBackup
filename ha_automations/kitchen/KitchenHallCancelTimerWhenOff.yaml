@@ -1,0 +1,13 @@
+id: KitchenHallCancelTimerWhenOff
+alias: KitchenHallCancelTimerWhenOff
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.kitchenhalllight
+    to: 'off'
+condition: []
+action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.kitchenhall_light_on_countdown
+mode: single

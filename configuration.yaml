@@ -125,6 +125,8 @@ timer:
     name: Amber Closet Light On Countdown Timer
   patio_light_on_countdown:
     name: Patio Light On Countdown Timer
+  kitchenhall_light_on_countdown:
+    name: Kitchen Hall Light On Countdown Timer
 
 # Shell commands
 shell_command:
