@@ -114,3 +114,24 @@
     entity_id: switch.brianofficeledbar
     domain: switch
   mode: single
+- id: '1628216515936'
+  alias: Turn off Pantry after timer
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: abde47d3414e06a1174d725e641e67d4
+    entity_id: switch.pantrylight
+    domain: switch
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: abde47d3414e06a1174d725e641e67d4
+    entity_id: switch.pantrylight
+    domain: switch
+  mode: single

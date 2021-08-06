@@ -1,0 +1,15 @@
+id: AmberClosetOnTriggerTimer
+alias: AmberClosetOnTriggerTimer
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.amberclosetlight
+    to: 'on'
+condition: []
+action:
+  - service: timer.start
+    target:
+      entity_id: timer.amber_closet_light_on_countdown
+    data:
+      duration: '00:10:00'
+mode: single

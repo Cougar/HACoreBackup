@@ -1,0 +1,24 @@
+blueprint:
+  name: Always On Switch
+  description: Keep the selected switch on, even when it is turned off. This should
+    be used for switches you never want to be turned off.
+  domain: automation
+  input:
+    target_switch:
+      name: Target Switch
+      description: The switch that will always be kept on.
+      selector:
+        entity:
+          domain: switch
+  source_url: https://gist.github.com/beauwest/4cd028a5221af5ffae4e9b8895498a9c
+mode: single
+max_exceeded: silent
+trigger:
+- platform: homeassistant
+  event: start
+- platform: state
+  entity_id: !input 'target_switch'
+  to: 'off'
+action:
+- service: switch.turn_on
+  entity_id: !input 'target_switch'

@@ -1,0 +1,14 @@
+id: LaundryRoomOffAfterTimer
+alias: LaundryRoomOffAfterTimer
+description: ''
+trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.laundryroom_light_on_countdown
+condition: []
+action:
+  - service: light.turn_off
+    target:
+      entity_id: light.laundryroomlight
+mode: single

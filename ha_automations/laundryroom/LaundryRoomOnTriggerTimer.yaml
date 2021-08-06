@@ -1,0 +1,15 @@
+id: LaundryRoomOnTriggerTimer
+alias: LaundryRoomOnTriggerTimer
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.laundryroomlight
+    to: 'on'
+condition: []
+action:
+  - service: timer.start
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+    data:
+      duration: '00:15:00'
+mode: single

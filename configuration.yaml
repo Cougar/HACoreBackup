@@ -34,9 +34,6 @@ logbook:
       - sensor.date_time
       - sensor.date_time_iso
       - sensor.date_time_utc
-iperf3:
-  hosts:
-    - host: iperf.scottlinux.com
 
 fastdotcom:
   scan_interval: '00:05:01'
@@ -118,6 +115,16 @@ cover split: !include_dir_list ./ha_covers
 
 climate: !include climate.yaml
 climate split: !include_dir_list ./ha_climates
+
+timer:
+  laundryroom_light_on_countdown:
+    name: LaundryRoom Light On Countdown Timer
+  pantry_light_on_countdown:
+    name: Pantry Light On Countdown Timer
+  amber_closet_light_on_countdown:
+    name: Amber Closet Light On Countdown Timer
+  patio_light_on_countdown:
+    name: Patio Light On Countdown Timer
 
 # Shell commands
 shell_command:

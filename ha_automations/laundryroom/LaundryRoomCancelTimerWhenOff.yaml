@@ -1,0 +1,13 @@
+id: LaundryRoomCancelTimerWhenOff
+alias: LaundryRoomCancelTimerWhenOff
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.laundryroomlight
+    to: 'off'
+condition: []
+action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+mode: single

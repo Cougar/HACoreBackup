@@ -1,0 +1,15 @@
+id: PantryOnTriggerTimer
+alias: PantryOnTriggerTimer
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.pantrylight
+    to: 'on'
+condition: []
+action:
+  - service: timer.start
+    target:
+      entity_id: timer.pantry_light_on_countdown
+    data:
+      duration: '00:05:00'
+mode: single

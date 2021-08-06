@@ -1,0 +1,13 @@
+id: PatioCancelTimerWhenOff
+alias: PatioCancelTimerWhenOff
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.patiolight1
+    to: 'off'
+condition: []
+action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.patio_light_on_countdown
+mode: single
