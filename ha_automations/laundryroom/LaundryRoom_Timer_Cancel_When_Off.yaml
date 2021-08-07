@@ -1,5 +1,5 @@
-id: LaundryRoomCancelTimerWhenOff
-alias: LaundryRoomCancelTimerWhenOff
+id: LaundryRoom_Timer_Cancel_When_Off
+alias: LaundryRoom_Timer_Cancel_When_Off
 description: ''
 trigger:
   - platform: state

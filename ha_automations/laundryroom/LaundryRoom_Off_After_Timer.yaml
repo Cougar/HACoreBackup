@@ -1,5 +1,5 @@
-id: LaundryRoomOffAfterTimer
-alias: LaundryRoomOffAfterTimer
+id: LaundryRoom_Off_After_Timer
+alias: LaundryRoom_Off_After_Timer
 description: ''
 trigger:
   - platform: event
