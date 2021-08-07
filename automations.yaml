@@ -747,12 +747,59 @@
     from: 'off'
     to: 'on'
   condition:
-  - condition: sun
-    before: sunrise
-    after: sunset
+  - condition: or
+    conditions:
+    - condition: sun
+      after: sunset
+    - condition: sun
+      before: sunrise
   action:
   - type: turn_on
     device_id: 625d9ab18632387169827ec701b17f55
     entity_id: light.garagelight
     domain: light
+  mode: single
+- id: '1628374612600'
+  alias: 'Garage - light: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.garage_light_on_countdown
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 625d9ab18632387169827ec701b17f55
+    entity_id: light.garagelight
+    domain: light
+  mode: single
+- id: '1628374672781'
+  alias: 'Garage - light: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.garagelight
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 00:30:00
+    target:
+      entity_id: timer.garage_light_on_countdown
+  mode: single
+- id: '1628374921475'
+  alias: 'Garage - Light: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.garagelight
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.garage_light_on_countdown
   mode: single
