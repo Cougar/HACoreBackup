@@ -714,3 +714,23 @@
     target:
       entity_id: timer.pool_spalight_on_countdown
   mode: single
+- id: '1628358968235'
+  alias: 'Kitchen - Sink: LED on at sunset'
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+  condition: []
+  action:
+  - scene: scene.kitchen_sink_on
+  mode: single
+- id: '1628358992349'
+  alias: 'Kitchen - Sink: LED off at sunrise'
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+  condition: []
+  action:
+  - scene: scene.kitchen_sink_off
+  mode: single
