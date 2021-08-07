@@ -118,17 +118,25 @@ climate split: !include_dir_list ./ha_climates
 
 timer:
   laundryroom_light_on_countdown:
-    name: LaundryRoom Light On Countdown Timer
+    name: laundryroom light on countdown timer
   pantry_light_on_countdown:
-    name: Pantry Light On Countdown Timer
+    name: pantry light on countdown timer
   amber_closet_light_on_countdown:
-    name: Amber Closet Light On Countdown Timer
+    name: amber closet light on countdown timer
   patio_light_on_countdown:
-    name: Patio Light On Countdown Timer
+    name: patio light on countdown timer
   kitchenhall_light_on_countdown:
-    name: Kitchen Hall Light On Countdown Timer
+    name: kitchen hall light on countdown timer
   waterheater_pump_on_countdown:
-    name: WaterHeater Pump On Countdown Timer
+    name: waterheater pump on countdown timer
+  pool_poollight_on_countdown:
+    name: 'Pool: pool light on countdown timer'
+  pool_spalight_on_countdown:
+    name: 'Pool: spa light on countdown timer'
+  pool_spajets_on_countdown:
+    name: 'Pool: spa jets on countdown timer'
+  pool_waterfall_on_countdown:
+    name: 'Pool: waterfall on countdown timer'
 # Shell commands
 shell_command:
   pushtogit: bash /config/ha_shell/ha_gitpush.sh

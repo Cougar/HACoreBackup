@@ -1,5 +1,5 @@
-id: shellies_discovery
-alias: Shellies Discovery
+id: 7daa80f2-a3f7-4ab5-9601-643fa5448cd6
+alias: 'System: shellies discovery'
 mode: queued
 max: 999
 trigger:

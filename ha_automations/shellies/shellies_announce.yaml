@@ -1,5 +1,5 @@
-id: shellies_announce
-alias: Shellies Announce
+id: 34197312-d4b4-4861-a1b7-ef53386e9fd3
+alias: 'System: shellies announce'
 trigger:
 - platform: homeassistant
   event: start

@@ -1,15 +1,13 @@
-id: PatioOnTriggerTimer
-alias: PatioOnTriggerTimer
+id: 527dac6a-3c64-4168-ab60-92bcbfc7b80d
+alias: PatioCancelTimerWhenOff
 description: ''
 trigger:
   - platform: state
     entity_id: light.patiolight1
-    to: 'on'
+    to: 'off'
 condition: []
 action:
-  - service: timer.start
+  - service: timer.cancel
     target:
       entity_id: timer.patio_light_on_countdown
-    data:
-      duration: '00:30:00'
 mode: single

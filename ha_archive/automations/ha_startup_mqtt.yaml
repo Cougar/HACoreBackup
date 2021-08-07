@@ -1,4 +1,4 @@
-id: ha_startup_mqtt
+id: a63415b6-88b8-4da9-ae89-5b76bb8bf189
 alias: "Tasmota State on HA Restart"
 trigger:
   platform: homeassistant

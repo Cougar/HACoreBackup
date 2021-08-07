@@ -1,13 +1,15 @@
-id: AmberClosetCancelTimerWhenOff
-alias: AmberClosetCancelTimerWhenOff
+id: d4cc94da-8d1e-4582-b33b-f057721c0075
+alias: AmberClosetOnTriggerTimer
 description: ''
 trigger:
   - platform: state
     entity_id: light.amberclosetlight
-    to: 'off'
+    to: 'on'
 condition: []
 action:
-  - service: timer.cancel
+  - service: timer.start
     target:
       entity_id: timer.amber_closet_light_on_countdown
+    data:
+      duration: '00:10:00'
 mode: single

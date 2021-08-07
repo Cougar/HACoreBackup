@@ -1,14 +1,14 @@
-id: KitchenHallOffAfterTimer
-alias: KitchenHallOffAfterTimer
+id: 1357158d-f046-4827-b94b-c764197542a4
+alias: AmberClosetOffAfterTimer
 description: ''
 trigger:
   - platform: event
     event_type: timer.finished
     event_data:
-      entity_id: timer.kitchenhall_light_on_countdown
+      entity_id: timer.amber_closet_light_on_countdown
 condition: []
 action:
   - service: light.turn_off
     target:
-      entity_id: light.kitchenhalllight
+      entity_id: light.amberclosetlight
 mode: single

@@ -1,5 +1,5 @@
 - id: '1626920784509'
-  alias: IKEA -> Hue Toggle Power
+  alias: 'Dev: IKEA -> Hue Toggle Power'
   description: ''
   trigger:
   - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
@@ -15,7 +15,7 @@
     domain: light
   mode: single
 - id: '1626920868327'
-  alias: IKEA -> Hue Brightness Up
+  alias: 'Dev: IKEA -> Hue Brightness Up'
   description: ''
   trigger:
   - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
@@ -31,7 +31,7 @@
     type: brightness_increase
   mode: single
 - id: '1626920884707'
-  alias: IKEA -> Hue Brightness Down
+  alias: 'Dev: IKEA -> Hue Brightness Down'
   description: ''
   trigger:
   - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
@@ -47,7 +47,7 @@
     type: brightness_decrease
   mode: single
 - id: '1628146216133'
-  alias: 'Brian Office Aqara Magic Cube '
+  alias: 'Dev: Brian Office Aqara Magic Cube '
   description: ''
   use_blueprint:
     path: brent/zha-aqara-magic-cube-57-actions.yaml
@@ -99,7 +99,7 @@
         entity_id: light.hue_lightstrip_2
         domain: light
 - id: '1628185959282'
-  alias: Left Button IKEA toggle power on Brian Office LED
+  alias: 'Dev: left button IKEA toggle power on Brian Office LED'
   description: ''
   trigger:
   - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
@@ -115,17 +115,17 @@
     domain: switch
   mode: single
 - id: '1628299869781'
-  alias: Motion-activated Light
+  alias: 'Dev: Motion-activated Light'
   description: ''
   use_blueprint:
     path: homeassistant/motion_light.yaml
     input:
-      motion_entity: binary_sensor.ewelink_ms01_02_ias_zone
+      motion_entity: binary_sensor.pantrymotion_ias_zone
       light_target:
         entity_id: light.sengled_01_2aea0203_level_light_color_on_off
       no_motion_wait: 60
 - id: '1628306255069'
-  alias: Pantry light off after 5 minutes
+  alias: 'Kitchen - Pantry: light off after 3 minutes'
   description: ''
   trigger:
   - platform: state
@@ -136,12 +136,12 @@
   action:
   - service: timer.start
     data:
-      duration: 00:01:00
+      duration: 00:03:00
     target:
       entity_id: timer.pantry_light_on_countdown
   mode: single
 - id: '1628309017551'
-  alias: Water Heater Pump On
+  alias: 'Utilities: water heater pump on'
   description: ''
   trigger:
   - platform: time_pattern
@@ -151,9 +151,10 @@
     after: 05:00:00
     before: '23:00:00'
   action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.waterheaterpumpswitch
+  - type: turn_on
+    device_id: c8754a8bac235609bed96a4a7b2c4d93
+    entity_id: switch.waterheaterpumpswitch
+    domain: switch
   - service: timer.start
     data:
       duration: 00:05:00
@@ -161,7 +162,7 @@
       entity_id: timer.waterheater_pump_on_countdown
   mode: single
 - id: '1628309364895'
-  alias: Water Heater Pump Off After Timer
+  alias: 'Utilities: water heater pump off after timer'
   description: ''
   trigger:
   - platform: event
@@ -170,12 +171,13 @@
       entity_id: timer.waterheater_pump_on_countdown
   condition: []
   action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.waterheaterpumpswitch
+  - type: turn_off
+    device_id: c8754a8bac235609bed96a4a7b2c4d93
+    entity_id: switch.waterheaterpumpswitch
+    domain: switch
   mode: single
 - id: '1628315524668'
-  alias: LaundryRoom_Off_After_Timer
+  alias: 'LaundryRoom:  Off After Timer'
   description: ''
   trigger:
   - platform: event
@@ -184,12 +186,13 @@
       entity_id: timer.laundryroom_light_on_countdown
   condition: []
   action:
-  - service: light.turn_off
-    target:
-      entity_id: light.laundryroomlight
+  - type: turn_off
+    device_id: 5878f7ba610ef24c89403ae7502365f8
+    entity_id: light.laundryroomlight
+    domain: light
   mode: single
 - id: '1628315551454'
-  alias: LaundryRoom_On_Trigger_Timer
+  alias: 'LaundryRoom: On Trigger Timer'
   description: ''
   trigger:
   - platform: state
@@ -211,7 +214,7 @@
       entity_id: timer.laundryroom_light_on_countdown
   mode: single
 - id: '1628315601275'
-  alias: LaundryRoom_Timer_Cancel_When_Off
+  alias: 'LaundryRoom: Timer Cancel When Off'
   description: ''
   trigger:
   - platform: state
@@ -225,7 +228,7 @@
       entity_id: timer.laundryroom_light_on_countdown
   mode: single
 - id: '1628315619820'
-  alias: LaundryRoom_Timer_Pause_During_Motion
+  alias: 'LaundryRoom: Timer Pause During Motion'
   description: ''
   trigger:
   - platform: state
@@ -241,7 +244,7 @@
       entity_id: timer.laundryroom_light_on_countdown
   mode: single
 - id: '1628315635919'
-  alias: LaundryRoom_Timer_Start_After_Motion
+  alias: 'LaundryRoom: Timer Start After Motion'
   description: ''
   trigger:
   - platform: state
@@ -258,4 +261,456 @@
       duration: 00:01:00
     target:
       entity_id: timer.laundryroom_light_on_countdown
+  mode: single
+- id: '1628345640233'
+  alias: 'Closet - Amber: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.amberclosetlight
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.amber_closet_light_on_countdown
+  mode: single
+- id: '1628345673023'
+  alias: 'Closet - Amber: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.amber_closet_light_on_countdown
+  condition: []
+  action:
+  - type: turn_off
+    device_id: d1e0e9e72aaf50311cdba23e0a800383
+    entity_id: light.amberclosetlight
+    domain: light
+  mode: single
+- id: '1628345723261'
+  alias: 'Closet - Amber: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.amberclosetlight
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    target:
+      entity_id: timer.amber_closet_light_on_countdown
+    data:
+      duration: 00:10:00
+  mode: single
+- id: '1628346050051'
+  alias: 'System: home assistant push config push to git'
+  description: ''
+  trigger:
+  - platform: time_pattern
+    hours: /1
+  condition: []
+  action:
+  - service: shell_command.pushtogit
+  mode: single
+- id: '1628346369190'
+  alias: 'Outside - Patio1: Cancel Timer When Off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.patiolight1
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.patio_light_on_countdown
+  mode: single
+- id: '1628346418430'
+  alias: 'Outside - Patio1: Off After Timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.patio_light_on_countdown
+  condition: []
+  action:
+  - type: turn_off
+    device_id: b76d1a9e3daa7c0c6bfa200a89c84faa
+    entity_id: light.patiolight1
+    domain: light
+  mode: single
+- id: '1628346450522'
+  alias: 'Outside - Patio1: On Trigger Timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.patiolight1
+    to: 'on'
+  condition: []
+  action:
+  - service: timer.start
+    target:
+      entity_id: timer.patio_light_on_countdown
+    data:
+      duration: 00:30:00
+  mode: single
+- id: '1628346755563'
+  alias: 'System: tasmota state on home assistant restart'
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/sonoffs/backlog
+      payload: 'power1 ;power2 ;power3 ;power4 ;power5; dimmer; state '
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/backlog
+      payload: 'power1 ;power2 ;power3 ;power4 ;power5; dimmer; state '
+  mode: single
+- id: '1628348347084'
+  alias: 'Kitchen - Hall: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.kitchenhalllight
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.kitchenhall_light_on_countdown
+  mode: single
+- id: '1628348407867'
+  alias: 'Kitchen - Hall: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.kitchenhall_light_on_countdown
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 0d8d9172d552f7c99edadf27b21c6d0c
+    entity_id: light.kitchenhalllight
+    domain: light
+  mode: single
+- id: '1628348520315'
+  alias: 'Kitchen - Hall: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.kitchenhalllight
+    to: 'on'
+  condition: []
+  action:
+  - service: timer.start
+    target:
+      entity_id: timer.kitchenhall_light_on_countdown
+    data:
+      duration: 00:10:00
+  mode: single
+- id: '1628349362683'
+  alias: 'Kitchen - Pantry: motion light on start timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: abde47d3414e06a1174d725e641e67d4
+    entity_id: light.pantrylight
+    domain: light
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  - service: timer.pause
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628349454297'
+  alias: 'Kitchen - Pantry: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.pantry_light_on_countdown
+  condition: []
+  action:
+  - type: turn_off
+    device_id: abde47d3414e06a1174d725e641e67d4
+    entity_id: light.pantrylight
+    domain: light
+  mode: single
+- id: '1628349536195'
+  alias: 'Kitchen - Pantry: on trigger motion off timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.pantrylight
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    state: 'off'
+  action:
+  - service: timer.start
+    target:
+      entity_id: timer.pantry_light_on_countdown
+    data:
+      duration: 00:01:00
+  mode: single
+- id: '1628349581779'
+  alias: 'Kitchen - Pantry: on trigger motion on timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.pantrylight
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    state: 'on'
+  action:
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  - service: timer.pause
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628349664349'
+  alias: 'Kitchen - Pantry: timer cancel when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.pantrylight
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628349714469'
+  alias: 'Kitchen - Pantry: timer pause during motion'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: light.pantrylight
+    state: 'on'
+  action:
+  - service: timer.pause
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628349760007'
+  alias: 'Kitchen - Pantry: timer start after motion'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628350644374'
+  alias: 'Pool - Waterfall: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.waterfall
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 00:15:00
+    target:
+      entity_id: timer.pool_waterfall_on_countdown
+  mode: single
+- id: '1628350897208'
+  alias: 'Pool - Waterfall: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.pool_waterfall_on_countdown
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: aqualinkd/Aux_2/set
+      payload: '0'
+  mode: single
+- id: '1628350959357'
+  alias: 'Pool - Waterfall: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.waterfall
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pool_waterfall_on_countdown
+  mode: single
+- id: '1628351742930'
+  alias: 'Pool - Spajets: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.spa_jets
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pool_spajets_on_countdown
+  mode: single
+- id: '1628351799198'
+  alias: 'Pool - Spajets: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.pool_spajets_on_countdown
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: aqualinkd/Aux_1/set
+      payload: '0'
+  mode: single
+- id: '1628351846973'
+  alias: 'Pool - Spajets: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.spa_jets
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 01:00:00
+    target:
+      entity_id: timer.pool_spajets_on_countdown
+  mode: single
+- id: '1628352084116'
+  alias: 'Pool - Pool Light: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.pool_light
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pool_poollight_on_countdown
+  mode: single
+- id: '1628352205397'
+  alias: 'Pool - Pool Light: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.pool_poollight_on_countdown
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: aqualinkd/Aux_4/set
+      payload: '0'
+  mode: single
+- id: '1628352260831'
+  alias: 'Pool - Pool Light: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.pool_light
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 01:00:00
+    target:
+      entity_id: timer.pool_poollight_on_countdown
+  mode: single
+- id: '1628352396317'
+  alias: 'Pool - Spa Light: cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.spa_light
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pool_spalight_on_countdown
+  mode: single
+- id: '1628352446451'
+  alias: 'Pool - Spa Light: off after timer'
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.pool_spalight_on_countdown
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: aqualinkd/Aux_3/set
+      payload: '0'
+  mode: single
+- id: '1628352480662'
+  alias: 'Pool - Spa Light: on trigger timer'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.spa_light
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 01:00:00
+    target:
+      entity_id: timer.pool_spalight_on_countdown
   mode: single

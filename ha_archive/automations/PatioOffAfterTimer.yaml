@@ -1,14 +1,14 @@
-id: AmberClosetOffAfterTimer
-alias: AmberClosetOffAfterTimer
+id: 306b8910-05af-4343-8a91-8b719b00c984
+alias: PatioOffAfterTimer
 description: ''
 trigger:
   - platform: event
     event_type: timer.finished
     event_data:
-      entity_id: timer.amber_closet_light_on_countdown
+      entity_id: timer.patio_light_on_countdown
 condition: []
 action:
   - service: light.turn_off
     target:
-      entity_id: light.amberclosetlight
+      entity_id: light.patiolight1
 mode: single

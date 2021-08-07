@@ -1,15 +1,15 @@
-id: AmberClosetOnTriggerTimer
-alias: AmberClosetOnTriggerTimer
+id: 96d70f76-c3fd-40f4-a4e3-5f888144dece
+alias: KitchenHallOnTriggerTimer
 description: ''
 trigger:
   - platform: state
-    entity_id: light.amberclosetlight
+    entity_id: light.kitchenhalllight
     to: 'on'
 condition: []
 action:
   - service: timer.start
     target:
-      entity_id: timer.amber_closet_light_on_countdown
+      entity_id: timer.kitchenhall_light_on_countdown
     data:
       duration: '00:10:00'
 mode: single

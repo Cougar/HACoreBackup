@@ -1,14 +1,14 @@
-id: PatioOffAfterTimer
-alias: PatioOffAfterTimer
+id: 795e6bf5-fea7-4ebe-b6e2-a9759f1d2388
+alias: KitchenHallOffAfterTimer
 description: ''
 trigger:
   - platform: event
     event_type: timer.finished
     event_data:
-      entity_id: timer.patio_light_on_countdown
+      entity_id: timer.kitchenhall_light_on_countdown
 condition: []
 action:
   - service: light.turn_off
     target:
-      entity_id: light.patiolight1
+      entity_id: light.kitchenhalllight
 mode: single
