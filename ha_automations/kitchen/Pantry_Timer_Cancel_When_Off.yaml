@@ -1,0 +1,13 @@
+id: Pantry_Timer_Cancel_When_Off
+alias: Pantry_Timer_Cancel_When_Off
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.pantrylight
+    to: 'off'
+condition: []
+action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.pantry_light_on_countdown
+mode: single

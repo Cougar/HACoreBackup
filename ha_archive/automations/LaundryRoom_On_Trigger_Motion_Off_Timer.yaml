@@ -1,11 +1,14 @@
-id: LaundryRoom_On_Trigger_Timer
-alias: LaundryRoom_On_Trigger_Timer
+id: LaundryRoom_On_Trigger_Motion_Off_Timer
+alias: LaundryRoom_On_Trigger_Motion_Off_Timer
 description: ''
 trigger:
   - platform: state
     entity_id: light.laundryroomlight
     to: 'on'
-condition: []
+condition:
+  - condition: state
+    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    state: 'off'
 action:
   - service: timer.start
     target:

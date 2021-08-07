@@ -1,8 +1,9 @@
-alias: Laundry_Room_Timer_Start_After_Motion
+id: Pantry_Timer_Start_After_Motion
+alias: Pantry_Timer_Start_After_Motion
 description: ''
 trigger:
   - platform: state
-    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    entity_id: binary_sensor.pantrymotion_ias_zone
     to: 'off'
 condition: []
 action:
@@ -10,5 +11,5 @@ action:
     data:
       duration: '00:01:00'
     target:
-      entity_id: timer.laundryroom_light_on_countdown
+      entity_id: timer.pantry_light_on_countdown
 mode: single

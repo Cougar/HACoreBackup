@@ -127,7 +127,8 @@ timer:
     name: Patio Light On Countdown Timer
   kitchenhall_light_on_countdown:
     name: Kitchen Hall Light On Countdown Timer
-
+  waterheater_pump_on_countdown:
+    name: WaterHeater Pump On Countdown Timer
 # Shell commands
 shell_command:
   pushtogit: bash /config/ha_shell/ha_gitpush.sh

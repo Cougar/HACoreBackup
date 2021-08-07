@@ -1,0 +1,16 @@
+id: Pantry_Timer_Pause_During_Motion
+alias: Pantry_Timer_Pause_During_Motion
+description: ''
+trigger:
+  - platform: state
+    entity_id: binary_sensor.pantrymotion_ias_zone
+    to: 'on'
+condition:
+  - condition: state
+    entity_id: light.pantrylight
+    state: 'on'
+action:
+  - service: timer.pause
+    target:
+      entity_id: timer.pantry_light_on_countdown
+mode: single

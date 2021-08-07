@@ -1,15 +1,15 @@
-alias: Laundry_Room_Timer_Pause_During_Motion
+id: LaundryRoom_Timer_Start_After_Motion
+alias: LaundryRoom_Timer_Start_After_Motion
 description: ''
 trigger:
   - platform: state
     entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
-    to: 'on'
-condition:
-  - condition: state
-    entity_id: light.laundryroomlight
-    state: 'on'
+    to: 'off'
+condition: []
 action:
-  - service: timer.pause
+  - service: timer.start
+    data:
+      duration: '00:01:00'
     target:
       entity_id: timer.laundryroom_light_on_countdown
 mode: single

@@ -114,24 +114,148 @@
     entity_id: switch.brianofficeledbar
     domain: switch
   mode: single
-- id: '1628216515936'
-  alias: Turn off Pantry after timer
+- id: '1628299869781'
+  alias: Motion-activated Light
+  description: ''
+  use_blueprint:
+    path: homeassistant/motion_light.yaml
+    input:
+      motion_entity: binary_sensor.ewelink_ms01_02_ias_zone
+      light_target:
+        entity_id: light.sengled_01_2aea0203_level_light_color_on_off
+      no_motion_wait: 60
+- id: '1628306255069'
+  alias: Pantry light off after 5 minutes
   description: ''
   trigger:
-  - platform: device
-    type: turned_on
-    device_id: abde47d3414e06a1174d725e641e67d4
-    entity_id: switch.pantrylight
-    domain: switch
-    for:
-      hours: 0
-      minutes: 5
-      seconds: 0
-      milliseconds: 0
+  - platform: state
+    entity_id: light.pantrylight
+    from: 'off'
+    to: 'on'
   condition: []
   action:
-  - type: turn_off
-    device_id: abde47d3414e06a1174d725e641e67d4
-    entity_id: switch.pantrylight
-    domain: switch
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.pantry_light_on_countdown
+  mode: single
+- id: '1628309017551'
+  alias: Water Heater Pump On
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /30
+  condition:
+  - condition: time
+    after: 05:00:00
+    before: '23:00:00'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.waterheaterpumpswitch
+  - service: timer.start
+    data:
+      duration: 00:05:00
+    target:
+      entity_id: timer.waterheater_pump_on_countdown
+  mode: single
+- id: '1628309364895'
+  alias: Water Heater Pump Off After Timer
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.waterheater_pump_on_countdown
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.waterheaterpumpswitch
+  mode: single
+- id: '1628315524668'
+  alias: LaundryRoom_Off_After_Timer
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.laundryroom_light_on_countdown
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id: light.laundryroomlight
+  mode: single
+- id: '1628315551454'
+  alias: LaundryRoom_On_Trigger_Timer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.laundryroomlight
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+  - condition: state
+    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    state: 'on'
+  - service: timer.pause
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+  mode: single
+- id: '1628315601275'
+  alias: LaundryRoom_Timer_Cancel_When_Off
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.laundryroomlight
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+  mode: single
+- id: '1628315619820'
+  alias: LaundryRoom_Timer_Pause_During_Motion
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: light.laundryroomlight
+    state: 'on'
+  action:
+  - service: timer.pause
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
+  mode: single
+- id: '1628315635919'
+  alias: LaundryRoom_Timer_Start_After_Motion
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - condition: state
+    entity_id: light.laundryroomlight
+    state: 'on'
+  - service: timer.start
+    data:
+      duration: 00:01:00
+    target:
+      entity_id: timer.laundryroom_light_on_countdown
   mode: single
