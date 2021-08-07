@@ -734,3 +734,25 @@
   action:
   - scene: scene.kitchen_sink_off
   mode: single
+- id: '1628371498179'
+  alias: 'Garage: doors opened after dark lights on'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    from: closed
+    to: open
+  - platform: state
+    entity_id: binary_sensor.garage_side_door_status
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: sun
+    before: sunrise
+    after: sunset
+  action:
+  - type: turn_on
+    device_id: 625d9ab18632387169827ec701b17f55
+    entity_id: light.garagelight
+    domain: light
+  mode: single
