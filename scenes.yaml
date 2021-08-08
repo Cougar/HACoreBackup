@@ -31,7 +31,7 @@
       friendly_name: Garage WorkBench
       state: 'off'
 - id: '1628378191846'
-  name: Sunrise
+  name: Sunrise scene
   entities:
     light.outsidelight:
       supported_color_modes:
@@ -63,8 +63,9 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'off'
+  icon: mdi:weather-sunset-up
 - id: '1628378245893'
-  name: Sunset
+  name: Sunset scene
   entities:
     light.outsidelight:
       supported_color_modes:
@@ -104,3 +105,4 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'on'
+  icon: mdi:weather-sunset-down
