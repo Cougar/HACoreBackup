@@ -1,3 +1,6 @@
+# Make non-existent .ssh folder
+mkdir -p ~/.ssh
+
 # Add github key to known_hosts
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
