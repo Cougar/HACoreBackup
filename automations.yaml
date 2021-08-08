@@ -315,6 +315,7 @@
   condition: []
   action:
   - service: shell_command.pushtogit
+  - service: notify.mobile_app_pixel_3_xl
   mode: single
 - id: '1628346369190'
   alias: 'Outside - Patio1: Cancel Timer When Off'
@@ -855,3 +856,10 @@
       brightness: 75
       rgb_color: 51,153,255
   mode: single
+- id: '1628448938779'
+  alias: 'Dev: Learn Tasmota Always On'
+  description: ''
+  use_blueprint:
+    path: beauwest/always_on_switch.yaml
+    input:
+      target_switch: switch.tasmota
