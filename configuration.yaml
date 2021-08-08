@@ -54,8 +54,17 @@ mqtt:
 logger:
   default: info
   logs:
-    homeassistant.components.yamaha: critical
-    custom_components.my_integration: critical
+    # log level for HA core
+    homeassistant.core: fatal
+
+    # log level for MQTT integration
+    homeassistant.components.mqtt: warning
+
+    # log level for all python scripts
+    homeassistant.components.python_script: debug
+
+    # log level for a custom component
+    custom_components.my_integration: debug
 
 # InfluxDB
 influxdb:
@@ -84,16 +93,6 @@ device_tracker:
       sophia_phone: 192.168.6.151
       liam_phone: 192.168.6.238
       aidan_phone: 192.168.6.218
-  - platform: google_maps
-    username: "bkmccarty@gmail.com"
-  - platform: google_maps
-    username: "amber.mccarty@gmail.com"
-  - platform: google_maps
-    username: "aidan.mccarty@gmail.com"
-  - platform: google_maps
-    username: "sophia.mccarty@gmail.com"
-  - platform: google_maps
-    username: "liam.mccarty@gmail.com"
 
 # Example configuration.yaml entry
 nest:
