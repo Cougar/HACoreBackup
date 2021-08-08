@@ -803,3 +803,23 @@
     target:
       entity_id: timer.garage_light_on_countdown
   mode: single
+- id: '1628378298478'
+  alias: Sunrise
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+  condition: []
+  action:
+  - scene: scene.sunrise
+  mode: single
+- id: '1628378324806'
+  alias: Sunset
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+  condition: []
+  action:
+  - scene: scene.sunset
+  mode: single

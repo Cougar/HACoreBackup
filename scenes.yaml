@@ -30,7 +30,40 @@
       power_threshold_w: 8
       friendly_name: Garage WorkBench
       state: 'off'
-- id: '1628358938131'
+- id: '1628378191846'
+  name: Sunrise
+  entities:
+    light.outsidelight:
+      supported_color_modes:
+      - onoff
+      friendly_name: OutsideLight
+      supported_features: 0
+      state: 'off'
+    light.porchlight:
+      supported_color_modes:
+      - brightness
+      friendly_name: PorchLight
+      supported_features: 0
+      state: 'off'
+    light.fireplacelight:
+      supported_color_modes:
+      - brightness
+      friendly_name: FirePlaceLight
+      supported_features: 0
+      state: 'off'
+    light.kitchen_sink_2aea0203_level_light_color_on_off:
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      off_brightness:
+      friendly_name: Kitchen Sink 2aea0203 level, light_color, on_off
+      supported_features: 43
+      state: 'off'
+    switch.garagepowertoolswitch:
+      friendly_name: GaragePowerToolSwitch
+      state: 'off'
+- id: '1628378245893'
   name: Sunset
   entities:
     light.outsidelight:
@@ -71,36 +104,3 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'on'
-- id: '1628358954747'
-  name: Sunrise
-  entities:
-    light.outsidelight:
-      supported_color_modes:
-      - onoff
-      friendly_name: OutsideLight
-      supported_features: 0
-      state: 'off'
-    light.porchlight:
-      supported_color_modes:
-      - brightness
-      friendly_name: PorchLight
-      supported_features: 0
-      state: 'off'
-    light.fireplacelight:
-      supported_color_modes:
-      - brightness
-      friendly_name: FirePlaceLight
-      supported_features: 0
-      state: 'off'
-    light.kitchen_sink_2aea0203_level_light_color_on_off:
-      min_mireds: 153
-      max_mireds: 370
-      supported_color_modes:
-      - color_temp
-      off_brightness:
-      friendly_name: Kitchen Sink 2aea0203 level, light_color, on_off
-      supported_features: 43
-      state: 'off'
-    switch.garagepowertoolswitch:
-      friendly_name: GaragePowerToolSwitch
-      state: 'off'
