@@ -155,3 +155,21 @@ timer:
 # Shell commands
 shell_command:
   pushtogit: bash /config/ha_shell/ha_gitpush.sh
+
+panel_iframe:
+  esphome:
+    title: 'ESPHome'
+    url: 'http://192.168.7.12:6052'
+    icon: mdi:raspberry-pi
+  nodered:
+    title: 'Node-Red'
+    url: 'http://192.168.7.12:1880'
+    icon: mdi:sitemap
+  graf:
+    title: 'Grafana'
+    url: 'http://192.168.7.12:3000'
+    icon: mdi:chart-bar-stacked
+  vscode:
+    title: 'VSCode'
+    url: 'http://192.168.7.12:8999'
+    icon: mdi:bug

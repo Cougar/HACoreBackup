@@ -1,6 +1,6 @@
 id: 1b685a24-9d45-4686-bbb8-d2290423d859
 alias: KitchenHallCancelTimerWhenOff
-description: ''
+description: 'Description Not needed'
 trigger:
   - platform: state
     entity_id: light.kitchenhalllight
