@@ -360,21 +360,6 @@
     data:
       duration: 00:30:00
   mode: single
-- id: '1628346755563'
-  alias: 'System: tasmota state on home assistant restart'
-  trigger:
-    platform: homeassistant
-    event: start
-  action:
-  - service: mqtt.publish
-    data:
-      topic: cmnd/sonoffs/backlog
-      payload: 'power1 ;power2 ;power3 ;power4 ;power5; dimmer; state '
-  - service: mqtt.publish
-    data:
-      topic: cmnd/tasmotas/backlog
-      payload: 'power1 ;power2 ;power3 ;power4 ;power5; dimmer; state '
-  mode: single
 - id: '1628348347084'
   alias: 'Kitchen - Hall: cancel timer when off'
   description: ''
@@ -856,10 +841,134 @@
       brightness: 75
       rgb_color: 51,153,255
   mode: single
-- id: '1628448938779'
-  alias: 'Dev: Learn Tasmota Always On'
+- id: '1628456899521'
+  alias: 'Power: Learn_Tasmota1 - Always On'
   description: ''
-  use_blueprint:
-    path: beauwest/always_on_switch.yaml
-    input:
-      target_switch: switch.tasmota
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.tasmota
+    to: 'off'
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.turn_on
+    entity_id: switch.tasmota
+  mode: single
+  max_exceeded: silent
+- id: '1628457366708'
+  alias: 'Power: Learn_Tasmota2 - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.learntasmota2
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.learntasmota2
+  mode: single
+  max_exceeded: silent
+- id: '1628457492912'
+  alias: 'Power: Internet - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.internetrouterpower
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.internetrouterpower
+  mode: single
+  max_exceeded: silent
+- id: '1628457560244'
+  alias: 'Power: Refrigerator - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.refrigeratorswitch
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.refrigeratorswitch
+  mode: single
+  max_exceeded: silent
+- id: '1628457592394'
+  alias: 'Power: Dishwasher - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.dishwasherswitch
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.dishwasherswitch
+  mode: single
+  max_exceeded: silent
+- id: '1628457625999'
+  alias: 'Power: Laundry Washer - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.laundrywasher
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.laundrywasher
+  mode: single
+  max_exceeded: silent
+- id: '1628457660749'
+  alias: 'Power: Laundry Dryer - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.laundrydryer
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.laundrydryer
+  mode: single
+  max_exceeded: silent
+- id: '1628459233643'
+  alias: 'Power: Umraid - Always On'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: switch.unraidswitch
+    to: 'off'
+  condition: []
+  action:
+  - wait_template: ''
+    timeout: 0:0:05
+  - service: switch.unraidswitch
+  mode: single
+  max_exceeded: silent
