@@ -823,3 +823,35 @@
   action:
   - scene: scene.sunset
   mode: single
+- id: '1628393139476'
+  alias: 'Office - Amber: Light on Bloom On'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.amberofficelight
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_bloom_1
+    data:
+      color_name: yellow
+      brightness: 255
+  mode: single
+- id: '1628393217287'
+  alias: 'Office - Amber: Light off Bloom blue'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.amberofficelight
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_bloom_1
+    data:
+      brightness: 75
+      rgb_color: 51,153,255
+  mode: single

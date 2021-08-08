@@ -1,0 +1,6 @@
+platform: statistics
+name: 'Firewall WAN In Stats'
+entity_id: sensor.firewall_wan_in
+sampling_size: 4
+max_age:
+  hours: 24

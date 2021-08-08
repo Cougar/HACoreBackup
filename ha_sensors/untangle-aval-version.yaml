@@ -1,0 +1,7 @@
+platform: scrape
+name: firewall_available_version
+resource: https://wiki.untangle.com/index.php/Date_Changelog
+select: ".toctext"
+scan_interval: 3600
+value_template: "{{ value.split(' ')[0] }}"
+verify_ssl: true
