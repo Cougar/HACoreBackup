@@ -957,7 +957,7 @@
   mode: single
   max_exceeded: silent
 - id: '1628459233643'
-  alias: 'Power: Umraid - Always On'
+  alias: 'Power: Unraid - Always On'
   description: ''
   trigger:
   - platform: homeassistant
