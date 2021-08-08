@@ -78,8 +78,22 @@ device_tracker:
     interval_seconds: 30
     consider_home: 600
     hosts:
-      bmccarty: 192.168.6.228
-      tesla3: 192.168.6.227
+      brian_phone: 192.168.6.228
+      tesla3: 192.168.6.225
+      amber_phone: 192.168.6.223
+      sophia_phone: 192.168.6.151
+      liam_phone: 192.168.6.238
+      aidan_phone:
+  - platform: google_maps
+    username: "bkmccarty@gmail.com"
+  - platform: google_maps
+    username: "amber.mccarty@gmail.com"
+  - platform: google_maps
+    username: "aidan.mccarty@gmail.com"
+  - platform: google_maps
+    username: "sophia.mccarty@gmail.com"
+  - platform: google_maps
+    username: "liam.mccarty@gmail.com"
 
 # Example configuration.yaml entry
 nest:
