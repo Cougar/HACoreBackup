@@ -14,3 +14,31 @@ tesla3:
   icon:
   picture:
   track: true
+
+amber_phone:
+  name: amber_phone
+  mac:
+  icon:
+  picture:
+  track: true
+
+sophia_phone:
+  name: sophia_phone
+  mac:
+  icon:
+  picture:
+  track: true
+
+liam_phone:
+  name: liam_phone
+  mac:
+  icon:
+  picture:
+  track: true
+
+aidan_phone:
+  name: aidan_phone
+  mac:
+  icon:
+  picture:
+  track: true

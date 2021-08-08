@@ -1,5 +1,7 @@
 title: My Awesome Home
 resources:
+  - url: /local/sun-card.js
+    type: module
   - url: /local/dual-gauge-card.js
     type: js
 views:

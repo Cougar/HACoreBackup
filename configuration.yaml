@@ -83,7 +83,7 @@ device_tracker:
       amber_phone: 192.168.6.223
       sophia_phone: 192.168.6.151
       liam_phone: 192.168.6.238
-      aidan_phone:
+      aidan_phone: 192.168.6.218
   - platform: google_maps
     username: "bkmccarty@gmail.com"
   - platform: google_maps
