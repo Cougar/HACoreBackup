@@ -839,7 +839,10 @@
       entity_id: light.hue_bloom_1
     data:
       brightness: 75
-      rgb_color: 51,153,255
+      rgb_color:
+      - 51
+      - 153
+      - 255
   mode: single
 - id: '1628456899521'
   alias: 'Power: Learn_Tasmota1 - Always On'
@@ -1022,4 +1025,50 @@
       entity_id: input_text.washer_state
     data:
       value: washing
+  mode: single
+- id: '1628483088277'
+  alias: 'Office - Brian: Light off Hue blue'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.brianofficeledbar
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_lightstrip_2
+    data:
+      brightness: 75
+      rgb_color:
+      - 51
+      - 153
+      - 255
+  mode: single
+- id: '1628483200979'
+  alias: 'Office - Brian: Light on Hue blue bright'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.brianofficeledbar
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_lightstrip_2
+    data:
+      brightness: 180
+      color_name: yellow
+  mode: single
+- id: '1628484361060'
+  alias: 'Tastmota: Publish TelePeriod 30 to tastmotas'
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/TelePeriod
+      payload: '30'
   mode: single
