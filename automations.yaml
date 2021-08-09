@@ -972,3 +972,54 @@
   - service: switch.unraidswitch
   mode: single
   max_exceeded: silent
+- id: '1628473933340'
+  alias: 'Laundry: Washer Idle'
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: d33410e3dd6f05cabbdecfe0f1466070
+    entity_id: sensor.laundrywasher_energy_power
+    domain: sensor
+    below: 5
+    for:
+      hours: 0
+      minutes: 4
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: input_text.set_value
+    target:
+      entity_id: input_text.washer_state
+    data:
+      value: idle
+  - service: tts.cloud_say
+    data:
+      entity_id: media_player.brian_office
+      message: The washing machine is done
+  mode: single
+- id: '1628474046253'
+  alias: 'Laundry: Washer Washing'
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: d33410e3dd6f05cabbdecfe0f1466070
+    entity_id: sensor.laundrywasher_energy_power
+    domain: sensor
+    below: 0
+    for:
+      hours: 0
+      minutes: 4
+      seconds: 0
+      milliseconds: 0
+    above: 4
+  condition: []
+  action:
+  - service: input_text.set_value
+    target:
+      entity_id: input_text.washer_state
+    data:
+      value: washing
+  mode: single
