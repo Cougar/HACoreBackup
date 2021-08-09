@@ -466,10 +466,8 @@
   - platform: state
     entity_id: light.pantrylight
     to: 'on'
-  condition:
-  - condition: state
-    entity_id: binary_sensor.pantrymotion_ias_zone
-    state: 'on'
+    from: 'off'
+  condition: []
   action:
   - service: timer.start
     data:
