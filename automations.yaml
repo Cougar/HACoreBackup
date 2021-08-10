@@ -971,3 +971,20 @@
       topic: cmnd/tasmotas/TelePeriod
       payload: '30'
   mode: single
+- id: '1628616639797'
+  alias: 'Dev: right button IKEA toggle power on Brian Office LED'
+  description: ''
+  trigger:
+  - device_id: 8c374a1a2dc294ec7b4467957a7df0d5
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: right
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_lightstrip_2
+    data:
+      color_name: yellow
+  mode: single
