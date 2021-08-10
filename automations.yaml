@@ -805,7 +805,39 @@
     event: sunset
   condition: []
   action:
-  - scene: scene.sunset
+  - type: turn_on
+    device_id: 2a828858a9bd7a45b0880961613d6190
+    entity_id: light.outsidelight
+    domain: light
+  - service: light.turn_on
+    target:
+      entity_id: light.porchlight
+    data:
+      brightness_pct: 40
+  - type: turn_on
+    device_id: 112ba05910558f51eb5ed1c26baecfa9
+    entity_id: light.fireplacelight
+    domain: light
+    brightness_pct: 76
+  - service: light.turn_on
+    target:
+      entity_id: light.kitchen_sink_2aea0203_level_light_color_on_off
+    data:
+      brightness: 8
+      color_temp: 370
+  - type: turn_on
+    device_id: 93ab05e23b299762055d1349646d0a16
+    entity_id: switch.garagepowertoolswitch
+    domain: switch
+  - service: light.turn_on
+    target:
+      entity_id: light.hue_lightstrip_2
+    data:
+      rgb_color:
+      - 51
+      - 153
+      - 255
+      brightness: 75
   mode: single
 - id: '1628393139476'
   alias: 'Office - Amber: Light on Bloom On'
