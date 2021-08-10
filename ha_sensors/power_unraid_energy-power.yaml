@@ -1,3 +1,6 @@
 platform: statistics
 name: 'Unraid Energy Power Stats'
 entity_id: sensor.unraidswitch_energy_power
+sampling_size: 4
+max_age:
+  hours: 24

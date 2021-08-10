@@ -1,0 +1,6 @@
+platform: statistics
+name: 'Unraid Energy Current Stats'
+entity_id: sensor.unraidswitch_energy_current
+sampling_size: 4
+max_age:
+  hours: 24
