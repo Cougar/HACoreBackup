@@ -65,6 +65,9 @@ logger:
 
     # log level for a custom component
     custom_components.my_integration: debug
+    hass_nabucasa: debug
+    homeassistant.components.cloud: debug
+    homeassistant.components.cloud.iot: debug
 
 # InfluxDB
 influxdb:
