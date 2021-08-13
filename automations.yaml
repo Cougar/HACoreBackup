@@ -873,7 +873,7 @@
       - light.sengled_03_95210103_level_light_color_on_off
     data:
       brightness_pct: 50
-      color_temp: 261
+      color_temp: 207
   mode: single
 - id: '1628798978304'
   alias: 'Liam - Lamp: "Dim Up" button pressed Tradfri'
