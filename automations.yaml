@@ -675,8 +675,8 @@
   alias: Sunrise
   description: ''
   trigger:
-  - platform: sun
-    event: sunrise
+  - platform: time
+    at: 02:00:00
   condition: []
   action:
   - scene: scene.sunrise
