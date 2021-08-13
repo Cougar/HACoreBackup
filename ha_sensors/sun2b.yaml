@@ -1,0 +1,9 @@
+platform: sun2
+entity_namespace: LA
+latitude: 34.3769732
+longitude: -118.5435177
+time_zone: America/Los_Angeles
+elevation: 398
+monitored_conditions:
+  - sunrise
+  - sunset
