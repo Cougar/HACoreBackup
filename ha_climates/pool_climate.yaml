@@ -1,0 +1,68 @@
+- platform: mqtt
+  unique_id: aqualink_pool_heater
+  name: Pool Heater
+  modes:
+    - "off"
+    - "heat"
+  send_if_off: true
+  initial: 83
+  power_command_topic: "aqualinkd/Pool_Heater/set"
+  payload_on: "1"
+  payload_off: "0"
+  current_temperature_topic: "aqualinkd/Temperature/Pool"
+  min_temp: 70
+  max_temp: 90
+  mode_command_topic: "aqualinkd/Pool_Heater/set"
+  mode_state_topic: "aqualinkd/Pool_Heater/enabled"
+  mode_state_template: >-
+    {% set values1 = { '0':'off', '1':'heat'} %}
+    {{ values1[value] if value in values1.keys() else 'off' }}
+  temperature_command_topic: "aqualinkd/Pool_Heater/setpoint/set"
+  temperature_state_topic: "aqualinkd/Pool_Heater/setpoint"
+  temperature_state_template: "{{ value_json }}"
+
+- platform: mqtt
+  unique_id: aqualink_spa_heater
+  name: Spa Heater
+  modes:
+    - "off"
+    - "heat"
+  send_if_off: true
+  initial: 100
+  power_command_topic: "aqualinkd/Spa_Heater/set"
+  payload_on: "1"
+  payload_off: "0"
+  current_temperature_topic: "aqualinkd/Temperature/Spa"
+  min_temp: 80
+  max_temp: 104
+  mode_command_topic: "aqualinkd/Spa_Heater/set"
+  mode_state_topic: "aqualinkd/Spa_Heater/enabled"
+  mode_state_template: >-
+    {% set values2 = { '0':'off', '1':'heat'} %}
+    {{ values2[value] if value in values2.keys() else 'off' }}
+  temperature_command_topic: "aqualinkd/Spa_Heater/setpoint/set"
+  temperature_state_topic: "aqualinkd/Spa_Heater/setpoint"
+  temperature_state_template: "{{ value_json }}"
+
+- platform: mqtt
+  unique_id: aqualink_freeze_protect
+  name: Freeze Protect
+  modes:
+    - "off"
+    - "cool"
+  send_if_off: true
+  initial: 36
+  power_command_topic: "aqualinkd/Freeze_Protect/set"
+  payload_on: "1"
+  payload_off: "0"
+  current_temperature_topic: "aqualinkd/Temperature/Air"
+  min_temp: 34
+  max_temp: 42
+  mode_command_topic: "aqualinkd/Freeze_Protect/set"
+  mode_state_topic: "aqualinkd/Freeze_Protect/enabled"
+  mode_state_template: >-
+    {% set values = { '0':'off', '1':'cool'} %}
+    {{ values[value] if value in values.keys() else 'off' }}
+  temperature_command_topic: "aqualinkd/Freeze_Protect/setpoint/set"
+  temperature_state_topic: "aqualinkd/Freeze_Protect/setpoint"
+  temperature_state_template: "{{ value_json }}"
