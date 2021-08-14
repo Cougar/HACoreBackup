@@ -1,0 +1,49 @@
+- platform: mqtt
+  unique_id: aqualink_air_temp
+  state_topic: "aqualinkd/Temperature/Air"
+  name: "Air Temp"
+  value_template: "{{ value_json }}"    
+  unit_of_measurement: "°F"
+  device_class: temperature
+
+- platform: mqtt
+  unique_id: aqualink_pool_heater_temp
+  state_topic: "aqualinkd/Pool_Heater/setpoint"
+  name: "Pool Heater Temp"
+  value_template: "{{ value_json }}"    
+  unit_of_measurement: "°F"     
+  device_class: temperature
+
+- platform: mqtt
+  unique_id: aqualink_pool_state
+  state_topic: "aqualinkd/Service_Mode"
+  name: "Aqualink Mode"
+  value_template: "{{ value }}"    
+  icon: mdi:wrench
+
+- platform: mqtt
+  unique_id: aqualink_pool_temp
+  state_topic: "aqualinkd/Temperature/Pool"
+  name: "Pool Temp"
+  value_template: "{{ value_json }}"    
+  unit_of_measurement: "°F"     
+  device_class: temperature
+
+- platform: mqtt
+  unique_id: aqualink_spa_heater_temp
+  state_topic: "aqualinkd/Spa_Heater/setpoint"
+  name: "Spa Heater Temp"
+  value_template: "{{ value_json }}"    
+  unit_of_measurement: "°F"        
+  device_class: temperature
+
+- platform: mqtt
+  unique_id: aqualink_spa_temp
+  state_topic: "aqualinkd/Temperature/Spa"
+  name: "Spa Temp"
+  value_template: "{{ value_json }}"    
+  unit_of_measurement: "°F"  
+  device_class: temperature
+
+
+

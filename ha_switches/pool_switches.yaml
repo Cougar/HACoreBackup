@@ -1,0 +1,144 @@
+# Pool
+- platform: mqtt
+  unique_id: aqualink_filter_pump
+  name: "Filter Pump"
+  state_topic: "aqualinkd/Filter_Pump"
+  command_topic: "aqualinkd/Filter_Pump/set"
+  json_attributes_topic: "aqualinkd/Filter_Pump/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb
+
+# Heating
+- platform: mqtt
+  unique_id: aqualink_pool_heater_switch
+  name: "Pool Heater Switch"
+  state_topic: "aqualinkd/Pool_Heater/enabled"
+  command_topic: "aqualinkd/Pool_Heater/set"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:fire
+
+- platform: mqtt
+  unique_id: aqualink_spa_heater_switch
+  name: "Spa Heater Switch"
+  state_topic: "aqualinkd/Spa_Heater/enabled"
+  command_topic: "aqualinkd/Spa_Heater/set"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:fire
+
+# Lighting
+- platform: mqtt
+  unique_id: aqualink_pool_light
+  name: "Pool Light"
+  state_topic: "aqualinkd/Aux_4"
+  command_topic: "aqualinkd/Aux_4/set"
+  json_attributes_topic: "aqualinkd/Aux_4/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb
+
+- platform: mqtt
+  unique_id: aqualink_spa_light
+  name: "Spa Light"
+  state_topic: "aqualinkd/Aux_3"
+  command_topic: "aqualinkd/Aux_3/set"
+  json_attributes_topic: "aqualinkd/Aux_3/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb
+
+# Spa
+- platform: mqtt
+  unique_id: aqualink_spa_jets
+  name: "Spa Jets"
+  state_topic: "aqualinkd/Aux_1"
+  command_topic: "aqualinkd/Aux_1/set"
+  json_attributes_topic: "aqualinkd/Aux_1/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:hot-tub
+
+- platform: mqtt
+  unique_id: aqualink_spa_mode
+  name: "Spa Mode"
+  state_topic: "aqualinkd/Spa_Mode"
+  command_topic: "aqualinkd/Spa_Mode/set"
+  json_attributes_topic: "aqualinkd/Spa_Mode/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:hot-tub
+
+# Waterfall
+- platform: mqtt
+  unique_id: aqualink_waterfall
+  name: "Waterfall"
+  state_topic: "aqualinkd/Aux_2"
+  command_topic: "aqualinkd/Aux_2/set"
+  json_attributes_topic: "aqualinkd/Aux_2/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false  
+  icon: mdi:water
+
+# Unused
+- platform: mqtt
+  unique_id: aqualink_aux5
+  name: "AUX5"
+  state_topic: "aqualinkd/Aux_5"
+  command_topic: "aqualinkd/Aux_5/set"
+  json_attributes_topic: "aqualinkd/Aux_5/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb
+
+- platform: mqtt
+  unique_id: aqualink_aux6
+  name: "AUX6"
+  state_topic: "aqualinkd/Aux_6"
+  command_topic: "aqualinkd/Aux_6/set"
+  json_attributes_topic: "aqualinkd/Aux_6/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb
+
+- platform: mqtt
+  unique_id: aqualink_aux7
+  name: "AUX7"
+  state_topic: "aqualinkd/Aux_7"
+  command_topic: "aqualinkd/Aux_7/set"
+  json_attributes_topic: "aqualinkd/Aux_7/delay"
+  json_attributes_template: "{{ {'delay': value|int} | tojson }}"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+  retain: false
+  icon: mdi:lightbulb

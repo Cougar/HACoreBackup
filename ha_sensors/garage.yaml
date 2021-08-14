@@ -1,0 +1,4 @@
+- platform: mqtt
+  unique_id: garage_car_door_status
+  name: "garage_car_door_status"
+  state_topic: "stat/GarageCarDoor/DoorStatus"
