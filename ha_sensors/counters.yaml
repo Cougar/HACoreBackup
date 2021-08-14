@@ -36,11 +36,12 @@
       friendly_name: 'Number of Entities'
       value_template: >-
         {{ states | rejectattr('state', 'eq', 'unavailable') | list | count}}
-    na_entities:
-      friendly_name: 'NA Entities'
-      value_template: >-
-        {{ states | selectattr('state', 'eq', 'unavailable') | map(attribute='entity_id') | list }}
-    na_entities_count:
-      friendly_name: 'Number of NA Entities'
-      value_template: >-
-        {{ states | selectattr('state', 'eq', 'unavailable') | map(attribute='entity_id') | list | count }}
+        
+    # unavailable_entities:
+    #   friendly_name: 'Unavailable Entities'
+    #   value_template: >-
+    #     {{ states | selectattr('state', 'eq', 'unavailable') | map(attribute='entity_id') | list }}
+    # unavailable_entities_count:
+    #   friendly_name: 'Number of Unavailable Entities'
+    #   value_template: >-
+    #     {{ states | selectattr('state', 'eq', 'unavailable') | map(attribute='entity_id') | list | count }}

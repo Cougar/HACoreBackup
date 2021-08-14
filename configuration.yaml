@@ -155,6 +155,7 @@ timer:
     name: 'Pool: waterfall on countdown timer'
   garage_light_on_countdown:
     name: 'Garage: light on countdown timer'
+
 # Shell commands
 shell_command:
   pushtogit: bash /config/ha_shell/ha_gitpush.sh

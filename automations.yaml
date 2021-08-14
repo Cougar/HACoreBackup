@@ -25,7 +25,7 @@
       entity_id: timer.pantry_light_on_countdown
   mode: single
 - id: '1628309017551'
-  alias: 'Utilities: water heater pump on'
+  alias: 'Utilities: waterheater pump scheduler'
   description: ''
   trigger:
   - platform: time_pattern
@@ -39,11 +39,6 @@
     device_id: c8754a8bac235609bed96a4a7b2c4d93
     entity_id: switch.waterheaterpumpswitch
     domain: switch
-  - service: timer.start
-    data:
-      duration: 00:05:00
-    target:
-      entity_id: timer.waterheater_pump_on_countdown
   mode: single
 - id: '1628309364895'
   alias: 'Utilities: water heater pump off after timer'
@@ -950,4 +945,20 @@
       - light.sengled_03_95210103_level_light_color_on_off
     data:
       color_temp: 370
+  mode: single
+- id: '1628952021516'
+  alias: 'Utilities: water heater pump turned on'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.waterheaterpumpswitch
+    to: 'on'
+    from: 'off'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: 00:05:00
+    target:
+      entity_id: timer.waterheater_pump_on_countdown
   mode: single
