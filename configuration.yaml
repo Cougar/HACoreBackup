@@ -132,7 +132,7 @@ cover split: !include_dir_list ./ha_covers
 climate: !include climate.yaml
 climate split: !include_dir_merge_list ./ha_climates
 
-timer:
+timer: 
   laundryroom_light_on_countdown:
     name: laundryroom light on countdown timer
   pantry_light_on_countdown:
