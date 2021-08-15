@@ -1,0 +1,18 @@
+# Logger
+logger:
+  default: warning
+  # logs:
+  #   # log level for HA core
+  #   homeassistant.core: fatal
+
+  #   # log level for MQTT integration
+  #   homeassistant.components.mqtt: warning
+
+  #   # log level for all python scripts
+  #   homeassistant.components.python_script: debug
+
+  #   # log level for a custom component
+  #   custom_components.my_integration: debug
+  #   hass_nabucasa: debug
+  #   homeassistant.components.cloud: debug
+  #   homeassistant.components.cloud.iot: debug

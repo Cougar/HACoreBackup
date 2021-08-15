@@ -1,0 +1,16 @@
+# Device Tracking
+device_tracker:
+  - platform: ping
+    interval_seconds: 30
+    consider_home: 600
+    hosts:
+      brian_phone: !secret brian_phone
+      tesla3: !secret tesla3
+      amber_phone: !secret amber_phone
+      sophia_phone: !secret sophia_phone
+      liam_phone: !secret liam_phone
+      aidan_phone: !secret aidan_phone
+      
+  - platform: mqtt_json
+    devices:
+      iss: location/iss

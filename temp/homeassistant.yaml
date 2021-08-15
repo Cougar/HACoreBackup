@@ -1,0 +1,9 @@
+# HomeAssistant Core
+homeassistant:
+  name: Cerezo House HA
+  latitude: !secret ha_latitude
+  longitude: !secret ha_longitude
+  unit_system: imperial
+  time_zone: America/Los_Angeles
+  customize: !include customize.yaml
+  #packages: !include_dir_list ./ha_integrations

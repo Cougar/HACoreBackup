@@ -1,0 +1,7 @@
+nest:
+  client_id: !secret nest_clientid
+  client_secret: !secret nest_clientsecret
+  # "Project ID" in the Device Access Console
+  project_id: !secret nest_projectid
+  # Provide the full path exactly as shown under "Subscription name" in Google Cloud Console
+  subscriber_id: !secret nest_subscriberid
