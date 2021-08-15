@@ -28,7 +28,7 @@ group: !include groups.yaml
 group split: !include_dir_list ./ha_groups
 
 script: !include scripts.yaml
-script split: !include_dir_list ./ha_scripts
+script split: !include_dir_named ./ha_scripts
 
 scene: !include scenes.yaml
 scene split: !include_dir_list ./ha_scenes

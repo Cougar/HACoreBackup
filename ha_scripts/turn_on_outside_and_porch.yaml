@@ -1,4 +1,4 @@
-alias: turn_on_outside_and_porch
+alias: "Turn on Outside and Porch"
 sequence:
 - type: turn_on
   device_id: cb79b32771533dad0137e75af7daa5f2
