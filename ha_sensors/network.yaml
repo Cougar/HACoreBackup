@@ -1,0 +1,6 @@
+- platform: rest
+  name: External IP
+  resource: 'https://ipinfo.io/json'
+  value_template: "{{ value_json.ip }}"
+  scan_interval:
+    seconds: 300

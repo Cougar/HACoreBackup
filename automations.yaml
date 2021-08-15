@@ -988,3 +988,16 @@
   action:
   - service: script.start_timers_for_lights_if_on
   mode: single
+- id: '1629060269030'
+  alias: 'Utilities: waterheater pump cancel timer when off'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.waterheaterpumpswitch
+    to: 'off'
+  condition: []
+  action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.waterheater_pump_on_countdown
+  mode: single
