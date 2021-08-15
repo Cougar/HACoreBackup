@@ -42,3 +42,10 @@ aidan_phone:
   icon:
   picture:
   track: true
+
+iss:
+  name: iss
+  mac:
+  icon:
+  picture:
+  track: true

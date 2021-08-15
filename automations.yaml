@@ -962,3 +962,17 @@
     target:
       entity_id: timer.waterheater_pump_on_countdown
   mode: single
+- id: '1629009502078'
+  alias: ISS Location Update
+  trigger:
+  - platform: state
+    entity_id: sensor.iss_coordinates
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: location/iss
+      payload_template: '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude
+        | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude
+        | float }}"}'
+      retain: true
+  mode: single

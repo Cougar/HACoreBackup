@@ -1,0 +1,29 @@
+- platform: rest
+  name: ISS Coordinates
+  json_attributes:
+    - timestamp
+    - iss_position
+    - latitude
+    - longitude
+  resource: 'http://api.open-notify.org/iss-now.json'
+  scan_interval:
+    seconds: 15
+
+- platform: rest
+  name: ISS Pass times
+  json_attributes:
+    - request
+    - response
+  value_template: >
+    {{ value_json.message }}
+  resource: !secret iss_pass_times_url
+  scan_interval:
+    seconds: 300
+
+- platform: rest
+  name: ISS Crew
+  json_attributes:
+    - people
+    - number
+  value_template: "{{ value_json['number'] }}"
+  resource: 'http://api.open-notify.org/astros.json'

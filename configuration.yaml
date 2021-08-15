@@ -96,6 +96,10 @@ device_tracker:
       sophia_phone: 192.168.6.151
       liam_phone: 192.168.6.238
       aidan_phone: 192.168.6.218
+      
+  - platform: mqtt_json
+    devices:
+      iss: location/iss
 
 # Example configuration.yaml entry
 nest:
