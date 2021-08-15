@@ -976,3 +976,13 @@
         | float }}"}'
       retain: true
   mode: single
+- id: '1629045607226'
+  alias: 'System: Startup'
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  condition: []
+  action:
+  - service: script.start_timers_for_lights_if_on
+  mode: single
