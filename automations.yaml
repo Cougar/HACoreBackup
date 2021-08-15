@@ -41,7 +41,7 @@
     domain: switch
   mode: single
 - id: '1628309364895'
-  alias: 'Utilities: water heater pump off after timer'
+  alias: 'Utilities: waterheater pump off after timer'
   description: ''
   trigger:
   - platform: event
@@ -840,7 +840,7 @@
       color_name: yellow
   mode: single
 - id: '1628484361060'
-  alias: 'Tastmota: Publish TelePeriod 30 to tastmotas'
+  alias: 'Tastmota: Publish TelePeriod 60 to tastmotas'
   description: ''
   trigger: []
   condition: []
@@ -848,7 +848,7 @@
   - service: mqtt.publish
     data:
       topic: cmnd/tasmotas/TelePeriod
-      payload: '30'
+      payload: '60'
   mode: single
 - id: '1628798506066'
   alias: 'Liam - Lamp: "Turn on" button pressed Tradfri'
@@ -947,7 +947,7 @@
       color_temp: 370
   mode: single
 - id: '1628952021516'
-  alias: 'Utilities: water heater pump turned on'
+  alias: 'Utilities: waterheater pump turned on'
   description: ''
   trigger:
   - platform: state
