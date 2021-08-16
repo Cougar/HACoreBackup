@@ -190,7 +190,7 @@
   description: ''
   trigger:
   - platform: time_pattern
-    hours: /1
+    hours: /6
   condition: []
   action:
   - service: shell_command.pushtogit
@@ -986,7 +986,7 @@
     event: start
   condition: []
   action:
-  - service: script.start_timers_for_lights_if_on
+  - service: script.1629086187317
   mode: single
 - id: '1629060269030'
   alias: 'Utilities: waterheater pump cancel timer when off'
