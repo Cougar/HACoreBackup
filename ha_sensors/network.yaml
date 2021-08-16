@@ -1,6 +1,6 @@
 - platform: rest
   name: External IP
-  resource: 'https://ipinfo.io/json'
+  resource: 'https://api.ipify.org/?format=json'
   value_template: "{{ value_json.ip }}"
   scan_interval:
     seconds: 300
