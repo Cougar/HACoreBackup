@@ -39,6 +39,11 @@
     device_id: c8754a8bac235609bed96a4a7b2c4d93
     entity_id: switch.waterheaterpumpswitch
     domain: switch
+  - service: timer.start
+    data:
+      duration: '5'
+    target:
+      entity_id: timer.waterheater_pump_on_countdown
   mode: single
 - id: '1628309364895'
   alias: 'Utilities: waterheater pump off after timer'
@@ -1000,4 +1005,25 @@
   - service: timer.cancel
     target:
       entity_id: timer.waterheater_pump_on_countdown
+  mode: single
+- id: '1629167588705'
+  alias: 'Utilities: Catch waterheater pump running without timer'
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /10
+  condition:
+  - condition: state
+    entity_id: switch.waterheaterpumpswitch
+    state: 'on'
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: timer.waterheater_pump_on_countdown
+      state: idle
+  action:
+  - type: turn_off
+    device_id: c8754a8bac235609bed96a4a7b2c4d93
+    entity_id: switch.waterheaterpumpswitch
+    domain: switch
   mode: single
