@@ -1027,3 +1027,16 @@
     entity_id: switch.waterheaterpumpswitch
     domain: switch
   mode: single
+- id: '1629267941887'
+  alias: Sophia off
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: af9ebbad029e6cde7fe9ed2b68fbd9d0
+    entity_id: light.sophia_wled
+    domain: light
+  mode: single
