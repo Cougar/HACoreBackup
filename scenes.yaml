@@ -31,6 +31,15 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'off'
+    light.sengled_04_91f30203_level_light_color_on_off:
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      off_brightness:
+      friendly_name: sengled-04 91f30203 level, light_color, on_off
+      supported_features: 43
+      state: 'off'
   icon: mdi:weather-sunset-up
 - id: '1628378245893'
   name: Sunset scene
@@ -72,5 +81,17 @@
       state: 'on'
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
+      state: 'on'
+    light.sengled_04_91f30203_level_light_color_on_off:
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 25
+      color_temp: 370
+      off_brightness:
+      friendly_name: sengled-04 91f30203 level, light_color, on_off
+      supported_features: 43
       state: 'on'
   icon: mdi:weather-sunset-down
