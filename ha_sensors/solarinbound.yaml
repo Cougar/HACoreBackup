@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    solar_combined_power:
+      value_template: "{{ (states('sensor.tas_em1_energy_power_0') | float) + (states('sensor.tas_em1_energy_power_1') | float) }}"
+    solar_combined_current:
+      value_template: "{{ (states('sensor.tas_em1_energy_current_0') | float) + (states('sensor.tas_em1_energy_current_1') | float) }}"
+    solar_combined_apparent_power:
+      value_template: "{{ (states('sensor.tas_em1_energy_apparentpower_0') | float) + (states('sensor.tas_em1_energy_apparentpower_1') | float) }}"
+    solar_combined_reactive_power:
+      value_template: "{{ (states('sensor.tas_em1_energy_reactivepower_0') | float) + (states('sensor.tas_em1_energy_reactivepower_1') | float) }}"
