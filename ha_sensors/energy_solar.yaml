@@ -1,19 +1,12 @@
 - platform: template
   sensors:
     solar_combined_power:
-      value_template: "{{ (states('sensor.solar1_power') | float) + (states('sensor.solar2_power') | float) }}"
+      value_template: "{{ (states('sensor.shellyem_b05a54_channel_1_power') | float) + (states('sensor.shellyem_b05a54_channel_2_power') | float) }}"
       unit_of_measurement: 'W'
-      friendly_name: 'Solar Power Combined'
+      friendly_name: 'Solar Meter Power Combined'
       device_class: power
     solar_combined_energy:
-      value_template: "{{ (states('sensor.solar1_energy') | float) + (states('sensor.solar2_energy') | float) }}"
+      value_template: "{{ (states('sensor.shellyem_b05a54_channel_1_energy') | float) + (states('sensor.shellyem_b05a54_channel_2_energy') | float) }}"
       unit_of_measurement: kWh
-      friendly_name: 'Solar Energy Combined'
+      friendly_name: 'Solar Meter Energy Combined'
       device_class: energy
-- platform: mqtt
-  state_topic: "shellies/shellyem-B05A54/emeter"
-  unit_of_measurement: "kWh"
-  value_template: "{{ value_json.0.energy | float / 1000 }}"
-  name: "MQTT Solar Energy"
-  device_class: energy
-  state_class: measurement
