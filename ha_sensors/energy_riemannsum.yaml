@@ -3,3 +3,8 @@
   name: solar_energy
   unit_prefix: k
   round: 2
+- platform: integration
+  source: sensor.total_monitored_dev
+  name: total_monitored_kwh
+  unit_prefix: k
+  round: 2

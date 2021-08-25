@@ -10,3 +10,22 @@
       unit_of_measurement: kWh
       friendly_name: 'Solar Meter Energy Combined'
       device_class: energy
+    total_monitored_dev:
+      value_template: >-
+        {{ (states('sensor.aidans31_energy_power') | float)
+        + (states('sensor.bevfrig_energy_power') | float)
+        + (states('sensor.dishwasherswitch_energy_power') | float)
+        + (states('sensor.freezerswitch_energy_power') | float)
+        + (states('sensor.laundrydryer_energy_power') | float)
+        + (states('sensor.laundrywasher_energy_power') | float)
+        + (states('sensor.liams31_energy_power') | float)
+        + (states('sensor.refrigeratorswitch_energy_power') | float)
+        + (states('sensor.s31_temp01_energy_power') | float)
+        + (states('sensor.sophias31_energy_power') | float)
+        + (states('sensor.unraid_energy_power_stats') | float)
+        + (states('sensor.unraidswitch_energy_power') | float)
+        + (states('sensor.waterheaterpumpswitch_energy_power') | float)
+        }}
+      unit_of_measurement: 'W'
+      friendly_name: 'Total Monitored Power Combined'
+      device_class: power
