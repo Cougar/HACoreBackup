@@ -68,6 +68,15 @@ utility_meter:
   daily_solar_energy:
     source: sensor.solar_energy
     cycle: daily
+  weekly_solar_energy:
+    source: sensor.solar_energy
+    cycle: weekly
   monthly_solar_energy:
     source: sensor.solar_energy
-    cycle: daily
+    cycle: monthly
+  quarterly_solar_energy:
+    source: sensor.solar_energy
+    cycle: quarterly
+  yearly_solar_energy:
+    source: sensor.solar_energy
+    cycle: yearly
