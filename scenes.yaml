@@ -95,3 +95,56 @@
       supported_features: 43
       state: 'on'
   icon: mdi:weather-sunset-down
+- id: '1630351513157'
+  name: AmberOfficeNight
+  entities:
+    light.lb_amberoffice_01:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 176
+      hs_color:
+      - 195
+      - 86
+      rgb_color:
+      - 35
+      - 200
+      - 255
+      xy_color:
+      - 0.152
+      - 0.254
+      effect: None
+      friendly_name: LB_AmberOffice_01
+      supported_features: 36
+      state: 'on'
+- id: '1630351531382'
+  name: AmberOfficeDay
+  entities:
+    light.lb_amberoffice_01:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 314
+      effect: None
+      friendly_name: LB_AmberOffice_01
+      supported_features: 36
+      state: 'on'
