@@ -1,1040 +1,804 @@
-2021-09-01 03:16:10 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-01 03:16:15 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2021-09-01 03:16:23 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
-2021-09-01 03:16:23 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
-2021-09-01 03:16:26 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
-2021-09-01 03:16:31 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
-2021-09-01 03:16:34 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-01 03:16:34 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-01 03:16:34 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-01 03:16:34 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-01 03:16:34 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-01 03:17:20 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-01 03:18:20 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-01 03:18:32 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
-2021-09-01 03:18:32 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")
+2021-09-01 15:09:03 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-01 15:09:17 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
+2021-09-01 15:09:17 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
+2021-09-01 15:09:17 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-09-01 15:09:19 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
+2021-09-01 15:09:23 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-01 15:09:23 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-01 15:09:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform snmp is taking over 10 seconds.
+2021-09-01 15:09:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform snmp is taking over 10 seconds.
+2021-09-01 15:09:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform snmp is taking over 10 seconds.
+2021-09-01 15:09:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform snmp is taking over 10 seconds.
+2021-09-01 15:09:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform snmp is taking over 10 seconds.
+2021-09-01 15:09:25 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-01 15:09:25 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-01 15:09:25 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-01 15:09:25 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-01 15:09:25 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-01 15:09:25 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
+2021-09-01 15:09:28 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-01 15:10:13 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-01 15:11:13 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-01 15:11:22 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
+2021-09-01 15:11:23 WARNING (Recorder) [homeassistant.components.recorder.migration] Database is about to upgrade. Schema version: 18
+2021-09-01 15:13:23 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.entities_count, old_state=<state sensor.entities_count=819; friendly_name=Number of Entities @ 2021-09-01T15:11:23.008243-07:00>, new_state=<state sensor.entities_count=865; friendly_name=Number of Entities @ 2021-09-01T15:12:23.028756-07:00>>, skipping template render for Template[{{ states | rejectattr('state', 'eq', 'unavailable') | list | count}}]
+2021-09-01 15:14:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 393, in async_render
-    render_result = _render_with_context(self.template, compiled, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1398, in _render_with_context
-    return template.render(**kwargs)
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
-    self.environment.handle_exception()
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "<template>", line 1, in top-level template code
-  File "/usr/local/lib/python3.9/site-packages/jinja2/sandbox.py", line 303, in getitem
-    return obj[argument]
-jinja2.exceptions.UndefinedError: list object has no element 4
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 509, in async_render_to_info
-    render_info._result = self.async_render(variables, strict=strict, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 395, in async_render
-    raise TemplateError(err) from err
-homeassistant.exceptions.TemplateError: UndefinedError: list object has no element 4
-2021-09-01 03:18:32 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_risetime_4'
-2021-09-01 03:18:32 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 393, in async_render
-    render_result = _render_with_context(self.template, compiled, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1398, in _render_with_context
-    return template.render(**kwargs)
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
-    self.environment.handle_exception()
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "<template>", line 1, in top-level template code
-  File "/usr/local/lib/python3.9/site-packages/jinja2/sandbox.py", line 303, in getitem
-    return obj[argument]
-jinja2.exceptions.UndefinedError: list object has no element 4
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 509, in async_render_to_info
-    render_info._result = self.async_render(variables, strict=strict, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 395, in async_render
-    raise TemplateError(err) from err
-homeassistant.exceptions.TemplateError: UndefinedError: list object has no element 4
-2021-09-01 03:18:32 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_duration_4'
-2021-09-01 03:18:34 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:20:49 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.sensor_count, old_state=<state sensor.sensor_count=420; friendly_name=Number of Sensors @ 2021-09-01T03:20:47.474419-07:00>, new_state=<state sensor.sensor_count=430; friendly_name=Number of Sensors @ 2021-09-01T03:20:48.476788-07:00>>, skipping template render for Template[{{ states.sensor | rejectattr('state', 'eq', 'unavailable') | list | count }}]
-2021-09-01 03:21:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:22:51 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.sensor_count, old_state=<state sensor.sensor_count=454; friendly_name=Number of Sensors @ 2021-09-01T03:22:49.300671-07:00>, new_state=<state sensor.sensor_count=464; friendly_name=Number of Sensors @ 2021-09-01T03:22:50.300986-07:00>>, skipping template render for Template[{{ states.sensor | rejectattr('state', 'eq', 'unavailable') | list | count }}]
-2021-09-01 03:22:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:23:21 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 03:23:21 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5MjA4Nn0.EWaN_1X_qrJDN8Dv5YdwsPd6M2DePuezMcmHst8PFZc-qJ6c3nihm0CW7HBArCK9ok7Xyf3s3BZq1JugUMLBlpQvNfYlOVoK02XNuCv-LmVBl9X3-WnN0YOGuKdkE1X9Mhfqqz9IrIKXUHw7B8y52XoD4OmrdklkRJoRkSFK6O9C2uLynd6G7-jUcrxjsIW6dCmuslJSKbdYbRJCd1fqTeDc00FEd9kpbdDnTEipkG8PDw7R3Oz6-r6hA0a5MRwuE5R1CeZh_WKnuUER4uq_0nOoFrtFByKEqrgMpps29mPW16N5FPymdQOGNCMRu8wKDd8QGSPfkap2b__twYd-wg
-2021-09-01 03:26:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:19:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:27:09 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:27:09 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:29:51 WARNING (Thread-15) [pychromecast.socket_client] [Office_Brian speaker(192.168.20.247):8009] Heartbeat timeout, resetting connection
-2021-09-01 03:30:06 ERROR (Thread-15) [pychromecast.socket_client] [Office_Brian speaker(192.168.20.247):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.247', 8009)), retrying in 5.0s
-2021-09-01 03:31:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:20:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 15:20:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr78j7c5P9HWw124G6Ni7awY_aM0OSh9LOuJzPSL-NJQScABQBG8tLmoZV4IRRVg1cIhOuT_RrvHzJBhOBJOx6w5v-nNDykd2JFTZFPeevFG7YiBW81o93-Xg7DjO3RQqv2-azIbMI01XY-zj1iuvbO7erqeDNtYVGMFUnt5EvnZyyBt4lDJZ_cN2G19vwwjB4PQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUzNTEyNn0.prZ0P8WOZ9BD2qyZjj0ui8Amv18Y87JAHWm1O7ZBCYCAnEQgdnrUXWjU905IRKm8ZqtYXHyMJ5OiXKhw0Q2OMT0Xlm2s9oj-uVH-nKpz6gQ0O77Op-M9Nru6JsdZbfK0DpHTsIDgrGqjqWAW_1sy400KXfMrg6Xv2ZeDGTy1oXtJ6FqWA1cUPYe1mgJu1cevEcW82aVzdR6uvuCleCliuT0bhSybTCDy0O5J0VsN_jY5OUKyGM-OcclP1wZmEjfDXRqc_KAVoLh13fh5orKVWUbNA8xSSZqQ6BrlUTxhOuAh4fYbJNQtsmLXRnlcca6iVKC4jvUhA-jhxai3O03yFg
+2021-09-01 15:23:01 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-01 15:24:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:32:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:32:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:36:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:29:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:36:49 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:41:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:34:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:42:07 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:46:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:39:16 ERROR (SyncWorker_7) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:46:48 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:46:48 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:51:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:44:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:52:04 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:52:53 WARNING (Thread-11) [pychromecast.socket_client] [Aidan Google Home(192.168.6.244):8009] Heartbeat timeout, resetting connection
-2021-09-01 03:56:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:49:18 ERROR (SyncWorker_1) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 03:56:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 03:56:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:00:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:01:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:54:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:05:03 WARNING (Thread-13) [pychromecast.socket_client] [Kitchen speaker(192.168.20.124):8009] Heartbeat timeout, resetting connection
-2021-09-01 04:05:06 ERROR (Thread-13) [pychromecast.socket_client] [Kitchen speaker(192.168.20.124):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.124', 8009)), retrying in 5.0s
-2021-09-01 04:05:19 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:06:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 15:59:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:10:07 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:11:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:01:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
+2021-09-01 16:04:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:13:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:16:02 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:16:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:05:52 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2021-09-01 16:09:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:20:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:21:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:14:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:24:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:24:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:26:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:19:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:28:47 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:30:59 WARNING (Thread-16) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Heartbeat timeout, resetting connection
-2021-09-01 04:31:03 ERROR (Thread-16) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.60', 8009)), retrying in 5.0s
-2021-09-01 04:31:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:24:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:34:07 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:36:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:29:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:38:46 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:38:46 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:41:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:34:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:44:02 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:44:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 04:44:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5Njk2NX0.IuY0WmAGUKnLzxarwgAKMinJ6yJ8tfev2UaD5jgo67aMn7fPu1jGysJMERAgBij-ITwiIi2kX0CdbzMTpx3NVKz7ID88Vhr5JqWtFqplvDH1gnJckW0WJsKLFMXbhYH_YjgbG3fFtzWHzxaZjKkGXFLRPgCBYaMnxkVocLfnOF_1vXaG6Zl3xbCeFoBCcL10mnOOyou5DQ5r6BQMCOlQ8oX2nNhH4sFxKxE0TD4iLk-2EUDZbL5VUUryWyAvJWBW7BFQggYtOW54haNm2RWHbzTpXx7O5a_G2_8TvnvTzky1TjeVnMwdhnIBLlte3daLxz6bE5rlp3MbEyEDuwyjBQ
-2021-09-01 04:46:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:37:34 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 16:37:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUzOTczMX0.HNwbIMwNo22Uw6D7pM737_CEMRsG7zWJjwWGYdO84m1f4t2lg9fjBuZf6Y37yywh2Nu-lW0BJNUb1XpSVSF7cjlzxwnkdvwKFPCCBnHh4znl5wfGY9h1XkT2m47xbSi5CJmxfTizFhbR_N4PtKXTS4tw5cT-rZFRC5xRbGkZ3IBhbrUQcHYCUKVgD4MwVaLsyXGyhptwMSA7W21lSXroZ17NxPNZ86jxgigOt3g-WSmFahNXbtt7J31tVd0Ud8UrcJGh-DlF_lAH_Qf2YoS-pOR2cemkgklZgfBDOlX0qacgwNeRcfS4-Y3Ii-QmM9KLO40lb4CyaBDZqrMXYqK58Q
+2021-09-01 16:39:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:48:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:48:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:49:28 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 04:49:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5NzIzNn0.DkRiXb7Omt05C_4Jwp9aFy_SPWQZTIYrwLXr9F3qRi--h33wWNmfYgcfd6heIZaE05HiidYZvGz6vCLPTMaLUe2_JtN24weCZ5puMxEo3tBuztaQBIRnNDYbWmkxNqiA-qyZ2LLcYTwDg3wpf8g5T1RPuYXIsSfJtnhgIRccRNTCnuYhMTUvMHLxezZj_sTbIH4WVwuI9lpNE5AQvShDMc84W10KzL_gY08Hjh_Og60TJn98004zvaSMtL1GdrxwL0E-1wQGFVg6yYrgS1YCXhpJehu3Ow7TsJJIKtM623oVwQy1bgR_NWwQirGPuHKt1rxOVpFNQUg0dRc70m-CuQ
-2021-09-01 04:51:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:44:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:53:58 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 04:56:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:49:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 04:58:41 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:01:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:54:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:02:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:02:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:06:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 16:59:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:07:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:11:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:04:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:12:12 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 05:12:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5ODU5MH0.OFnHc7t53IuyOQbQuY8w0-TsaLGSA2mtU2h7o0QclQRJ68_dZtOBCRqeM_hBLPpslSONW8Q-y4y-g1QXVpQ6YyuZ6CiCYLCNCrSqkGL-7ZZCDYPvKUkctpMpuvEerFta76G_CfYEZxK-ydE_Y2wajj60QyUtPWia8Ss7Voj18qi_jVnUeDOy4e3V6M6DbBFb49Hyyd2rLrH5anovrxHs4W9r7u9wjNNmDhGqnd0Mz4GgWciX43BojstO7xjoyhofM5Rj7F3d-LxR2h29R1PJfCxr28Uu0I6BkyALoaKLZIsRROQ93IOHxZszEkM7Gsqx7pyBuT53Oiu-0nipRgFVAg
-2021-09-01 05:12:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:13:03 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 05:13:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5ODU5MH0.OFnHc7t53IuyOQbQuY8w0-TsaLGSA2mtU2h7o0QclQRJ68_dZtOBCRqeM_hBLPpslSONW8Q-y4y-g1QXVpQ6YyuZ6CiCYLCNCrSqkGL-7ZZCDYPvKUkctpMpuvEerFta76G_CfYEZxK-ydE_Y2wajj60QyUtPWia8Ss7Voj18qi_jVnUeDOy4e3V6M6DbBFb49Hyyd2rLrH5anovrxHs4W9r7u9wjNNmDhGqnd0Mz4GgWciX43BojstO7xjoyhofM5Rj7F3d-LxR2h29R1PJfCxr28Uu0I6BkyALoaKLZIsRROQ93IOHxZszEkM7Gsqx7pyBuT53Oiu-0nipRgFVAg
-2021-09-01 05:14:07 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 05:14:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5ODU5MH0.OFnHc7t53IuyOQbQuY8w0-TsaLGSA2mtU2h7o0QclQRJ68_dZtOBCRqeM_hBLPpslSONW8Q-y4y-g1QXVpQ6YyuZ6CiCYLCNCrSqkGL-7ZZCDYPvKUkctpMpuvEerFta76G_CfYEZxK-ydE_Y2wajj60QyUtPWia8Ss7Voj18qi_jVnUeDOy4e3V6M6DbBFb49Hyyd2rLrH5anovrxHs4W9r7u9wjNNmDhGqnd0Mz4GgWciX43BojstO7xjoyhofM5Rj7F3d-LxR2h29R1PJfCxr28Uu0I6BkyALoaKLZIsRROQ93IOHxZszEkM7Gsqx7pyBuT53Oiu-0nipRgFVAg
-2021-09-01 05:15:20 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 05:15:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrypA6Yn-GzgM4XykCqZYBxSGgqhqBsn1ORsKRaT1HbEScQBQBG8t7JN47RUouk699BgNvmy34A9XNubYxDKc-D3dReHkMqGfV12QejuLpE1gyzJPJaOevLu6wFIJDHJv5M3V_6NHmGf7aJbxbkOcLbHdzZgB42lps_v_dXcQnz_zCZ54BMjoWwAfWyhDC80yykNu?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDQ5ODU5MH0.OFnHc7t53IuyOQbQuY8w0-TsaLGSA2mtU2h7o0QclQRJ68_dZtOBCRqeM_hBLPpslSONW8Q-y4y-g1QXVpQ6YyuZ6CiCYLCNCrSqkGL-7ZZCDYPvKUkctpMpuvEerFta76G_CfYEZxK-ydE_Y2wajj60QyUtPWia8Ss7Voj18qi_jVnUeDOy4e3V6M6DbBFb49Hyyd2rLrH5anovrxHs4W9r7u9wjNNmDhGqnd0Mz4GgWciX43BojstO7xjoyhofM5Rj7F3d-LxR2h29R1PJfCxr28Uu0I6BkyALoaKLZIsRROQ93IOHxZszEkM7Gsqx7pyBuT53Oiu-0nipRgFVAg
-2021-09-01 05:16:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:09:25 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 17:09:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0MTYyOX0.uPDb2-AqSfpGsrKtaRu32qwdFAfBmqHZqhgzC5LydNgywHGPWheSTNcK6ZCqISdEM_q243yDbvy4-PzAbpTJz-1gO8PdKpurDIl7QriFXvYYV9ZwKjZo2BvDBOAFBOLK8w7KUfNzvqHaFAZluunue0JHQRl0Zavp1DnC4JlnpjBAXtEnJ0ZMkvi4pE5PFgjvKjMZklZ4g_p7HtFa-ZtECjbVJLD9sgSWNwyDsbLFbfmY9vufQDoUTMiCJbbWIIp2Mm5WScVDUm2j1GGe0Zf79NK3bdkmHiY7poxe2fGxxEt6WoVQR2lPUGzY82JWhoxMGbWBKF9ry12uwxkvLLFLSQ
+2021-09-01 17:09:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:17:45 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:17:45 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:19:29 ERROR (stream_worker) [libav.tls] Error in the pull function.
-2021-09-01 05:19:29 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-01 05:19:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
-2021-09-01 05:19:39 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-01 05:21:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:10:11 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 17:10:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0MTYyOX0.uPDb2-AqSfpGsrKtaRu32qwdFAfBmqHZqhgzC5LydNgywHGPWheSTNcK6ZCqISdEM_q243yDbvy4-PzAbpTJz-1gO8PdKpurDIl7QriFXvYYV9ZwKjZo2BvDBOAFBOLK8w7KUfNzvqHaFAZluunue0JHQRl0Zavp1DnC4JlnpjBAXtEnJ0ZMkvi4pE5PFgjvKjMZklZ4g_p7HtFa-ZtECjbVJLD9sgSWNwyDsbLFbfmY9vufQDoUTMiCJbbWIIp2Mm5WScVDUm2j1GGe0Zf79NK3bdkmHiY7poxe2fGxxEt6WoVQR2lPUGzY82JWhoxMGbWBKF9ry12uwxkvLLFLSQ
+2021-09-01 17:14:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:22:35 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:26:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:19:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:27:35 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:27:35 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:31:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:24:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:32:40 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:36:48 ERROR (SyncWorker_7) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:27:16 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 17:27:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr78j7c5P9HWw124G6Ni7awY_aM0OSh9LOuJzPSL-NJQScABQBG8tLmoZV4IRRVg1cIhOuT_RrvHzJBhOBJOx6w5v-nNDykd2JFTZFPeevFG7YiBW81o93-Xg7DjO3RQqv2-azIbMI01XY-zj1iuvbO7erqeDNtYVGMFUnt5EvnZyyBt4lDJZ_cN2G19vwwjB4PQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0MjcxNX0.ZBId2M1mwLVNVUSTH2wofasI9lplfvkw3Mxl1y4biKSrmFzH1_H0ZzN0335Y_O94TGzGjtfPf2B4KhikcHypcSfVl7ayVq9cPSdiA5Wx0_jU1UjOhXls00NNVEl-Q_pQt8WgLm-bqaV30Aaji5kA1WGrFAkosodAohuLU8j4ciywo7LAHKMML0CwEVK_X-jqfqGncSUpPeluSB4xwUIE2XBfF-wFOZCyBRwi4S4gXdiCIrPAyC2lXoeOpcct1h2D95LGFKHQm1rG9FqXkZfMHQkV3Tt5uwH8BHjSO2Buy122tZQAKN_x2a44LpTTHHZ2YrDhUfXsHih208s_P_XywA
+2021-09-01 17:29:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:37:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:37:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:41:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:34:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:42:54 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:46:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:39:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:48:18 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:48:18 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:51:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:44:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:53:13 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:56:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:49:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 05:58:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 05:58:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:01:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:54:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:02:13 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:06:41 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:06:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 17:59:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:11:02 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:11:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:04:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:14:46 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:16:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:08:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
+2021-09-01 18:09:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:19:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:19:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:21:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:14:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:24:06 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 06:24:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwMjkyM30.HPWkFOJJhWvJHiiPK0lsRLauLuhalj2XmI6PIL-UzpWtf5uEZAIhv_TX4ywS0Orbecy9ezre7JEnUoPDh0RNdEN4g1IruErlW0NCqz-6mbxAFH_zRcYTKok4abWftHqZDhiKtrcBnnJUMWdpPRZAqoYepqQSud5msC_BJ1pBBGKMsyrfwCsPBT_M2gfso6P2wj9xxL9S6HmzgWKwSkVLN5AdAHaFU2PKo1kZOT4WO3fUrqS8uFRjdmjkqRXnjhIa8m27yHFWQ0qZsZnnGew7fzz8L9pU6nk5fp39yZag1W9i5Z0m9E9jgX-1r8eERzguRlkWjHcm0RN1o8uj0O5oeg
-2021-09-01 06:24:13 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:26:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:19:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:27:57 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_off
-2021-09-01 06:28:45 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 06:28:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwMzE5NH0.sImmsEBolvk3zRZo-xra9WdbktOZDtEHp42-GWd_uXGUt9xCRCD8T8cgaIBQywUKgBiotZ_1bwkKfwm0-lYAZRn57yeziUndlFLM9BkfZIpPSzppho40yszkvpWSuUhAkfqDCY8ylEU8uQuUOvOv-lpil7CqAZH3IWHrd_fmB4Lwx8YcJrC1nmNR7yhxcmNDshq_NcTsjUwpRNe1abxjKWrNds65NYJeUilAm_vV1nHtHzL7o18KeeVBEFWsRBtgNsLFk2fApgk0CGtzOZb3fe1YQusJ7q73-SP-a1hOOy6li77U3mHCPS9jwmUqeatU40AD4aHC-4h7WG6vqWPfTA
-2021-09-01 06:28:58 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:31:28 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_risetime_4'
-2021-09-01 06:31:28 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_duration_4'
-2021-09-01 06:31:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:24:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:34:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:34:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:37:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:29:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:38:46 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:42:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:34:38 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-01 18:34:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:43:17 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:46:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.seventeentrack_package_420913219274890249338700531464 is taking over 10 seconds
-2021-09-01 06:47:00 WARNING (MainThread) [homeassistant.components.sensor] Updating seventeentrack sensor took longer than the scheduled update interval 0:00:30
-2021-09-01 06:47:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:35:44 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 18:35:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0Njc4MH0.emYaBBQKvVr8e0bRYBJbttngMtI3EqeZpYPyFPb9nQs-EDnKNG8I3VvVW1GNMk9omSQZN_k0CVYJvh6sbMtb9ZcJRz5QuSZZJhTEiyNTwmwOeH3m9RD-g5a9lbLZZrAKRGB_YQibMPIFVXn3QJAnZ4EMi9gm_15AIK1hGe_N1TrIxEYQ0F-NZF3Ve_yg839d2-Hf2Vfo3PGvNqZ_5jcV1j0sZCOOX2CiX4kOtgdR4UOQJKUVRZVYdoHqbzEWLAUKde0hFXI_vg6yKOj8MiidfUDXEUNDfZZmifw0Xrvk6XhwBHiZMEdPs9qHWdqnr4SwkRpE-rLEZlZ6e-zQqg21pg
+2021-09-01 18:36:54 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 18:36:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0Njc4MH0.emYaBBQKvVr8e0bRYBJbttngMtI3EqeZpYPyFPb9nQs-EDnKNG8I3VvVW1GNMk9omSQZN_k0CVYJvh6sbMtb9ZcJRz5QuSZZJhTEiyNTwmwOeH3m9RD-g5a9lbLZZrAKRGB_YQibMPIFVXn3QJAnZ4EMi9gm_15AIK1hGe_N1TrIxEYQ0F-NZF3Ve_yg839d2-Hf2Vfo3PGvNqZ_5jcV1j0sZCOOX2CiX4kOtgdR4UOQJKUVRZVYdoHqbzEWLAUKde0hFXI_vg6yKOj8MiidfUDXEUNDfZZmifw0Xrvk6XhwBHiZMEdPs9qHWdqnr4SwkRpE-rLEZlZ6e-zQqg21pg
+2021-09-01 18:38:17 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-01 18:38:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzSUh11qjH4VUWPmcl-T_VLGPcYlKSjUB70U1J8uImAScQBQBG8ti0c5BZeoDdrlgvTR6cbln82NpgmPIkrBweSWJE_YORFUFD6G-BLEW_hy_CZW-jWyIZQf_nUc94jL8tWgXEGOYuBVQ-SnC3kcTgJDh953WnzeTA2L7J99QxP3hFizjljV82XyLDH4IjoabngB?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU0Njc4MH0.emYaBBQKvVr8e0bRYBJbttngMtI3EqeZpYPyFPb9nQs-EDnKNG8I3VvVW1GNMk9omSQZN_k0CVYJvh6sbMtb9ZcJRz5QuSZZJhTEiyNTwmwOeH3m9RD-g5a9lbLZZrAKRGB_YQibMPIFVXn3QJAnZ4EMi9gm_15AIK1hGe_N1TrIxEYQ0F-NZF3Ve_yg839d2-Hf2Vfo3PGvNqZ_5jcV1j0sZCOOX2CiX4kOtgdR4UOQJKUVRZVYdoHqbzEWLAUKde0hFXI_vg6yKOj8MiidfUDXEUNDfZZmifw0Xrvk6XhwBHiZMEdPs9qHWdqnr4SwkRpE-rLEZlZ6e-zQqg21pg
+2021-09-01 18:39:31 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast station SAUC1 data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/LOX/146,60/forecast')
+2021-09-01 18:39:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:47:20 ERROR (MainThread) [homeassistant.components.seventeentrack.sensor] There was an error retrieving packages: Error requesting data from https://buyer.17track.net/orderapi/call: 520, message='', url=URL('https://buyer.17track.net/orderapi/call')
-2021-09-01 06:47:30 WARNING (MainThread) [homeassistant.components.sensor] Updating seventeentrack sensor took longer than the scheduled update interval 0:00:30
-2021-09-01 06:48:00 WARNING (MainThread) [homeassistant.components.sensor] Updating seventeentrack sensor took longer than the scheduled update interval 0:00:30
-2021-09-01 06:48:14 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:48:14 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:48:23 ERROR (MainThread) [homeassistant.components.seventeentrack.sensor] There was an error retrieving the summary: Error requesting data from https://buyer.17track.net/orderapi/call: 525, message='', url=URL('https://buyer.17track.net/orderapi/call')
-2021-09-01 06:52:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:44:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:53:02 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:57:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:49:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 06:57:36 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 06:57:36 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:01:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
-2021-09-01 07:02:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:54:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:05:16 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:05:16 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:07:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 18:59:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:09:52 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:12:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:04:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:14:14 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 07:14:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwNTkwM30.ePBiZAbPiDTwOs7qcgHuvvl8SA5oSyVZTI8RAJCqKnHJ_RSAqwsZwHK3rweqmhruBUYkyLWfoeBb8rG-s9nFNW4-qMbau7OQgZS0VkW8X0BdieDaE2HGlc1Uhj8Kq2JmsfIkoDOLgRzKfXvcaOdSoCbEj6i3mAauIWbusUioSP4NTVGWAbXKh9gBX9AEIif84euuJrPoy4yU9jkgtZ8FJhU_pFSNdxDClTAY0yYFGDJNIYjI9JFjcoaTXI3XTL0DICu9YADxeHPRe4UgDyIcfKtl-MqyM-NICjGv-gp7xFHvPI0xjjk4WrdERhwWsCQUSIf10s7kx65VgMGpcaFZZw
-2021-09-01 07:14:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:17:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:09:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:18:35 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:18:35 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:22:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:14:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:22:56 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:23:30 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 07:23:30 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwNjQ0NH0.DWoF0CdSJ6iNC92CTDfCC980AvZo9sOCdkw3QjLBz89y2ljQnLXBPSPKXJqLrBUGKQ4xQi7hvwhBdQRKejPLyxSzKmfNR0cSmBob4c-fGSSFlZTn3eA9LOIKQNvDNLZulGFNwlrjDssgg5JBCW2JEOkEheZXL1EAXs1V9KI-V4HIn1ruQdnd6aLFQGrBJmiugBNhOn2WDEh6fGcvMUZfI70rzgDBfsPOvYueaUAbbwxlZMVvhreK7Fbzr1PI8ljP4MHN82lxq83to6SpsIJqm0G5wbX56-zhaormPp0guOuvJm_8vmtfyDP-AOmG4Xe5_naYUZfoiHRgnNEkTBzvvQ
-2021-09-01 07:24:40 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 07:24:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwNjQ0NH0.DWoF0CdSJ6iNC92CTDfCC980AvZo9sOCdkw3QjLBz89y2ljQnLXBPSPKXJqLrBUGKQ4xQi7hvwhBdQRKejPLyxSzKmfNR0cSmBob4c-fGSSFlZTn3eA9LOIKQNvDNLZulGFNwlrjDssgg5JBCW2JEOkEheZXL1EAXs1V9KI-V4HIn1ruQdnd6aLFQGrBJmiugBNhOn2WDEh6fGcvMUZfI70rzgDBfsPOvYueaUAbbwxlZMVvhreK7Fbzr1PI8ljP4MHN82lxq83to6SpsIJqm0G5wbX56-zhaormPp0guOuvJm_8vmtfyDP-AOmG4Xe5_naYUZfoiHRgnNEkTBzvvQ
-2021-09-01 07:26:02 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-01 07:26:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxrz5z2TyaYJUaGRpRWhD9wYHjDO_9e4kHRq_dtk-PltEScQBQBG8t87KVuDYUDN5VYVTNCVPC_hD1u6BPdDvVf8z-dvphI2bEsa2860LFWq5pghAQL6DJm3O9kiFuHJg4DGeZZ5Y15OuPHYnP7-FsBOZ1Fim-EzYJSbakCBEq2dniFAdmzfD_vDQdYYtksdcyY0Ts?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDUwNjQ0NH0.DWoF0CdSJ6iNC92CTDfCC980AvZo9sOCdkw3QjLBz89y2ljQnLXBPSPKXJqLrBUGKQ4xQi7hvwhBdQRKejPLyxSzKmfNR0cSmBob4c-fGSSFlZTn3eA9LOIKQNvDNLZulGFNwlrjDssgg5JBCW2JEOkEheZXL1EAXs1V9KI-V4HIn1ruQdnd6aLFQGrBJmiugBNhOn2WDEh6fGcvMUZfI70rzgDBfsPOvYueaUAbbwxlZMVvhreK7Fbzr1PI8ljP4MHN82lxq83to6SpsIJqm0G5wbX56-zhaormPp0guOuvJm_8vmtfyDP-AOmG4Xe5_naYUZfoiHRgnNEkTBzvvQ
-2021-09-01 07:27:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:19:32 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_on
+2021-09-01 19:19:32 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-01 19:20:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:27:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:32:01 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 14: The service is currently unavailable.
-2021-09-01 07:32:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:25:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:32:14 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:32:14 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:36:56 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:37:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:30:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:41:52 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:42:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:35:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:46:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:46:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:47:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:40:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:51:03 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:52:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:45:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:55:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 07:57:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:50:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 07:59:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:02:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 19:55:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:02:56 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:07:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:00:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:07:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:07:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:12:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:05:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:12:28 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:16:50 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:17:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:10:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:19:03 ERROR (SyncWorker_0) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:19:13 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22664377358656] Received invalid command: forecast_solar/forecasts
-2021-09-01 08:22:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:15:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:23:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:27:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:20:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:28:12 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:28:12 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:32:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:25:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:33:03 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:37:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:30:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:38:21 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:38:21 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:42:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:35:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:43:04 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:47:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:40:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:47:46 ERROR (Thread-5) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:52:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:45:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 08:52:39 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:52:39 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:57:19 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 08:57:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:50:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:00:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:02:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 20:55:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:04:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:07:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:00:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:08:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:12:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:05:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:14:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:14:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:17:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:10:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:18:32 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:22:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:15:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:22:52 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:27:01 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:27:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:20:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:31:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:31:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:32:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:25:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:36:30 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:37:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:30:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:41:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:41:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:42:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:35:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:45:11 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-01 09:46:02 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:46:27 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_risetime_4'
-2021-09-01 09:46:27 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")' for attribute '_attr_state' in entity 'sensor.iss_duration_4'
-2021-09-01 09:47:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:38:35 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-01 21:38:50 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-01 21:38:57 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'189c1f27aa5a7e' (b'aa5a' != b'5034')
+2021-09-01 21:38:57 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-01 21:39:41 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-01 21:40:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:50:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:52:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:45:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:55:04 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:55:04 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 09:57:20 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-01 09:57:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:50:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 09:59:48 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:02:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 21:55:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:03:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:07:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:00:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:07:56 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:12:18 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:12:18 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:12:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:00:47 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-01 22:00:47 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-09-01 22:01:17 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-01 22:01:19 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-01 22:01:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr78j7c5P9HWw124G6Ni7awY_aM0OSh9LOuJzPSL-NJQScABQBG8tLmoZV4IRRVg1cIhOuT_RrvHzJBhOBJOx6w5v-nNDykd2JFTZFPeevFG7YiBW81o93-Xg7DjO3RQqv2-azIbMI01XY-zj1iuvbO7erqeDNtYVGMFUnt5EvnZyyBt4lDJZ_cN2G19vwwjB4PQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU1ODk4M30.RrBhXjoiajZMF2NDOIfRPPqSGExv4QVAKulRFmYPQCcF-den5H1bR5_0pktxG8QHNewRfRZHWvyWhY5NI7U1RTZ2PyAjcG8rk7OkuPvTaanvbMzOIBeSbvOPYKmihXwknPLJjRsXIbBBQEJEjFHA5Wf6gpdl48ZzDt9UT-MAkLZgvlkA76SoEfMaDKJqBA8b7xNxt72rTY2z5F4vUD9bnol56ADg-88mMhIKmp44QPvu5VfdrzxzCuZl0nrEcDzmpjihK5REHqEDlf_cQKYvTVwjVNg6xiaVzIUdEmVXfhsC7gXwI6qktUM2AwpowezdDK1IF4YrS_X9W7sceFhoLw
+2021-09-01 22:01:59 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-01 22:01:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr78j7c5P9HWw124G6Ni7awY_aM0OSh9LOuJzPSL-NJQScABQBG8tLmoZV4IRRVg1cIhOuT_RrvHzJBhOBJOx6w5v-nNDykd2JFTZFPeevFG7YiBW81o93-Xg7DjO3RQqv2-azIbMI01XY-zj1iuvbO7erqeDNtYVGMFUnt5EvnZyyBt4lDJZ_cN2G19vwwjB4PQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDU1ODk4M30.RrBhXjoiajZMF2NDOIfRPPqSGExv4QVAKulRFmYPQCcF-den5H1bR5_0pktxG8QHNewRfRZHWvyWhY5NI7U1RTZ2PyAjcG8rk7OkuPvTaanvbMzOIBeSbvOPYKmihXwknPLJjRsXIbBBQEJEjFHA5Wf6gpdl48ZzDt9UT-MAkLZgvlkA76SoEfMaDKJqBA8b7xNxt72rTY2z5F4vUD9bnol56ADg-88mMhIKmp44QPvu5VfdrzxzCuZl0nrEcDzmpjihK5REHqEDlf_cQKYvTVwjVNg6xiaVzIUdEmVXfhsC7gXwI6qktUM2AwpowezdDK1IF4YrS_X9W7sceFhoLw
+2021-09-01 22:05:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:16:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:17:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:10:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:21:12 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:22:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:15:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:26:24 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:26:24 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:27:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:20:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:31:11 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:32:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:25:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:36:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:37:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:30:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:41:01 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:41:01 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:42:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:35:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:46:50 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:47:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:40:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:52:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:52:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:52:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:45:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:57:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:50:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 10:58:21 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:58:21 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 10:58:48 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-01 11:01:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:02:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 22:55:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:06:53 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:07:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.sophia_wled
+2021-09-01 23:00:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:11:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:11:57 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:12:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:05:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:17:00 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:17:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:10:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:22:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:22:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:22:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:12:00 WARNING (Recorder) [homeassistant.components.sensor.recorder] Entity sensor.solar_energy from integration integration has state class total_increasing, but its state is not strictly increasing. Please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+recorder%22
+2021-09-01 23:15:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:27:54 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:27:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:20:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:32:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:25:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:33:00 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:33:00 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:38:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:30:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:38:31 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:43:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:35:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:43:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:43:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:48:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:40:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:49:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:53:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:45:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:54:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:54:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 11:58:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:50:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 11:59:48 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:03:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-01 23:55:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:03:47 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:03:47 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:07:11 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-01 12:07:17 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'ab1593499c6cb76b19179874f0de0a83ff7e1ecc8ac9de4ef29f5bf17e' (b'5bf1' != b'210b')
-2021-09-01 12:07:17 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
-2021-09-01 12:08:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:00:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:08:55 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
-2021-09-01 12:08:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:13:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:05:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:14:20 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:14:20 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:18:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:10:04 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-02 00:10:05 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'5c48a1a9a52a25b2d9942d258b5582499d4e27abedce7b8bf8c66389fc7e3fa7ebcdde6f8f4c2613b1e070381c0e07bbe5ca658a459a4d9e4f9ff7c3d9d46a35a2519048247ce97e' (b'7ce9' != b'b50c')
+2021-09-02 00:10:05 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-02 00:10:21 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-02 00:10:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:18:33 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:23:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:15:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:23:34 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:28:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:21:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:28:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:28:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:33:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:26:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:34:28 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:38:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:31:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:39:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:39:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:43:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:36:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:44:29 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:48:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:41:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:49:16 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:49:16 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:53:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:46:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 12:53:26 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:57:40 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 12:58:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:51:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:00:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:03:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 00:54:19 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")' for attribute '_attr_native_value' in entity 'sensor.iss_risetime_4'
+2021-09-02 00:54:19 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")' for attribute '_attr_native_value' in entity 'sensor.iss_duration_4'
+2021-09-02 00:56:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:04:59 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:08:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:01:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:08:46 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:13:08 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:13:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:06:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:17:30 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:17:30 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:18:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:11:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:22:11 ERROR (Thread-5) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:23:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:16:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:27:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:28:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:21:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:31:54 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:31:54 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:33:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:26:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:36:00 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:38:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:31:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:39:55 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:43:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:36:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:44:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:44:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:48:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:41:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:49:13 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:53:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:46:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:54:00 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:58:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:51:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 13:59:10 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 13:59:10 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:00:41 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-01 14:02:45 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:03:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 01:56:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:07:19 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:08:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:01:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:11:41 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:13:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:06:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:16:28 ERROR (SyncWorker_0) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:16:28 ERROR (SyncWorker_0) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:18:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:07:13 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-02 02:11:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:20:50 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:23:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:16:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:25:25 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:28:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:21:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:29:47 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:33:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:23:09 WARNING (Thread-15) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Heartbeat timeout, resetting connection
+2021-09-02 02:23:27 ERROR (Thread-15) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.60', 8009)), retrying in 5.0s
+2021-09-02 02:26:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:34:26 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:34:26 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:34:59 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-01 14:36:30 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast station SAUC1 data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/LOX/146,60/forecast')
-2021-09-01 14:38:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:31:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:39:05 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:43:22 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:43:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:36:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:47:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:47:43 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:48:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:41:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:52:32 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:53:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:46:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 14:57:02 ERROR (Recorder) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 14:58:40 ERROR (SyncWorker_1) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:51:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 15:00:21 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 15:03:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-02 02:56:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-01 15:05:03 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 15:05:03 ERROR (MainThread) [homeassistant] Error doing job: Unclosed client session
-2021-09-01 15:08:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
+2021-09-02 03:01:06 WARNING (Thread-837) [homeassistant.util.executor] Thread[SyncWorker_5] is still running at shutdown: File "/usr/local/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 77, in _worker
+    work_item.run()
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
+  File "/usr/src/homeassistant/homeassistant/components/discovery/__init__.py", line 225, in _discover
+    for disc in netdisco.discover():
+  File "/usr/local/lib/python3.9/site-packages/netdisco/discovery.py", line 103, in discover
+    return [dis for dis, checker in self.discoverables.items()
+  File "/usr/local/lib/python3.9/site-packages/netdisco/discovery.py", line 104, in <listcomp>
+    if checker.is_discovered()]
+  File "/usr/local/lib/python3.9/site-packages/netdisco/discoverables/__init__.py", line 21, in is_discovered
+    return len(self.get_entries()) > 0
+  File "/usr/local/lib/python3.9/site-packages/netdisco/discoverables/plex_mediaserver.py", line 21, in get_entries
+    return self.find_by_data({'Content-Type': 'plex/media-server'})
+  File "/usr/local/lib/python3.9/site-packages/netdisco/discoverables/__init__.py", line 159, in find_by_data
+    return self.netdis.gdm.find_by_data(values)
+  File "/usr/local/lib/python3.9/site-packages/netdisco/gdm.py", line 41, in find_by_data
+    self.scan()
+  File "/usr/local/lib/python3.9/site-packages/netdisco/gdm.py", line 23, in scan
+    self.update()
+  File "/usr/local/lib/python3.9/site-packages/netdisco/gdm.py", line 85, in update
+    bdata, server = sock.recvfrom(1024)
