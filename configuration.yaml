@@ -53,15 +53,6 @@ cover split: !include_dir_list ./ha_covers
 climate: !include climate.yaml
 climate split: !include_dir_merge_list ./ha_climates
 
-# Example configuration.yaml entry
-weather:
-  - platform: template
-    name: "cerezo_weather"
-    condition_template: "{{ states('sensor.openweathermap_condition') }}"
-    temperature_template: "{{ states('sensor.wthrstn_temp') | float}}"
-    humidity_template: "{{ states('sensor.wthrstn_humi')| float }}"
-    pressure_template: "{{ states('sensor.wthrstn_pres')| float * 0.02953 }}"
-
 # Utility Meter
 
 utility_meter:
