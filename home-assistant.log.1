@@ -1,562 +1,1603 @@
-2021-09-05 19:34:38 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-05 19:34:51 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
-2021-09-05 19:34:51 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
-2021-09-05 19:34:51 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
-2021-09-05 19:34:53 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
-2021-09-05 19:34:57 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-05 19:34:57 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-05 19:34:58 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
-2021-09-05 19:34:58 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-05 19:34:58 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-05 19:34:58 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-05 19:34:58 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-05 19:34:58 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-05 19:35:47 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-05 19:36:47 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-05 19:36:56 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
-2021-09-05 19:36:56 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
-2021-09-05 19:39:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 03:16:39 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-06 03:16:47 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2021-09-06 03:16:53 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
+2021-09-06 03:16:53 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-09-06 03:16:56 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
+2021-09-06 03:16:57 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
+2021-09-06 03:17:02 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
+2021-09-06 03:17:02 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-06 03:17:03 WARNING (MainThread) [homeassistant.config_entries] Config entry 'shellyem-B05A54' for shelly integration not ready yet; Retrying in background
+2021-09-06 03:17:04 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-06 03:17:04 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-06 03:17:04 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-06 03:17:04 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-06 03:17:04 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-06 03:17:07 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast hourly station SAUC1 data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/LOX/146,60/forecast/hourly')
+2021-09-06 03:17:52 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-06 03:18:47 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-06 03:18:52 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-06 03:19:02 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
+2021-09-06 03:19:02 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
+2021-09-06 03:21:02 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.entities_count, old_state=<state sensor.entities_count=746; friendly_name=Number of Entities @ 2021-09-06T03:19:02.240328-07:00>, new_state=<state sensor.entities_count=779; friendly_name=Number of Entities @ 2021-09-06T03:20:02.282675-07:00>>, skipping template render for Template[{{ states | rejectattr('state', 'eq', 'unavailable') | list | count}}]
+2021-09-06 03:21:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 19:44:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 03:26:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 19:49:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 03:31:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 19:54:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 03:36:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 19:55:13 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 19:55:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDg5NzIwMX0.Sg5STUAtatJCmIudRg8RZII0_TA2S96DdJstKPRK6I8Qb8sdICPBd8Q7cY9khGbdXZUb1hYxD9X_dNjVIYMfglge8Vv77GmRE0Vhx814hbzoFYXY3j45yEWo0kLqIvjES-40M5Tt1ojc677xluZhzG5sRXxnmKJDMZgZkuXyHYm5iih3LZwxff7rtcbQ90WGxcSeC10--cJU_GpSzgvBL7Jehq8dQA7AZ2NUNuD7FcPHFkBED-oWu6QTi74aTGn8Mtcd6GnhLS-wo-y3pndDPsUdmjzAEeVA74N4CaqOGY-7sNuWSi216EOqST7TMGn7tb_nano4PfzCEAcSYvJS1A
-2021-09-05 19:56:14 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'1915b1a9112a11b259874a25aa5592499c84471f4066987e' (b'6698' != b'e99f')
-2021-09-05 19:56:42 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+2021-09-06 03:41:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/zigpy/device.py", line 287, in request
-    raise zigpy.exceptions.DeliveryError(
-zigpy.exceptions.DeliveryError: [0xa8ad:1:0x0500]: Message send failure
-2021-09-05 19:56:42 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 03:46:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 03:48:33 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom_Master speaker(192.168.20.77):8009] Heartbeat timeout, resetting connection
+2021-09-06 03:48:38 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom_Master speaker(192.168.20.77):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.77', 8009)), retrying in 5.0s
+2021-09-06 03:51:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 03:56:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:01:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:06:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:12:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:16:54 WARNING (Thread-17) [pychromecast.socket_client] [Office_Brian speaker(192.168.20.247):8009] Heartbeat timeout, resetting connection
+2021-09-06 04:17:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:17:10 ERROR (Thread-17) [pychromecast.socket_client] [Office_Brian speaker(192.168.20.247):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.247', 8009)), retrying in 5.0s
+2021-09-06 04:22:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:27:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:31:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
+2021-09-06 04:32:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:37:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:42:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:47:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:51:57 WARNING (Thread-15) [pychromecast.socket_client] [Aidan Google Home(192.168.6.244):8009] Heartbeat timeout, resetting connection
+2021-09-06 04:52:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 04:52:13 ERROR (Thread-15) [pychromecast.socket_client] [Aidan Google Home(192.168.6.244):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.6.244', 8009)), retrying in 5.0s
+2021-09-06 04:57:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:02:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:07:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:07:28 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:07:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMDMzNn0.tSxffHZzR-NsHf7LEvvaDjEFlL4k0G92_bzQZGzWeS1MAvBHa4MXQHOS3HuMoHICGCID8fbOw_bbLq38cTwsvEyR3wZXa2TSrJCvTV5JA2fzcPndmL2GoILoXLWwj4ieNU2oXbcj3vh6yE2SKnRlaAQuP6sVjFFoQglIJ_6K5Dh9nHKt9VKrgYHeubMVm9UJtM1tSAFBou82GdASJD_YjCNem7pIDiiA8_s8PSWzdTliao0QIA6HgNFS-lBU2Wnb6Vesmekpwbv42gizYQCYYYbEhacBGpDE2kk4YPIRTSxeA4B93jasYvBTSb_vqncERLAVtiQOgI2BNjgxP0dvwQ
+2021-09-06 05:12:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:16:38 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:16:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMDg3N30.RsELKL8tAZptxBf7japQatV0UBM7BuDhje33B6y2P3evqFhIsaiqKfUew00m_EQYMS64_340cVYfBQE8YJxT_OYuDMFls6KQ8yagr2kNotMHfIX-auiBWZV6IKh-awvClBMdpgRCiVy-UZNp4ry4pBoIWiSGtbj7bCKUEdjdPpWYrjTn_ZkcZhUJfst6pVL6iBEX0RlN6eP-gSS0I_AfNDp9SHLsQndr03VddqkP_GKzPjfwmXENMGpYRqZVn7bnJZN8ja-BeWami_KdPQN6b9d1lZ7RuSqQzR71U59IfpOpel42m2slodXmDvuduO2MPeLsRtF-L0lPHP4bZI5vWg
+2021-09-06 05:17:10 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:17:10 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMDg3N30.RsELKL8tAZptxBf7japQatV0UBM7BuDhje33B6y2P3evqFhIsaiqKfUew00m_EQYMS64_340cVYfBQE8YJxT_OYuDMFls6KQ8yagr2kNotMHfIX-auiBWZV6IKh-awvClBMdpgRCiVy-UZNp4ry4pBoIWiSGtbj7bCKUEdjdPpWYrjTn_ZkcZhUJfst6pVL6iBEX0RlN6eP-gSS0I_AfNDp9SHLsQndr03VddqkP_GKzPjfwmXENMGpYRqZVn7bnJZN8ja-BeWami_KdPQN6b9d1lZ7RuSqQzR71U59IfpOpel42m2slodXmDvuduO2MPeLsRtF-L0lPHP4bZI5vWg
+2021-09-06 05:17:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:21:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMTE0OH0.l6d6eHGVQnekMYICrK5mnll3tmBsjt13GECgRPE0ueI3blFqWxOhZ4xEeJEL4r-F4FtDaEKZRybqzWjtRFJcnJ8IEvjfNWDssBzZMtVFsToA3OixEu8D_3phoPy3C5hyk8AQNFRa62xF4BdwVwr2Aff8UvCxXcVI0VV9R-jTlF853JjhC5O_mgUZHZo3eBH2z2Plpx9_IbHBhzFf0uTgC3xZFFjZdSPSYCZYx_p0C49TBxBd_DDboqS3Zu2N3rvmUGJ6G_KB0L1Zr655SznsgvtFQqRtp8DC45uOJ8r_ytBKkAGFSoc4wLItlo7nvGMkJIXWENo2QdKzDLckozRDHg
+2021-09-06 05:21:31 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:21:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMTE0OH0.l6d6eHGVQnekMYICrK5mnll3tmBsjt13GECgRPE0ueI3blFqWxOhZ4xEeJEL4r-F4FtDaEKZRybqzWjtRFJcnJ8IEvjfNWDssBzZMtVFsToA3OixEu8D_3phoPy3C5hyk8AQNFRa62xF4BdwVwr2Aff8UvCxXcVI0VV9R-jTlF853JjhC5O_mgUZHZo3eBH2z2Plpx9_IbHBhzFf0uTgC3xZFFjZdSPSYCZYx_p0C49TBxBd_DDboqS3Zu2N3rvmUGJ6G_KB0L1Zr655SznsgvtFQqRtp8DC45uOJ8r_ytBKkAGFSoc4wLItlo7nvGMkJIXWENo2QdKzDLckozRDHg
+2021-09-06 05:22:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:27:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:28:12 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 05:32:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:35:14 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:35:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMTk1OX0.QzoKWFg8KKzU59i7jwS0rt8d2OZ1wDEE73WnodfZ26csQPpCzhrnmMdwlJFt0hPebE9Tc__nSC0W1w3CSPAH37vVKveeKrcCBtQRP3txm8Wd1b6bf9L3iUdAshQo9duRHnMXFE-YiETIY3_erfspgc9wTNgMCEPUmDN3uskK1T34K-zwN-098v6MWZ0dN2f2uI2Di19JOcd8_ad2xgzyhcEg9BRsG2pw1TC-NN8k5Zo_D-aVayi87J8n1kAWSBQ-p9D8H_9CNFJnPRh7hM51VdN3El6QoX01yeR1KNoirfyRoO5r2rRg3RuNKIVV9oSzScFzV8qHmMvXvS2FiQWOmA
+2021-09-06 05:37:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:39:25 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:39:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjIzMH0.ldOZRadKK2ukgZEjTq_bu5nklw7zACUelrVSNlCwDuqUMZJS_Esd0IqckX7NdxGpFGAu6e51w9a67k1GyaLm4UXzloajSUrMCOBXNZ_5XQwQRQErCu5o3fS7z07YBeTkeD1hHqJOmUiiiVW104XroyJrJ4b2sdwvfvo1G9mAs9lNHFVbTG1OG_lMY3V7qORGZPw9k8WFEq631mHFl94zmuvlpTWuxxmP09wBiYlZgVdUKYnobZ0lyBX_yuSi8W06hBEuxaJY2DKjCgXMZ66DX9knT_0SgIVILLwGBnWRYL0O5nPhJEdwYpMwotDj_KVCNELlyHUyyoAwpkZCsVz3rg
+2021-09-06 05:39:52 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:39:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjIzMH0.ldOZRadKK2ukgZEjTq_bu5nklw7zACUelrVSNlCwDuqUMZJS_Esd0IqckX7NdxGpFGAu6e51w9a67k1GyaLm4UXzloajSUrMCOBXNZ_5XQwQRQErCu5o3fS7z07YBeTkeD1hHqJOmUiiiVW104XroyJrJ4b2sdwvfvo1G9mAs9lNHFVbTG1OG_lMY3V7qORGZPw9k8WFEq631mHFl94zmuvlpTWuxxmP09wBiYlZgVdUKYnobZ0lyBX_yuSi8W06hBEuxaJY2DKjCgXMZ66DX9knT_0SgIVILLwGBnWRYL0O5nPhJEdwYpMwotDj_KVCNELlyHUyyoAwpkZCsVz3rg
+2021-09-06 05:40:11 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:40:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjIzMH0.ldOZRadKK2ukgZEjTq_bu5nklw7zACUelrVSNlCwDuqUMZJS_Esd0IqckX7NdxGpFGAu6e51w9a67k1GyaLm4UXzloajSUrMCOBXNZ_5XQwQRQErCu5o3fS7z07YBeTkeD1hHqJOmUiiiVW104XroyJrJ4b2sdwvfvo1G9mAs9lNHFVbTG1OG_lMY3V7qORGZPw9k8WFEq631mHFl94zmuvlpTWuxxmP09wBiYlZgVdUKYnobZ0lyBX_yuSi8W06hBEuxaJY2DKjCgXMZ66DX9knT_0SgIVILLwGBnWRYL0O5nPhJEdwYpMwotDj_KVCNELlyHUyyoAwpkZCsVz3rg
+2021-09-06 05:41:04 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:41:04 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjIzMH0.ldOZRadKK2ukgZEjTq_bu5nklw7zACUelrVSNlCwDuqUMZJS_Esd0IqckX7NdxGpFGAu6e51w9a67k1GyaLm4UXzloajSUrMCOBXNZ_5XQwQRQErCu5o3fS7z07YBeTkeD1hHqJOmUiiiVW104XroyJrJ4b2sdwvfvo1G9mAs9lNHFVbTG1OG_lMY3V7qORGZPw9k8WFEq631mHFl94zmuvlpTWuxxmP09wBiYlZgVdUKYnobZ0lyBX_yuSi8W06hBEuxaJY2DKjCgXMZ66DX9knT_0SgIVILLwGBnWRYL0O5nPhJEdwYpMwotDj_KVCNELlyHUyyoAwpkZCsVz3rg
+2021-09-06 05:42:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:44:26 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:44:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjUwMH0.Qhex1--LoUc1nt9zUc0-8k6MxtpiEixQB3q3mLAhQAz2_TUDw-apHTPn6_WTmt8EyY4m0_xXm2g3tjUYU3jieDC9NJhQXsS7lZFGM0rH1V7I46ynXzzK8nWVAqWiMTc4ww17wrlf3YevJ6Uu4E9GrEx8T2bfxYOmkUBPAyNZMQXDtxxf2jAWTeuXv3C7Zbn5aoNcF42ohSV8QVlnvLoFWgnTNgZniRIqkuoapsc4uwNdEMHWAOf0A5suIjNpSqcF5gsEP3iBLdth717zR6wkIKtWPRyg_vSRAbFS--LlD79DRmbxOiQnWWqdKmWP2SthZjPPscNs3dLmjKEwVcStnw
+2021-09-06 05:44:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjUwMH0.Qhex1--LoUc1nt9zUc0-8k6MxtpiEixQB3q3mLAhQAz2_TUDw-apHTPn6_WTmt8EyY4m0_xXm2g3tjUYU3jieDC9NJhQXsS7lZFGM0rH1V7I46ynXzzK8nWVAqWiMTc4ww17wrlf3YevJ6Uu4E9GrEx8T2bfxYOmkUBPAyNZMQXDtxxf2jAWTeuXv3C7Zbn5aoNcF42ohSV8QVlnvLoFWgnTNgZniRIqkuoapsc4uwNdEMHWAOf0A5suIjNpSqcF5gsEP3iBLdth717zR6wkIKtWPRyg_vSRAbFS--LlD79DRmbxOiQnWWqdKmWP2SthZjPPscNs3dLmjKEwVcStnw
+2021-09-06 05:45:26 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:45:55 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:45:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjUwMH0.Qhex1--LoUc1nt9zUc0-8k6MxtpiEixQB3q3mLAhQAz2_TUDw-apHTPn6_WTmt8EyY4m0_xXm2g3tjUYU3jieDC9NJhQXsS7lZFGM0rH1V7I46ynXzzK8nWVAqWiMTc4ww17wrlf3YevJ6Uu4E9GrEx8T2bfxYOmkUBPAyNZMQXDtxxf2jAWTeuXv3C7Zbn5aoNcF42ohSV8QVlnvLoFWgnTNgZniRIqkuoapsc4uwNdEMHWAOf0A5suIjNpSqcF5gsEP3iBLdth717zR6wkIKtWPRyg_vSRAbFS--LlD79DRmbxOiQnWWqdKmWP2SthZjPPscNs3dLmjKEwVcStnw
+2021-09-06 05:46:24 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 05:47:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:47:26 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 05:47:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr48WHwdlKPKwcs_5acpBa6PSXqkigabTb1yQGhh53D8ScQBQBG8t7MVblyFj1bGKdYR3hgZ3i7rkZNhzZnqnl2mHdjC3RPu0mtbSFJ6M3U20db36MVvARurqZ4pkrsFrMz4a8fibdPFKHcFiaLCStaXedfGj61sfoODqT4S_FHmdNYdCXlRi4uWDpDpLgTWUqwIa?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMjUwMH0.Qhex1--LoUc1nt9zUc0-8k6MxtpiEixQB3q3mLAhQAz2_TUDw-apHTPn6_WTmt8EyY4m0_xXm2g3tjUYU3jieDC9NJhQXsS7lZFGM0rH1V7I46ynXzzK8nWVAqWiMTc4ww17wrlf3YevJ6Uu4E9GrEx8T2bfxYOmkUBPAyNZMQXDtxxf2jAWTeuXv3C7Zbn5aoNcF42ohSV8QVlnvLoFWgnTNgZniRIqkuoapsc4uwNdEMHWAOf0A5suIjNpSqcF5gsEP3iBLdth717zR6wkIKtWPRyg_vSRAbFS--LlD79DRmbxOiQnWWqdKmWP2SthZjPPscNs3dLmjKEwVcStnw
+2021-09-06 05:52:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 05:57:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:02:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:02:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMzU4Mn0.N58rpXxDVCL8hMAKV6ifg1BEr51ubX5Kzv6InUPpl-V8zv_61deO9-BPkWF6Qp76bnzRlrLovqSkQD0DbGFqxaYKy1Pzo--ljO4vn592paJ43bwarBB-51nkN7XPeJ-gbC9SybjLg5KEmKQSASU6k2yliuv3BqvtQdY316mA9jTLdGZDLHC1MCMMuuHlcfs1oiQj-ElY1FT3RNb8GdjhbBpLaU_lBzf8cmUKgk00awT1LvLIQ4-TPfW1RmAqLW3geR2NqZkcqqYCA5_eyb4o9CJbVdEXgqk8UGiLxC74a-v73AxXm-RDZaLgtnNm67RuQ08yvYaEKaDvNsJ2J16W5A
+2021-09-06 06:04:18 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 06:04:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkzMzU4Mn0.N58rpXxDVCL8hMAKV6ifg1BEr51ubX5Kzv6InUPpl-V8zv_61deO9-BPkWF6Qp76bnzRlrLovqSkQD0DbGFqxaYKy1Pzo--ljO4vn592paJ43bwarBB-51nkN7XPeJ-gbC9SybjLg5KEmKQSASU6k2yliuv3BqvtQdY316mA9jTLdGZDLHC1MCMMuuHlcfs1oiQj-ElY1FT3RNb8GdjhbBpLaU_lBzf8cmUKgk00awT1LvLIQ4-TPfW1RmAqLW3geR2NqZkcqqYCA5_eyb4o9CJbVdEXgqk8UGiLxC74a-v73AxXm-RDZaLgtnNm67RuQ08yvYaEKaDvNsJ2J16W5A
+2021-09-06 06:07:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:12:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:17:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:22:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:27:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:31:28 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_off
+2021-09-06 06:32:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:37:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:42:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:47:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:52:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 06:57:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:02:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:07:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:12:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:17:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:22:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:27:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:32:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:37:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:42:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:47:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:52:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 07:57:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:00:37 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 08:02:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:07:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:12:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:17:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:18:13 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 08:18:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDk0MTY5OX0.dhGH-BpdigxBkB0I3QQu5v7LAmom9J80eYPoOnkRYBhPVdyZcle8P0PNFkqH0zS6WjM2RJI3EEWGtO5qI4IFIbsXQHIkpJZzulUfCxlRjoO6B0zXtd0n1FuTneAAYHLtYX7ChKHIRcdiXJowf-OPpaFywRCcdEv1pMd1T19m4xGilsMe2QJ4FjvowXK0VP5mO7eJvQbSubE4LHRaQFlqONDSnknMPJzzKmtMnsbcHax7T6EICkcxpVdsqlDoFqMIiUnEGlWGy7-HGfrvUOStNNuFJK8-tgwrPfYpFXQQDzgHZnvl7N4iaZyszvUeUd2tWKpyQqEdhvwBEi6xCT_vpA
+2021-09-06 08:22:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:27:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:29:32 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 08:29:47 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 08:30:02 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 08:30:04 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'481cb1a9112ac20251a8bd7e' (b'a8bd' != b'3447')
+2021-09-06 08:30:04 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-06 08:30:04 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-06 08:31:52 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 08:31:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDk0MjUxMX0.Yc3o6pynEMUQXb08qTfOOAC7BMgtjng1XxIpASfquk_63sOzZrZ8_r94yniaAHhjo4sv7iJM67cD--fu3pqWLIIp-445Oy2C9wDu2ymgbMXBsifN9yiDFdjni1trNNwymMYrcSKe-OfqScKgrhdVLCjM9pLNuz1a0beuX_iR_x1kyKrbU6c7vmrX6ilro6BaUSs-TLQmLYCpBu5wOlWRu2Pb1FjWQhtPSIl0NKxcySWetlrThsQpWRfVyvGIPIaHCkEpuAZigFiV0TwLx8sNKgVXIONLRfGaoOkL64P0v2BneSqSuyTNpMtm_6rUo-24CCX5sVLbyVzwK7xv52zgNA
+2021-09-06 08:32:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:33:44 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-06 08:33:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr8H-M3Ih2UIWUYR-p3STYskmqaMZxRUugG6SKEgoR2oScQBQBG8tu4AIa9ympla6moyFu0aZzp_uBR9vb-1oNanAdAa5ZTsuafZl_IPgO0TPg5QEAW7SwBa5sMbc9RHNtkiuFLQWhVN-L-3JTa5tAnio7DF-cKFEEWFWHPokxDLn0S5exv4R_Q4BzPKhbZ3v5m7v?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDk0MjUxMX0.Yc3o6pynEMUQXb08qTfOOAC7BMgtjng1XxIpASfquk_63sOzZrZ8_r94yniaAHhjo4sv7iJM67cD--fu3pqWLIIp-445Oy2C9wDu2ymgbMXBsifN9yiDFdjni1trNNwymMYrcSKe-OfqScKgrhdVLCjM9pLNuz1a0beuX_iR_x1kyKrbU6c7vmrX6ilro6BaUSs-TLQmLYCpBu5wOlWRu2Pb1FjWQhtPSIl0NKxcySWetlrThsQpWRfVyvGIPIaHCkEpuAZigFiV0TwLx8sNKgVXIONLRfGaoOkL64P0v2BneSqSuyTNpMtm_6rUo-24CCX5sVLbyVzwK7xv52zgNA
+2021-09-06 08:34:21 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-06 08:37:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:42:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:47:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:52:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 08:56:28 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 08:57:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:02:22 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 09:02:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:07:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:13:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:18:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:23:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:28:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:33:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:38:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:43:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:48:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:53:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 09:58:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:03:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:08:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:10:56 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 10:13:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:15:30 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 10:15:45 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 10:16:00 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 10:16:12 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-06 10:16:58 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-06 10:18:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:23:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:28:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:33:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:38:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:38:57 ERROR (Thread-14) [pychromecast.socket_client] [Liam Home Mini(192.168.6.222):8009] Error reading from socket.
+2021-09-06 10:38:57 WARNING (Thread-14) [pychromecast.socket_client] [Liam Home Mini(192.168.6.222):8009] Error communicating with socket, resetting connection
+2021-09-06 10:43:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:48:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:52:59 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 10:53:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 10:58:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:03:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:08:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:13:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:18:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:23:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:28:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:33:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:38:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:43:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:48:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:53:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 11:55:10 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 11:55:25 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 11:58:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:03:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:08:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:13:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:18:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:23:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:28:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:33:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:38:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:43:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:48:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:53:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 12:58:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:03:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:08:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:13:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:18:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:23:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:28:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:33:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:35:45 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 13:38:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:43:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:48:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:53:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 13:58:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:03:15 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 14:03:30 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 14:03:45 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 14:03:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:04:00 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 14:04:01 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-06 14:05:49 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-06 14:08:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:14:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:17:12 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 14:19:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:24:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:29:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:34:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:39:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:44:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:44:18 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-06 14:44:18 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'mappingproxy object' has no attribute 'iss_position' when rendering '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude | float }}"}'
+2021-09-06 14:44:18 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] ISS Location Update: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-06 14:44:18 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] Error while executing automation automation.iss_location_update: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-06 14:49:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:54:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 14:59:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:04:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:06:55 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 15:09:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:14:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:18:11 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 15:19:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:24:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:29:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:29:21 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 15:34:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:39:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:44:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:49:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:54:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 15:59:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:04:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:08:09 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 16:08:23 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'4a8ab1a911f47e' (b'11f4' != b'7793')
+2021-09-06 16:08:23 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-06 16:09:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:10:21 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-06 16:14:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:19:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:24:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:29:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:29:46 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 16:32:34 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 16:32:49 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 16:34:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:39:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:43:30 ERROR (SyncWorker_2) [pyecobee] Error requesting authorization from ecobee: 500: {'error': '57014', 'error_description': 'canceling statement due to statement timeout'}
+2021-09-06 16:43:30 ERROR (MainThread) [homeassistant.components.ecobee] Error refreshing ecobee tokens
+2021-09-06 16:44:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:49:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:54:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 16:59:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:04:25 ERROR (MainThread) [homeassistant.components.shelly] Timeout fetching shellyem-B05A54 data
+2021-09-06 17:04:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:09:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:11:09 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 17:14:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:19:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:24:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:29:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:34:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:39:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:44:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:49:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:54:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 17:59:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:04:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:09:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:14:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:19:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:24:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:29:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:34:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:38:47 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 18:39:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:42:15 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-06 18:44:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:49:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:54:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 18:59:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:03:12 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 19:04:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:09:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:12:42 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_on
+2021-09-06 19:12:43 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-06 19:15:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:20:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:25:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:30:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:35:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:40:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:45:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:50:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/zigpy/device.py", line 287, in request
-    raise zigpy.exceptions.DeliveryError(
-zigpy.exceptions.DeliveryError: [0xa8ad:1:0x0500]: Message send failure
-2021-09-05 19:56:42 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:53:25 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:25 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:36 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:36 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:47 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:58 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:53:58 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:54:47 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:54:47 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:54:49 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:55:00 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:55:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/zigpy/device.py", line 287, in request
-    raise zigpy.exceptions.DeliveryError(
-zigpy.exceptions.DeliveryError: [0xa8ad:1:0x0500]: Message send failure
-2021-09-05 19:59:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-06 19:55:10 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:55:12 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:55:21 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:55:21 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:56:09 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.entities_count, old_state=<state sensor.entities_count=907; friendly_name=Number of Entities @ 2021-09-06T19:54:09.617717-07:00>, new_state=<state sensor.entities_count=906; friendly_name=Number of Entities @ 2021-09-06T19:55:09.622006-07:00>>, skipping template render for Template[{{ states | rejectattr('state', 'eq', 'unavailable') | list | count}}]
+2021-09-06 19:59:56 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 19:59:56 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 20:00:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:04:14 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 20:04:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDg5Nzc0Mn0.YcBnEGG8bXyPyvp1J7XUnMV2-zsEBir_jsUgutATTnylH8O81Qeyw5SP_lFoxa8AK5CMabBt1a6MDcfHcZa1FzUQ9toRYLThHDSocN_AUXoxadN7aX2K4EIzc54rxABYxRmocXOq6ySNbSOtme6Yi_BxfmpQuCa2MtQYkMKBM7ztV7OWn7duucNba8powofrSDqmkFbe7CL6zsfx2FssC6HPLnM9pqp9uzNFlmqZ8OXJMhJTe2uQ9T1XZ66-wmMfzGpWnOpM4gb5Sg_qpS2w0SIb4VFQRuIgMJK4LebRycm2gBWIn-f3Ba2OI4s6a_IYfwj9pzBaj_kVLU32xdxh5g
-2021-09-05 20:04:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:01:47 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 20:01:47 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 20:05:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:08:54 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 20:08:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDg5ODAxM30.sIKvaKf6ZmO_s5cA_mTgzRf0ny6Z0a5GGqZnsO-pu7G3KnD_G-pCtb8Ht72bHorMRCfLwFh6MQHLRkLWS11VCgxMA1JqJGrYJ2NH9POjqsswqKw_u4RELvd3wT8QwfW7SNjAVX6wdBuuBJfP01V5hWFZpgqV42Jst9Yq-5khE-nE13pcupDb2_0Nf1Mgmy338O-G2wI5lw1Rt9lbmBVTx8-YVeKZ05nGvpVxDGnfH0J3S7EyVop5_agr36og3osImY8Tc_P61EIqLd7rrqase3TXGRt7X57YdR-atiUWEESrUDYNNGDpqm6LatBqv2AbSn-WJEW-ShE05H5KdcBUmw
-2021-09-05 20:09:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:10:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:14:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:15:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:15:16 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-05 20:18:05 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 20:18:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDg5ODU1NH0.mF00dZkYYtFJ-5kJbv3xBcDMB_8Hl3IszY33-U0rM8QHVcy55G65P71GGkm9SzijldihGMVcopDoCA1mIXwgAA-btqzpOW7JVQq5kXlQ7VvhE4eXUjw64jI_7QTiQHfaD3cRANsiyzs9mIlFQPdc9MLEFV9EynQsYOYVvpmUEfQh2bZkc_OHfrZQHQUgn0LemXyYfUpaznMnSod4CEE0VwqHyyNcZIYOA6caTr0n35whg5SMpznij4vZAVvYTLbW7Y_Rdixi_duB5-gejcA7UK8oaADFbLB7vazCBlzsU0wEZWmtw0lKaZI6A66zGhAqj-xVgdqLHdZ80bmu51tndQ
-2021-09-05 20:18:57 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:18:57 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:32 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:32 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:37 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 20:19:42 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:43 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:45 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:49 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
-2021-09-05 20:19:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:20:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:24:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:25:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:29:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:30:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:31:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 20:31:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDg5OTM2NX0.k66lqn2hM3iIFprioWR2-ROsVld4NQnCzMy53P50DZo__n2r_5d1a7eB__8HDoZx5pt9myFE0NJ-FZA_4Ey0VrmD2nHRCJqKcDnivOayK5w9EnRzvI9nwsrol6I_yKDVYZ4CxYMUPnJUL72HsIRzOHJ4iCilU0NqVcGIRiNVnp6_rfqGEW1QrtAYsF_x8j-jcKbgc3a9XK2CjkU1Bl50NsDryvmJvm2J4h-QcvQsSRxiFvzy6OH3EAVxelRMM3Bv1SEQb6nQIPlGwnWufoSQt1rZr6u04SIbjUHKaxT--0aohkhZVo4NWbJf8ELbre9Cnq8SzPTERb1xXzNawXsr8g
-2021-09-05 20:34:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:35:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:39:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:40:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:44:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:45:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:49:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:50:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:55:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:55:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 20:55:58 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
-2021-09-05 20:57:17 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
-2021-09-05 21:00:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 20:57:12 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast station SAUC1 data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/LOX/146,60/forecast')
+2021-09-06 21:00:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:04:44 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:05:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:05:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:06:54 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:07:34 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:08:00 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 21:08:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwMTUyOX0.IztqhLJjbrfy36zpvnQAg27Sb3ClMMwXJjPnP7oEyBISdPMxhg_kJS4JR0JgYBMrs6NqXqeNb2FVIT_TxO6sNYs1GzrBjWEP2ZeqpbMfaUbVHoLLN03StAYgWU6bSvAotofGNfwKZbG0Adu1zLHJnniV6d1VJamXwhXMXM7Tvq225XE-TebF_s1fbvS-YbOP333TIQ2qdXM6hEZt14FGMoyElknF9i30MznhgumTYDh1mRHoK0_3hLBXI5Jpy4-XvMzyzni0Lb1V0g7N71Ya6GHlU4bkxAQkG2iGlm8UVFAT2XVZkHWhm8ATCSGVsq-r-s38Chmdn0O_db-9jIgFqg
-2021-09-05 21:08:34 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:10:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:10:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:11:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:11:24 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:11:54 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:12:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:12:14 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:15:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:12:03 WARNING (Recorder) [homeassistant.components.sensor.recorder] Entity sensor.solar_energy from integration integration has state class total_increasing, but its state is not strictly increasing. Please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+recorder%22
+2021-09-06 21:15:17 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 21:15:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:20:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:20:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:24:59 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:25:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:25:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:25:29 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:25:59 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 21:26:16 ERROR (Thread-17) [pychromecast.socket_client] [Tech TV(192.168.20.176):8009] Error reading from socket.
-2021-09-05 21:26:16 WARNING (Thread-17) [pychromecast.socket_client] [Tech TV(192.168.20.176):8009] Error communicating with socket, resetting connection
-2021-09-05 21:26:18 ERROR (Thread-17) [pychromecast.socket_client] [Tech TV(192.168.20.176):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.176', 8009)), retrying in 5.0s
-2021-09-05 21:30:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:25:32 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:32 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:41 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:44 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:44 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:50 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:50 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:25:52 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-09-06 21:26:14 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:26:34 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:26:34 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 21:26:54 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:27:54 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:28:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:28:14 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:28:24 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:28:34 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:29:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:29:44 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:30:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:35:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:31:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:31:14 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:32:04 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:32:14 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:32:24 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:32:34 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-06 21:35:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:40:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:40:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:45:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:45:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:50:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:50:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 21:55:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 21:55:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:00:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:00:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:05:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:02:41 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-06 22:05:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:06:48 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:06:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNTA0Nn0.Zy-m-IHlF54wle16KfJ2zq5MyrTXz5eS6cEkBRLKRi2Vf_DgzZ7_POg1H7oI-_BVQ80OFa9dtS4vaWgBv0xT5oDC2CeMvitIVheuiL3Y92JXNt1AX-f1VLgwT80rFnr0FeRS9GkUfmB2mSOhiAatw7Sj_D8-w8tMu2RgTXFPc56vL_K9mcgcHpwPzamKKFXoaikmmd2ROS5i18Fcts-bFGW_q08uEYRVx3IDyFIpqoknClbF-g_wR1IJ9S_HUMYfKEoqIinUNzYCyMhO6hU-h9KTIi_LMcrs0gnj74NPLlVey_oDWD3efWjp0CJ2OOdr00J2235BRZb-wQDNwfbbHA
-2021-09-05 22:07:26 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-05 22:10:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:10:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:15:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:15:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:16:01 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:16:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNTU4N30.APcXUO4zt-u3bfliuKTIjcQMW0k78E1wjOqeJ2D4NUByhSZiGkWRg45YF483bfvsvq7ubwPhj4xApW_OdqaJD6_RjQdrG8yWMCNw09p2OlgUDgB-_e_0ZBfbpA_XZd48zA04pR_uZctxLXV4U929FpTPx_ukGHcsfN_fduledKfXFcVE6zo9JLIwNIy3TRm1njNkoRv4SP_Ew9jop7MEaPLAqjrWNCwBUXbAs0aBWWt5Feuq_ZJUSsZ28PMgQr0XKRsFuvuqTgQr_XAw5Lnf51nlcnLE6YLbY19oE59BNdNaM-JzzAVJ3HS7ZJcX0sqMB75l2q4ukVi1v4T524c5Dg
-2021-09-05 22:17:22 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:17:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNTU4N30.APcXUO4zt-u3bfliuKTIjcQMW0k78E1wjOqeJ2D4NUByhSZiGkWRg45YF483bfvsvq7ubwPhj4xApW_OdqaJD6_RjQdrG8yWMCNw09p2OlgUDgB-_e_0ZBfbpA_XZd48zA04pR_uZctxLXV4U929FpTPx_ukGHcsfN_fduledKfXFcVE6zo9JLIwNIy3TRm1njNkoRv4SP_Ew9jop7MEaPLAqjrWNCwBUXbAs0aBWWt5Feuq_ZJUSsZ28PMgQr0XKRsFuvuqTgQr_XAw5Lnf51nlcnLE6YLbY19oE59BNdNaM-JzzAVJ3HS7ZJcX0sqMB75l2q4ukVi1v4T524c5Dg
-2021-09-05 22:20:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:20:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:23:20 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
-2021-09-05 22:23:27 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
-2021-09-05 22:25:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:25:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:25:21 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:25:21 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNjEyOH0.P5qiNKFe3fDu2ErfmxJRSx_P1hRBap0RvwwLRdBIgjAdWVtmBiWriIwh0NUoxD1hrAHVVNgrUH1XZaWkx4M84B59DWCNG3zrzCFct010xkE9hUVbmBGJEPWmpOGW4pEdPINhFH3sQyY53orYCzlMRql3OK2lVdkxWQ7uvFG2hXgRaCXW-wKQh1cW3ZuSwFoCX18Qlp9bK72FxZxwcLU73cw4-lQtQfqLejyDLRrhuCTwTKwvslIOJdt3See7xTVY9quatp6hdj0WkXmWNWIXqWm8h3x0aIPRbYAJpzePZV6q6_WlPSTrFdmj8w2BTl8Hq2xcNmYZAlXMZubDsm78Sw
-2021-09-05 22:30:01 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:30:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNjM5OH0.uH_wmaRakrQHLx1uHlDhDIEjbM1we5iO1JEQNnz0VKlgUC3g45FnNqQedtxA3TpT9RDcTXPXHPG8jKEdU3tlrvmZwvWLH4c1NybXpowhvvGGpqiIC3z0amVdxM8W_Hd2awp4PSuCnCwrR01wLJWCXwt9ykxOcpKpiwZuvDqcBApteUhu5sf0doCgaoWtnD7dBVPQhVm8cNKKPT67juHurbr6qOdkAH5o1-I456RzOjGpMyEe37u3AfFwjb9SKJdMvOwDACpodxOpRylTwRxOo7qkf1yLneyZMcs-ut5WyWcBjSYGt7oEBci-nqWn37wdPfIn_LwhoAdPVNE48tMoig
-2021-09-05 22:30:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:30:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:34:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:34:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNjY2OX0.RQgG7i-c4MNuyBPgSBX1l3nZ7ITAVEMctaSjvuQGjLgqODgoc7yn8JiumJvCM5icIrl7SizSTgUetJfRObNxaqGPbju1EfB0mJALqntjdJx43pQyqwFfeZ2Gptv1sEnehCgupMdVnHcS6NiCGaxZGU4pZFhlbwozL2b8LVpi_HaFCyp8IF6Q8xnIM0_L5dUT_aH2xqNxqM3xap_8SzimLUxZ770Aau8B8EToKbv0NKgW6GmrBAE4aQU8IJ6wMFrk1-EEdevHn8nyMx9nRC-iBDHY6sPw0gzPrhfEXJdBobXtf0v75xHZTlgyHeoZi91xFDHYbza75zs4DE_UzCSE3A
-2021-09-05 22:35:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:35:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:36:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-05 22:36:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr9g1A6VxHQ7uRJnQi1ThD8G11d1P8Gx-5lExFPZNgtoScQBQBG8t5InSjIerCkYPvsu8jqX3NtDY_02X6Hx_jPSpTIXLgXOunZBw8nQUb3JjP3043OWYn_n1D_ciurLmRvnFmO8AQCj5ADEyWdu3Abe37AQaW6wa86CWJZiXwudc3ki735W-RaRjpPZh-ZDo6AqQ?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkwNjY2OX0.RQgG7i-c4MNuyBPgSBX1l3nZ7ITAVEMctaSjvuQGjLgqODgoc7yn8JiumJvCM5icIrl7SizSTgUetJfRObNxaqGPbju1EfB0mJALqntjdJx43pQyqwFfeZ2Gptv1sEnehCgupMdVnHcS6NiCGaxZGU4pZFhlbwozL2b8LVpi_HaFCyp8IF6Q8xnIM0_L5dUT_aH2xqNxqM3xap_8SzimLUxZ770Aau8B8EToKbv0NKgW6GmrBAE4aQU8IJ6wMFrk1-EEdevHn8nyMx9nRC-iBDHY6sPw0gzPrhfEXJdBobXtf0v75xHZTlgyHeoZi91xFDHYbza75zs4DE_UzCSE3A
-2021-09-05 22:40:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:40:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:45:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:43:12 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-06 22:45:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:50:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:50:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 22:55:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 22:54:37 ERROR (MainThread) [pubnub] session.request exception: [Errno 104] Connection reset by peer
+2021-09-06 22:54:37 ERROR (MainThread) [pubnub] Exception in subscribe loop: [Errno 104] Connection reset by peer
+2021-09-06 22:55:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.sophia_wled
-2021-09-05 23:00:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.sophia_wled
+2021-09-06 23:00:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:05:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:05:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:10:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:10:13 ERROR (MainThread) [homeassistant.components.shelly] Timeout fetching shellyem-B05A54 data
+2021-09-06 23:10:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:15:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:15:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:20:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:17:13 ERROR (MainThread) [homeassistant.components.shelly] Timeout fetching shellyem-B05A54 data
+2021-09-06 23:20:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:25:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:25:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:30:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:30:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:35:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:35:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:40:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:40:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:45:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:45:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:50:16 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-05 23:50:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:46:22 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 23:46:37 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 23:46:52 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 23:47:07 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 23:47:13 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'4babb1a9112a15b653abb1a9112a15b658964d24ab1593499cd9836eddf19874f4de1483fc7a15a7ebcd3c687e' (b'3c68' != b'eea1')
+2021-09-06 23:47:22 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-06 23:48:41 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-06 23:50:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-05 23:55:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-06 23:55:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:00:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:00:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:05:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:05:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:07:52 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-06 00:07:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkxMjM0OX0.Z2RxpwqksLfc-1rro2ASrm39XdzGWZr71Ikap8evRHvGwnTg8mlNs5SYc6vtEB8vuY9Um5wrnC2FlHVQQoA6Q424VUSy7lXr803IeCTVhaCRcMpWIYjKAvXb-NxigMIZYmSa4zpjerJRy3chqlFU2067YrtRXjnXlDRydgldXO-gBQBdTiEfXRkJ0AY0LqVngWQ2AUMjQyac7J1J1pHRGRW6yW15-8O5WWb4TtZr1KkimY-eva8we0_Z7TMMVQcK-n4f7mRN08Y50XJ22I5wN3Bm1dFCXdWZIBdB5KlQ_Hdo6cacLOdCGhhvtnDSSUdFJe9RZ87yDPvdM6qvPUhP0A
-2021-09-06 00:10:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:05:58 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-07 00:10:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:15:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:16:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:17:06 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-06 00:17:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkxMjg5MH0.eE0mKoChlpngYDyN9ggfYIXogtrMt4EJx1CJUB9K8KK-UhKxhEXEaeKz7aNID8-8gWzBGzcxdWywEWfJ5Hhqry8iq1Zl6PA2Qh8Cvva9K3cmxnoq1dpOoyoq_NFIaiyDSsEFpNoovSjyka1ktc8xErCD6AVUTQQ-6-esG-1Outmu8Z8eiJVSP2yBB1G_upVX1tf5PEHdcm7CWvRhfn7ymsB5e_R56kB8LLHGIfeEi-MHHAwxsP4V_JpuG86JjZUg-2NzlK6PIu3mabr31Pu60fXqT9tf0u1KskQycSbrRBxmA_vOOf8UfqULCzbTGGTb7BjJ-HFmggxPBpIbCrOeYw
-2021-09-06 00:20:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:21:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:21:43 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-06 00:21:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkxMzE2MX0.V_USVH1fIQ8ICM-mZXj2UIS9Zxwb-KDA_y84hD_BM0whQw-GKREoHatx-EfGeMlkQGhyFk1dyC930fldlZn6mj9JOuAUT80ODz6JzP1QzCqvBIdnUbU0qTGvf_cdz8FmLR1I8i2Vm-bUyS7LYm4hnW9gTPBlNfm4rx7DLwF5zgBiOBwimG02JaIGw35OazL81xPrMtM2R1-7BwEPybpLb-6igSPXdO93m32wqsc7FwuDgPWMJuip8gd57WcNNOJ8U5pC8bWdTEg1P10zpKRA3zwut4J9LswkyYW1KLB5qOS_ll8ksF0N7fhyPthB8b3XCoqG_2_4JygJIH69rDtryA
-2021-09-06 00:23:08 ERROR (stream_worker) [libav.tls] Error in the pull function.
-2021-09-06 00:23:08 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-06 00:23:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
-2021-09-06 00:23:58 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-06 00:24:10 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-06 00:24:10 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkxMzE2MX0.V_USVH1fIQ8ICM-mZXj2UIS9Zxwb-KDA_y84hD_BM0whQw-GKREoHatx-EfGeMlkQGhyFk1dyC930fldlZn6mj9JOuAUT80ODz6JzP1QzCqvBIdnUbU0qTGvf_cdz8FmLR1I8i2Vm-bUyS7LYm4hnW9gTPBlNfm4rx7DLwF5zgBiOBwimG02JaIGw35OazL81xPrMtM2R1-7BwEPybpLb-6igSPXdO93m32wqsc7FwuDgPWMJuip8gd57WcNNOJ8U5pC8bWdTEg1P10zpKRA3zwut4J9LswkyYW1KLB5qOS_ll8ksF0N7fhyPthB8b3XCoqG_2_4JygJIH69rDtryA
-2021-09-06 00:25:20 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-06 00:25:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrzokW_RWfZn5xzFNHIWo8YgGmRbLQleVSDyO9na4664ScQBQBG8t4mv6csdSBor84bMQMY3Udi2VEWXOVLs6exfCcZr1GNUC620cRyyRbf2x6TzVOr3oQ9pZAJ6hHd_SQX_ICvHLH27zafLpt225eTi_ldJghZTB-b3pHFdKmjljLaMFCn32W2xS5ygbylPFLZU7?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMDkxMzE2MX0.V_USVH1fIQ8ICM-mZXj2UIS9Zxwb-KDA_y84hD_BM0whQw-GKREoHatx-EfGeMlkQGhyFk1dyC930fldlZn6mj9JOuAUT80ODz6JzP1QzCqvBIdnUbU0qTGvf_cdz8FmLR1I8i2Vm-bUyS7LYm4hnW9gTPBlNfm4rx7DLwF5zgBiOBwimG02JaIGw35OazL81xPrMtM2R1-7BwEPybpLb-6igSPXdO93m32wqsc7FwuDgPWMJuip8gd57WcNNOJ8U5pC8bWdTEg1P10zpKRA3zwut4J9LswkyYW1KLB5qOS_ll8ksF0N7fhyPthB8b3XCoqG_2_4JygJIH69rDtryA
-2021-09-06 00:25:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:26:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:30:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:31:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:35:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:31:35 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-07 00:31:43 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2021-09-07 00:33:28 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-07 00:36:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:40:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:41:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:45:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:46:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:50:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:51:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 00:52:49 WARNING (MainThread) [homeassistant.components.automation.liam_lamp_power_on_from_tradfri] Liam - Lamp: "Turn on" button pressed Tradfri: Already running
-2021-09-06 00:54:52 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}")' for attribute '_attr_native_value' in entity 'sensor.iss_risetime_4'
-2021-09-06 00:54:52 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('UndefinedError: list object has no element 4') while processing template 'Template("{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}")' for attribute '_attr_native_value' in entity 'sensor.iss_duration_4'
-2021-09-06 00:55:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 00:56:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:00:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:01:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:05:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:06:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:10:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:11:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:15:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:16:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:20:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:21:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:25:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:26:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:30:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:31:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:35:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:36:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:40:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:41:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:45:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:46:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:50:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:51:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 01:56:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 01:56:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:01:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:01:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:06:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:06:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:08:06 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-06 02:08:12 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'3a62b1a9112a154262b1a9112a15b658924a24ab1593499c00b36a19179874fade3a83fc7e2fa7605c7e' (b'605c' != b'6dd7')
-2021-09-06 02:08:12 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
-2021-09-06 02:08:54 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
-2021-09-06 02:11:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:11:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:12:00 WARNING (Recorder) [homeassistant.components.sensor.recorder] Entity sensor.solar_energy from integration integration has state class total_increasing, but its state is not strictly increasing. Please create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+recorder%22
-2021-09-06 02:14:54 WARNING (Thread-18) [pychromecast.socket_client] [Kitchen speaker(192.168.20.124):8009] Heartbeat timeout, resetting connection
-2021-09-06 02:16:04 ERROR (SyncWorker_3) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:16:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:21:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:18:52 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom_Master speaker(192.168.20.77):8009] Heartbeat timeout, resetting connection
+2021-09-07 02:18:58 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom_Master speaker(192.168.20.77):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.77', 8009)), retrying in 5.0s
+2021-09-07 02:21:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:26:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:26:26 ERROR (SyncWorker_0) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:31:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:31:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:36:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:36:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:37:11 WARNING (Thread-16) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Heartbeat timeout, resetting connection
-2021-09-06 02:37:27 ERROR (Thread-16) [pychromecast.socket_client] [Bedroom_Sophia speaker(192.168.20.60):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.20.60', 8009)), retrying in 5.0s
-2021-09-06 02:41:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:41:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:46:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:46:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:49:22 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-06 02:49:28 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
-2021-09-06 02:50:56 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
-2021-09-06 02:51:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:49:52 WARNING (Thread-17) [pychromecast.socket_client] [Office_Brian speaker(192.168.20.247):8009] Heartbeat timeout, resetting connection
+2021-09-07 02:51:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 02:51:14 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-06 02:51:29 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-06 02:56:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-07 02:56:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-06 03:00:29 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
