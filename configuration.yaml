@@ -57,17 +57,32 @@ climate split: !include_dir_merge_list ./ha_climates
 
 utility_meter:
   daily_solar_energy:
-    source: sensor.solar_energy
+    source: sensor.iotawatt_total_solar_kwh
     cycle: daily
   weekly_solar_energy:
-    source: sensor.solar_energy
+    source: sensor.iotawatt_total_solar_kwh
     cycle: weekly
   monthly_solar_energy:
-    source: sensor.solar_energy
+    source: sensor.iotawatt_total_solar_kwh
     cycle: monthly
   quarterly_solar_energy:
-    source: sensor.solar_energy
+    source: sensor.iotawatt_total_solar_kwh
     cycle: quarterly
   yearly_solar_energy:
-    source: sensor.solar_energy
+    source: sensor.iotawatt_total_solar_kwh
+    cycle: yearly
+  daily_mains_energy:
+    source: sensor.iotawatt_total_sce_kwh
+    cycle: daily
+  weekly_mains_energy:
+    source: sensor.iotawatt_total_sce_kwh
+    cycle: weekly
+  monthly_mains_energy:
+    source: sensor.iotawatt_total_sce_kwh
+    cycle: monthly
+  quarterly_mains_energy:
+    source: sensor.iotawatt_total_sce_kwh
+    cycle: quarterly
+  yearly_mains_energy:
+    source: sensor.iotawatt_total_sce_kwh
     cycle: yearly

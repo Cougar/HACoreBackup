@@ -1,10 +1,15 @@
 - platform: integration
-  source: sensor.solar_combined_power
-  name: solar_energy
+  source: sensor.mainsconsumption
+  name: iotawatt_total_sce_kwh
   unit_prefix: k
   round: 2
 - platform: integration
-  source: sensor.total_monitored_dev
-  name: total_monitored_kwh
+  source: sensor.solarproduction
+  name: iotawatt_total_solar_kwh
+  unit_prefix: k
+  round: 2
+- platform: integration
+  source: sensor.mainsexport
+  name: iotawatt_export_to_grid_kwh
   unit_prefix: k
   round: 2
