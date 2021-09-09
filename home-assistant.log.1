@@ -1,36 +1,42 @@
-2021-09-08 17:32:20 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-08 17:32:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook f06d1a61aa5c38a342b6db71f8743e282e529f663d9b996d12cd72ba7b7e2f35 from cloud
-2021-09-08 17:32:32 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
-2021-09-08 17:32:32 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [23162035602816] Error handling message: Unknown error
+2021-09-08 17:38:38 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-08 17:38:43 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [23273395992032] Received invalid command: energy/info
+2021-09-08 17:38:43 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [23273395992032] Received invalid command: energy/info
+2021-09-08 17:38:43 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [23273395992032] Received invalid command: energy/info
+2021-09-08 17:38:50 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
+2021-09-08 17:38:51 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
+2021-09-08 17:38:56 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-08 17:38:56 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-08 17:38:57 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
+2021-09-08 17:38:57 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-08 17:38:57 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-08 17:38:57 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-08 17:38:57 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-08 17:38:57 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
+2021-09-08 17:39:16 ERROR (MainThread) [zigpy.application] Couldn't start application
+2021-09-08 17:39:16 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start EZSP = Silicon Labs EmberZNet protocol: Elelabs, HUSBZB-1, Telegesis coordinator
 Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/history/__init__.py", line 175, in ws_get_list_statistic_ids
-    statistic_ids = await hass.async_add_executor_job(
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/src/homeassistant/homeassistant/components/recorder/statistics.py", line 316, in list_statistic_ids
-    for platform in hass.data[DOMAIN].values():
-RuntimeError: dictionary changed size during iteration
-2021-09-08 17:32:33 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
-2021-09-08 17:32:40 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-08 17:32:40 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-08 17:32:40 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-08 17:32:40 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-08 17:32:40 ERROR (MainThread) [homeassistant.components.snmp.sensor] Please check the details in the configuration file
-2021-09-08 17:32:40 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-08 17:32:40 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-08 17:32:40 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
-2021-09-08 17:33:28 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-08 17:34:21 ERROR (bellows.thread_0) [bellows.uart] CRC error in frame b'9c4e24abeece698bf3c67b89f07e38a7ebcdde6f8fffc7dbd5d2698c4623a9ec763ba5ea758241984c2613b1e070381c0e07bbe5ca658a459a4d9e4f9ff7c3d9d46a35a25190482405137e' (b'0513' != b'4250')
-2021-09-08 17:34:28 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
-2021-09-08 17:34:39 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
-2021-09-08 17:35:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr_j4cFVPhxroR-Pbi7EZlNtporQ4CnRIW1NZwIq2WfYScQBQBG8tDgVlqAGMwJ-Ah9FY5fmd_MYLoqJYX5znlpnOJ1-K9EFGqRVed-MCwZOViWwWw8f4Ln_HPgKVeMpkyNOzXwjMXTxBrqT6lyrsshJgJAs2T6Pt6LU4tSdXF3-XyOGzN2JSWsyEffCYzefGxAL9?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE0Nzk4Mn0.nBwiyOH9Lshq-I_MSw4N-jdzgbU_fw3ScyKuOX-wh1if79DyLBad2i88ytYcxthN8EVCOFAybsffDKssMJ4VPs4rrLI3R5hz9skldMwQ3wdTaXUthbpmTbHBjjdpDpmh0JicLWfkV76vL_BH_Ir3ZqFXJnewFl70-Cc6UEmWNjUHr1m3v6PZRR-nWoazw_mGEmNqXz-An8PRBV9yB6WzFxTHpxQb2G5y1KD2E1W_tmapzJymMeuMsP3s8l2wR3YDn1GP7-Kle6LTJiu5UN5rMvPdVwQ4l_F7NDVZpUZhr9_T4fJsOqrEvCH9I903LnJLBAo3JFzp9CPv-a04qFIS3w
-2021-09-08 17:36:39 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'') while processing template 'Template("{{ (state_attr('sensor.firewall_wan_in_stats','change_rate')|float*8*(state_attr('sensor.firewall_wan_in_stats', 'sampling_size')-1)/1000000)|round(2) }}")' for attribute '_attr_native_value' in entity 'sensor.firewall_internet_in_mbps'
-2021-09-08 17:36:39 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'') while processing template 'Template("{{ (state_attr('sensor.firewall_wan_out_stats','change_rate')|float*8*(state_attr('sensor.firewall_wan_out_stats', 'sampling_size')-1)/1000000)|round(2) }}")' for attribute '_attr_native_value' in entity 'sensor.firewall_internet_out_mbps'
-2021-09-08 17:36:46 ERROR (MainThread) [homeassistant.components.template.cover] Received invalid cover is_on state: unavailable. Expected: open, opening, closed, closing, true, false
-2021-09-08 17:36:48 ERROR (MainThread) [iotawattpy.connection] Err: 
-2021-09-08 17:36:48 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+  File "/usr/local/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
+    self.application_controller = await app_controller_cls.new(
+  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
+    await app.startup(auto_form)
+  File "/usr/local/lib/python3.9/site-packages/bellows/zigbee/application.py", line 167, in startup
+    await ezsp.update_policies(self.config)
+  File "/usr/local/lib/python3.9/site-packages/bellows/ezsp/protocol.py", line 132, in update_policies
+    (status,) = await self.setPolicy(self.types.EzspPolicyId[policy], value)
+  File "/usr/local/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+2021-09-08 17:39:16 WARNING (MainThread) [homeassistant.config_entries] Config entry 'socket://192.168.7.171:8888' for zha integration not ready yet; Retrying in background
+2021-09-08 17:39:47 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-08 17:40:00 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-08 17:40:00 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
     self.data = await self._async_update_data()
@@ -38,13 +44,936 @@ Traceback (most recent call last):
     await self.api.update()
   File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
     await self._refreshSensors(timespan)
-  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 169, in _refreshSensors
-    values = json.loads(response.text)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
 AttributeError: 'NoneType' object has no attribute 'text'
-2021-09-08 17:36:48 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.sensor_count, old_state=<state sensor.sensor_count=453; friendly_name=Number of Sensors @ 2021-09-08T17:36:44.661038-07:00>, new_state=<state sensor.sensor_count=473; friendly_name=Number of Sensors @ 2021-09-08T17:36:46.882601-07:00>>, skipping template render for Template[{{ states.sensor | rejectattr('state', 'eq', 'unavailable') | list | count }}]
-2021-09-08 17:36:49 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
-2021-09-08 17:37:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-08 17:40:47 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: forecast_solar
+2021-09-08 17:40:56 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: Cannot connect to host 91.228.53.233:443 ssl:False [Connect call failed ('91.228.53.233', 443)]; Retrying in background
+2021-09-08 17:40:57 ERROR (MainThread) [homeassistant.components.automation.liam_lamp_power_on_from_tradfri] Unknown error while setting up trigger (empty result) Liam - Lamp: "Turn on" button pressed Tradfri
+2021-09-08 17:40:57 ERROR (MainThread) [homeassistant.components.automation.liam_lamp_dim_up_button_pressed_tradfri] Unknown error while setting up trigger (empty result) Liam - Lamp: "Dim Up" button pressed Tradfri
+2021-09-08 17:40:57 ERROR (MainThread) [homeassistant.components.automation.liam_lamp_dim_down_button_pressed_tradfri] Unknown error while setting up trigger (empty result) Liam - Lamp: "Dim Down" button pressed Tradfri
+2021-09-08 17:40:57 ERROR (MainThread) [homeassistant.components.automation.liam_lamp_left_button_pressed_tradfri] Unknown error while setting up trigger (empty result) Liam - Lamp: "Left" button pressed Tradfri
+2021-09-08 17:40:57 ERROR (MainThread) [homeassistant.components.automation.liam_lamp_right_button_pressed_tradfri] Unknown error while setting up trigger (empty result) Liam - Lamp: "Right" button pressed Tradfri
+2021-09-08 17:43:44 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 17:43:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 17:43:59 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 17:44:14 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 17:44:29 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 17:44:44 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 17:47:18 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-08 17:48:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 17:53:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 17:58:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 17:59:15 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 17:59:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE0OTQ0Mn0.DPuc7pNRHFaX5fhi6ZeG_7zn_4jJQ9mSnfRyN4djkJY81gXyU0E8624Juw77GcfUIwRtBdDZ04Ad5eNHoyNpAt9VoQQbKc9zUU3j6jHwKyhrLDxk-3PfouFe2KN0iz1TNP3grikYF0dBHbrQWspekF0ydD7vrgtyPtuJxu1FNdej3ArqebW897an9OxoO_TErmKwNm9NcCVAPN5RD3S2sEYY3CPXpLp4Q-sf3gcsCW2xjL61sHRu1kuNUMvhrnN-dejaVqRVvVX3QYSCg_LWJMRtorGwLElt4ohjwZ3zyqgjcvcxVmhzpgAB7_haJabZ8kKxwPiCU7TqeIF5CTxIrQ
+2021-09-08 18:00:21 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-08 18:03:43 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 18:03:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE0OTcxMn0.KCpFZcxDNpsHaI5Z2Vwj9yR1-mS_AyY3gPnzY_2TcpwCcB8mKVVZpPjTgGLHPQKjgBSyYvxSTCiYGaqA9prrpZJUrbTZOLSv_uO1F8Dk8v5mpJGB9825PjjJmawCvamxjRUikogBnW6zHGiLXmxVVTtO-J76SQ6Mr1YIvb0GSyWrJHPpvdLHSsJKPZBomgnxClOoCj6lTRmmPpr-OWMfzeDhLyKq1yPqIyJUkmZ2VJST_gEkBo-mF9T1N_85RvcK3Kz7_-bG0ejBfAGSx8VxDRaL0WSiFysGDTgLR12_3vZdRqbK6CzZFPfwQnbI5GK0aAM4pQP-whpTRzVuQXnUvA
+2021-09-08 18:03:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:08:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:12:02 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.iotawatt_total_sce_kwh has unknown unit None
+2021-09-08 18:12:02 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.iotawatt_total_solar_kwh has unknown unit None
+2021-09-08 18:12:02 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.iotawatt_export_to_grid_kwh has unknown unit None
+2021-09-08 18:12:02 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.daily_mains_energy has unknown unit None
+2021-09-08 18:12:03 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.weekly_mains_energy has unknown unit None
+2021-09-08 18:12:03 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.monthly_mains_energy has unknown unit None
+2021-09-08 18:12:03 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.quarterly_mains_energy has unknown unit None
+2021-09-08 18:12:03 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.yearly_mains_energy has unknown unit None
+2021-09-08 18:13:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:18:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:23:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:28:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:33:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:35:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1MTYwOX0.YIny8LQSaHHunWqp7vVRhPHODCM96U9XvQQZp4ZoBSU19bQE_vZXneTXBLWf_xpJw0V-jRNnUkRgypSguvN_JcWdUQnUxJp5Wj5bOx0IFodRKfzI2qDfmd9cBJG-IwRvWibXQG9YFdTxXo6zyTLrvPDrIyu2Z109hJ9kTf4JYwHqwxJM1FT3BMDQkyQZ1iThRpwvQEj5XndQgKfcMf7Ci7xqNHQEmVSFjFds2pVh1clHqJoSGZr52rbpSXaC6xotiaulrNJdAuYKw0_WAbPBVoVMUDoyeV_D49m7-43nDtlCMcmgQAB7y09KL3T2yP5KJpXmHDB0WziGHtp-oIFYBg
+2021-09-08 18:38:27 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-08 18:38:38 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-08 18:38:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-09-08 18:38:38 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-08 18:38:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:39:32 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 18:43:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:48:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:53:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 18:59:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:04:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:07:10 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 19:07:26 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 19:09:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:09:55 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_on
+2021-09-08 19:09:56 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-08 19:09:59 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-08 19:14:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:16:15 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:16:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NDA0NX0.DkUlKxD7E4joBm3nEruk3TL8LtjxBNLP8uC0_M9RLmY3aMgGl94TwYaUA98MpIQ0cn8z1BkerQynl5nXvrMbcOLCe6IzOxLiAxZYIJMWrPwFAuR6Uhbo-srm8HtJIUWIcWLNjoDF8yERTS9JVdlrIkQC1SXkhVGriMYQZyaObKIqgFYlFvgJrtS4NdK5wZsFuaGNDJcZSi8ATtBjuN5LSmSxX4mieQJTeu8hLwm8zSQM4vY-b3Zj6S1scaBumH2LuzZQZ6W68yw4W4QuU0jHZt_3epSQUcH1qAwIgpAhhyvQJNPK-fRrdrvu32rZkpChEoCBG1gxOeU198eMxdlDUw
+2021-09-08 19:19:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:24:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:29:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:34:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:39:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:43:13 ERROR (MainThread) [iotawattpy.connection] Err: All connection attempts failed
+2021-09-08 19:43:13 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-08 19:44:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:46:29 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-08 19:46:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-09-08 19:46:31 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-08 19:47:10 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-08 19:47:10 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:48:11 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:48:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:49:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:49:24 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:49:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:50:44 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:50:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:52:15 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:52:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:53:55 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:53:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:54:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:54:49 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-08 19:54:49 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-08 19:55:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:55:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:57:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:57:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 19:59:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 19:59:57 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 19:59:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:02:18 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:02:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:04:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:04:48 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:04:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:07:28 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:07:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:09:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:10:19 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:10:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:13:20 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:13:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:14:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:16:31 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:16:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:19:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:19:52 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:19:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:21:59 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-08 20:23:22 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:23:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:24:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:27:03 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:27:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:29:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:30:53 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:30:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:34:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:34:53 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:34:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:37:27 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:37:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1ODkxNX0.VrA9NY8MgI2pih3r9KVySxi4ImplM9xHGHkCboljcaGkW0uU-E_ccgMhJR_8ahv9GRshjIYjae6OrK8KZIyIxk09qSrXVXqPiIylTUKaQmqKWaehC2V_Cz9iZRv_2GbrPucURhRgcNyx9LW4U7jgsbo7_J0ASc5reV7hJU8a1fmvW53x2pq8hDZiBhkeSBwhsJWByF9WnhBO8U2v04trcyzFXBR23Ja75Dnc-yW8_pS3fVS_HawUtqh5viI7sct6TXKjr6Lsnnkm7XI2MOdWDvZcPNy79UK09lBelIx72nja9-nk2sHvnDqBXpoiy4UbfH3yfxu6o2M5UFrdmpPvKg
+2021-09-08 20:39:05 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:39:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:39:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:41:24 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 13: Internal error encountered.
+2021-09-08 20:41:58 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-08 20:41:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1OTE4Nn0.LW8SAMpVw-pkSn1EMxa3K_0P-rohpv2QwoQJ8xsjq3D0HM-8_zRxFMGOntl64xxoVXXn_fOWk5R24xWpXnRSiQGo9szsTToBw2YEZdyfVG-l1lpJQ2K37_dsQ-t5XRHaMBNiNk_id74BYvJLLYWWS4fiPhvjK08xGV7OYI1jzlZwkwRY5uB3sThJ12vBt9vQ16mj4Q96ZvPUIPPlWsoHzpJxUTeP9G4BOViYjDDZNoAQ8kryyvn1BoI3ORIOn1ICeCrFOE9RR7uicnle9ZMWg3OFDAajHG3kYoasc5TWCGEpQGvlh0rdbzixyMyWB2B-F514phAUJiEA_9efGNuU0w
+2021-09-08 20:42:38 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-08 20:42:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1OTE4Nn0.LW8SAMpVw-pkSn1EMxa3K_0P-rohpv2QwoQJ8xsjq3D0HM-8_zRxFMGOntl64xxoVXXn_fOWk5R24xWpXnRSiQGo9szsTToBw2YEZdyfVG-l1lpJQ2K37_dsQ-t5XRHaMBNiNk_id74BYvJLLYWWS4fiPhvjK08xGV7OYI1jzlZwkwRY5uB3sThJ12vBt9vQ16mj4Q96ZvPUIPPlWsoHzpJxUTeP9G4BOViYjDDZNoAQ8kryyvn1BoI3ORIOn1ICeCrFOE9RR7uicnle9ZMWg3OFDAajHG3kYoasc5TWCGEpQGvlh0rdbzixyMyWB2B-F514phAUJiEA_9efGNuU0w
+2021-09-08 20:43:25 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:43:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:43:29 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 403 Forbidden
+2021-09-08 20:43:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1OTE4Nn0.LW8SAMpVw-pkSn1EMxa3K_0P-rohpv2QwoQJ8xsjq3D0HM-8_zRxFMGOntl64xxoVXXn_fOWk5R24xWpXnRSiQGo9szsTToBw2YEZdyfVG-l1lpJQ2K37_dsQ-t5XRHaMBNiNk_id74BYvJLLYWWS4fiPhvjK08xGV7OYI1jzlZwkwRY5uB3sThJ12vBt9vQ16mj4Q96ZvPUIPPlWsoHzpJxUTeP9G4BOViYjDDZNoAQ8kryyvn1BoI3ORIOn1ICeCrFOE9RR7uicnle9ZMWg3OFDAajHG3kYoasc5TWCGEpQGvlh0rdbzixyMyWB2B-F514phAUJiEA_9efGNuU0w
+2021-09-08 20:44:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:47:55 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:47:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:49:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:51:39 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:51:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1OTcyN30.T_-QbnP0GL6IZvZPn8FiCGFvVzPSg1bgxMNXWHclUon-i3toi181lN-kJT33W20YRuX21VgzixowRlhUqwz_RAIZkEgq-VUyunNc0L-0OJ5uq0o_nGsHNU6fWaEWHfa0EKqeNfcW21oSyUs02Wl4hdXN8cuVR-x45bMkwq5dRRoMSaiLZ6PaomJxeOGWKxGbI8NpnbRXewrpY95Y0UUpOiYMqCg6JL8pcsktLFRbKRdA89fxxv1yG729j-eBImx6Z9Ez3slgBOfXaTwtvIT44N2wPERIViZIlRaiZXdmvGAMcOHOihfljwmevqf09_lfrlWWXR5QTlUmxVoYnCBlFg
+2021-09-08 20:52:36 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:52:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:54:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 20:57:27 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 20:57:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 20:59:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:02:27 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:02:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:04:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:05:21 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:05:21 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MDUzOX0.j02cJ2UIC82TqtFOOG9eXRx8Z0Wfg29O6YpfD7TLhDQti2y3CZ5XUoVqyTdQp3IEMuLz90ak0ohMTukkXSs2jORPes_NeF3G7mXdb8Lrt_myjN6YGiaDZh7apLzKp-kJFkvpPsVDPTeaeSyXvwIMmFoPfqIQZO0ZinbDfufaQRyqzGyvMx-97UDGOZIwFX7g6JCZ8cLVbPnEp0RMWwKTZQyz5TvBra-tYJ4_HGLEZ6PYB33IPe242xFHJomT3J27Q7LSHoTMzj4nqLGrJ_i7ecDcvGTyNuGDeIHxkFjgu6h1iV1aJbxE3hh4DHZwjP4yAb8lPI3QawLRYwBYnyNfmg
+2021-09-08 21:06:58 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:06:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MDUzOX0.j02cJ2UIC82TqtFOOG9eXRx8Z0Wfg29O6YpfD7TLhDQti2y3CZ5XUoVqyTdQp3IEMuLz90ak0ohMTukkXSs2jORPes_NeF3G7mXdb8Lrt_myjN6YGiaDZh7apLzKp-kJFkvpPsVDPTeaeSyXvwIMmFoPfqIQZO0ZinbDfufaQRyqzGyvMx-97UDGOZIwFX7g6JCZ8cLVbPnEp0RMWwKTZQyz5TvBra-tYJ4_HGLEZ6PYB33IPe242xFHJomT3J27Q7LSHoTMzj4nqLGrJ_i7ecDcvGTyNuGDeIHxkFjgu6h1iV1aJbxE3hh4DHZwjP4yAb8lPI3QawLRYwBYnyNfmg
+2021-09-08 21:07:38 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:07:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:09:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:10:11 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:10:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MDgwOX0.NJcLraF3CaYSh4BhE8Ox6FkXns4C5k7GbdXGqNMIvS7OfgecxSbpbQ_q_2WGunOdC-hqi5W3rBt_cOZxGSmNPUbu1Dd-V3oDMDqFfzUajZgcdGNSu4LN8DvxG_WF7wwtkobTZrGfmKUNzcqS33-xceOcfcXLjJKSBXevtx0ugwqZHJJcDkBWqb7onAErLLpNVuNSxqGkBIEe2-N4itEjeh7nuSUS8apH1QpvBYz_hpzn6NRpDQ96GIgA-z1RFxMChGpILwA5WiVcI2I0v5oTa1vVUqkfELHTgWQwfTKT4ON8BUjXJ6mdHU54VQZ08j7jXW0MIIu1fbX8S7zsmRR3uw
+2021-09-08 21:12:58 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:12:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:14:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:14:53 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:14:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MTA4MH0.DPqBozRFQG6rG8hEXnb8dWbuAnf8N2SIzLJkssNfNFulqFyyjjOvb9sBQh2XxNbw9pReBNKFCv9KehHyvjPiwvsEcylzM_vJX1ag85DBOTI6WB9xOVjfQWwqfxCzrWwR1_msgAjOerz5t-3dIIOj07fx3zGily927YFbxjyKCem5abzPscXXlontLTswl-Ms-SeNkLXshbMZEBi2mUGqP880XXgad2Em4iBE9nhGEYHMrkZ55AQYmQDofl1IQ9M4GoF0Q0c7KaP_IbumGMCz9JwDFTvad-_SO3Nq_SENmZmJ5tdFfDHUy4Gr1XiXULDU-lQV0c6byeXRJKr3B_cawA
+2021-09-08 21:17:22 ERROR (SyncWorker_3) [homeassistant.util.yaml.loader] mapping values are not allowed here
+  in "/config/configuration.yaml", line 104, column 25
+2021-09-08 21:18:29 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:18:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:19:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:23:57 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-08 21:24:03 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:24:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MTYyMX0.isla8jGTXx-afF4U8EZG-Nb_xtMv3HuwOdtV646XTEVTJNUZVpLNKZ555G0PU4rb8VyGOm6Z80bKoin_LsvYu154Cbp_nHf3-tv_glu8IeGioI8DEOTLlASfb-mOYzm5cPHqJKKli82hMx3JkI1Ip2cwMzdzL4MjdwJPIv-zwTAFazTeiogCJM3Bw5TAo4LwxUmB0WdddRZj4wVzPNMXrLIk4ZWMeS3kfMlJJW7yiSTl2a7rS-_zXwGs2h20Oh7RYW-eMXu61f3Yo5RZia_5xZNj08293npQq4WcTfZ7LyuMCjvcyr2SthnOSwgmSlXzbvRh8OzojSYpocpilANOxQ
+2021-09-08 21:24:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:24:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:26:03 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:29:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:29:59 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:29:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:34:23 ERROR (MainThread) [pubnub] session.request exception: [Errno 104] Connection reset by peer
+2021-09-08 21:34:23 ERROR (MainThread) [pubnub] Exception in subscribe loop: [Errno 104] Connection reset by peer
+2021-09-08 21:34:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:36:00 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:36:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:37:44 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:37:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MjQzM30.OyBTenypJsBpsZrdSdpYjrEhizKmdvV-AeL5c6WSry_9jZrgZ4p-gqb0T7RBJ2d4PywoSuxPqkTZZkVVA7bZCtOwBQuOIIZGuIrtWmSc_JKUVWjEYlD66FsgxWhieTAu75o84bIDQOY8klWXwPVZKODTJLWqktQWZjfn6J_sYcjgSZzc5DeqIWufBt3WbvVd-1chUyfzs1BXoRvEY5DvU6V2yWV8oGJ27ilrFsrqlA8GHBsgAw9NpBAKynipao7QQacDV0-bkVTmU-buYnAbj67vOsMoRVBe6uhCMIopGGwO_TOg7kHWQDzSRhhroVQEjrh_Kj87Mw52UiX7XEpQIQ
+2021-09-08 21:39:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.seventeentrack_packages_delivered is taking over 10 seconds
+2021-09-08 21:39:24 WARNING (MainThread) [homeassistant.components.sensor] Updating seventeentrack sensor took longer than the scheduled update interval 0:00:30
+2021-09-08 21:39:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:40:05 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:40:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2MjQzM30.OyBTenypJsBpsZrdSdpYjrEhizKmdvV-AeL5c6WSry_9jZrgZ4p-gqb0T7RBJ2d4PywoSuxPqkTZZkVVA7bZCtOwBQuOIIZGuIrtWmSc_JKUVWjEYlD66FsgxWhieTAu75o84bIDQOY8klWXwPVZKODTJLWqktQWZjfn6J_sYcjgSZzc5DeqIWufBt3WbvVd-1chUyfzs1BXoRvEY5DvU6V2yWV8oGJ27ilrFsrqlA8GHBsgAw9NpBAKynipao7QQacDV0-bkVTmU-buYnAbj67vOsMoRVBe6uhCMIopGGwO_TOg7kHWQDzSRhhroVQEjrh_Kj87Mw52UiX7XEpQIQ
+2021-09-08 21:42:13 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:42:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:42:25 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 21:42:40 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 21:44:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:48:33 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:48:33 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:49:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:54:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:55:04 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 21:55:04 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 21:59:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 21:59:49 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-08 22:01:44 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:01:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:04:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:08:34 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:08:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:09:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:10:56 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-08 22:10:56 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-08 22:14:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:15:35 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:15:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:19:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:22:45 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:22:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:24:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:29:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:30:06 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:30:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:34:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:37:36 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:37:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:39:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:43:09 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-08 22:43:09 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-08 22:43:43 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-08 22:43:43 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-08 22:44:43 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-08 22:44:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:45:17 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:45:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:47:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/asyncio/selector_events.py", line 856, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/httpcore/_backends/anyio.py", line 60, in read
+    return await self.stream.receive(n)
+  File "/usr/local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 1095, in receive
+    raise self._protocol.exception
+anyio.BrokenResourceError
+2021-09-08 22:49:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:53:07 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 22:53:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 22:53:37 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 22:53:52 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-08 22:54:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 22:59:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.sophia_wled
+2021-09-08 23:01:08 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:01:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:04:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:09:18 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:09:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:09:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:14:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:17:38 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:17:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:19:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:24:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:26:09 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:26:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:26:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3lHlNR7bgqPJO_YEi14knFOMGy0kxFYVWfLuiGv8jsScQBQBG8tR5vR0-AnT3AlSJC-iqpkj9UuO87Ghfu6joPhK9-Yo49gr9xAZILHHiz2o_7SrcwfFzvdT89R7k9yG3CUHHUIO0neY2DeFEN4wKKmF_9BFBMkVaw8iifp5NrCODFhWuhoysgubEX0DNg6U0A0?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE2ODkyN30.oGPLLVYoHWqDjN5-DtdU6TGQ4SJpaQ7miQ6vQaLyVw5qKOXixtmPoCsw0W3EP7n9hOE9auQwFjvyq-103Sx0HTB-_pD_U7cLgV_NzT1jVlbhVv9b3zUPlwccwU9bC188kWGnq4M7oohC24fp0ezJAJg5YNK-00RBGqaDlLoV7Q8qRueoz0n0Ql-z-UxJCU38DZtPyMuVNaU0AT40NMUdTP28Boa_cQy-RQy1lZS-0xnK9HNSAMt4hZ5vjoU10PTzNqeMQQG0Gt3OeFEB-ovuqOL39fs-alwk9SYl4C_ZxgKkLPtxDy4m4sdkYDuPmlh6eGIAPolvDTHiQVukYHxaiA
+2021-09-08 23:29:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:34:39 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:34:49 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:34:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:34:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:39:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:43:40 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:43:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:44:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:49:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-08 23:52:40 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-08 23:52:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-08 23:54:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:00:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:01:51 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:01:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:05:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:10:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:11:11 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:11:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:15:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:20:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:20:42 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:20:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:25:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:30:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:30:22 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:30:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:32:06 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-09 00:32:06 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-09 00:35:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:40:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:40:15 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:40:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:45:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:50:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 00:50:16 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 00:50:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 00:55:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:00:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:00:26 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:00:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:05:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:10:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:10:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:10:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:12:46 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.iss fails
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 446, in async_update_ha_state
+    await self.async_device_update()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 641, in async_device_update
+    raise exc
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/iss/binary_sensor.py", line 99, in update
+    self.iss_data.update()
+  File "/usr/src/homeassistant/homeassistant/util/__init__.py", line 277, in wrapper
+    result = method(*args, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/iss/binary_sensor.py", line 119, in update
+    self.is_above = iss.is_ISS_above(self.latitude, self.longitude)
+  File "/usr/local/lib/python3.9/site-packages/pyiss/__init__.py", line 140, in is_ISS_above
+    test = self.pass_times(latitude, longitude, altitude, 2)
+  File "/usr/local/lib/python3.9/site-packages/pyiss/__init__.py", line 93, in pass_times
+    raise Exception("Error server n {}".format(data.status_code))
+Exception: Error server n 500
+2021-09-09 01:15:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:16:39 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-09 01:16:39 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'mappingproxy object' has no attribute 'iss_position' when rendering '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude | float }}"}'
+2021-09-09 01:16:39 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] ISS Location Update: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-09 01:16:39 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] Error while executing automation automation.iss_location_update: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-09 01:19:15 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.iss fails
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 446, in async_update_ha_state
+    await self.async_device_update()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 641, in async_device_update
+    raise exc
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/iss/binary_sensor.py", line 99, in update
+    self.iss_data.update()
+  File "/usr/src/homeassistant/homeassistant/util/__init__.py", line 277, in wrapper
+    result = method(*args, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/iss/binary_sensor.py", line 119, in update
+    self.is_above = iss.is_ISS_above(self.latitude, self.longitude)
+  File "/usr/local/lib/python3.9/site-packages/pyiss/__init__.py", line 140, in is_ISS_above
+    test = self.pass_times(latitude, longitude, altitude, 2)
+  File "/usr/local/lib/python3.9/site-packages/pyiss/__init__.py", line 93, in pass_times
+    raise Exception("Error server n {}".format(data.status_code))
+Exception: Error server n 500
+2021-09-09 01:20:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:21:17 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:21:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:22:52 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-09 01:22:52 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-09 01:25:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:30:15 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-09 01:30:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:31:57 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:31:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:35:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:40:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:42:48 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:42:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:45:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:50:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 01:52:38 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 01:52:53 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 01:53:08 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 01:53:23 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 01:53:38 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 01:53:48 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 01:53:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 01:55:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:00:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:02:52 ERROR (Recorder) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-09 02:04:59 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 02:04:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 02:05:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:10:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:15:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:16:19 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 02:16:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 02:20:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:25:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:27:49 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 02:27:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 02:29:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.seventeentrack_packages_delivered is taking over 10 seconds
+2021-09-09 02:30:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:35:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:39:30 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 02:39:30 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 02:40:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:41:36 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-09 02:45:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:50:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:51:20 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 02:51:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr2LNT_ubpJk1sNqv96pYUwbq5iIoEPsQvyR6mx9q59AScQBQBG8tIMJBlJI22svN4fI3kdit_hY26LN9M4Mk_X9TelIofup7VEWm0L9vICSsX1qojjAjqvwoqIHbrUN9GwFnoP4OunGD0PM2a9zMs5mXCTcZRNxOE-zZaGh-2aGOyDrqGrj6UdgejYKAvpGDhsp3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTE1NTY2OH0.QVJLC0a_o7q8iGM90LlygdDcFYsop4sxKxVPF4rBjoK-2C2JKjFWd42hteO7jNuJt2a4hE6Iw_hRS2sf014p3SQej32vEqJ_vc_aRuakNXDm2vyGfpYXM5UVrz1OPQFxEIU9TyzeEdm3KodeGS5dapW5NSDxMg2V7OnmAkUZ5jNQHYDL1kWQVGXLwSOl23AxNHDnNi4bBfoJWXxE7kRqOlArMELSG0ErapdXhLQAN_hXzww5etpxgChkcKqejd235bY5PyecxSBKgCOefT7sXaHcPinIl_bB63qAusDhIDy3HJB_jfQLwjftg5GZbbQddMMtjEgcTdHBxtgAQH_Ocw
+2021-09-09 02:55:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 02:55:54 WARNING (Thread-12) [pychromecast.socket_client] [Kitchen speaker(192.168.20.124):8009] Heartbeat timeout, resetting connection
+2021-09-09 02:59:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.seventeentrack_packages_delivered is taking over 10 seconds
+2021-09-09 03:00:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 03:01:08 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
