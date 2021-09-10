@@ -1,936 +1,50 @@
-2021-09-09 15:19:11 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:15 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Received invalid command: energy/info
-2021-09-09 15:19:21 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
-2021-09-09 15:19:22 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:19:22 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Cerezo House HA' for forecast_solar integration not ready yet: The Forecast.Solar API is unreachable, ; Retrying in background
-2021-09-09 15:19:23 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
-2021-09-09 15:19:24 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-09 15:19:24 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
-2021-09-09 15:19:29 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
-2021-09-09 15:19:30 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-09 15:19:31 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform seventeentrack is taking over 10 seconds.
-2021-09-09 15:19:45 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:19:55 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:19:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
-2021-09-09 15:20:17 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:20:58 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:22:20 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:23:39 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 15:23:39 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 15:23:43 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:23:56 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 15:23:56 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 15:24:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 20:33:06 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sun2 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:11 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22830812307712] Received invalid command: energy/info
+2021-09-09 20:33:17 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.cpu_temp (<class 'homeassistant.components.command_line.sensor.CommandSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+command_line%22
+2021-09-09 20:33:19 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Roku Smart Soundbar' for roku integration not ready yet: Invalid response from API: Error occurred while communicating with device; Retrying in background
+2021-09-09 20:33:21 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.attictemp1_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-09 20:33:21 WARNING (MainThread) [homeassistant.components.sensor] Entity sensor.garagesidedoorsensor_bme280_dewpoint (<class 'homeassistant.components.tasmota.sensor.TasmotaSensor'>) with device_class None reports a temperature in °C which will be converted to °F. Temperature conversion for entities without correct device_class is deprecated and will be removed from Home Assistant Core 2022.3. Please update your configuration if device_class is manually configured, otherwise create a bug report at https://github.com/home-assistant/core/issues?q=is%3Aopen+is%3Aissue+label%3A%22integration%3A+tasmota%22
+2021-09-09 20:33:25 WARNING (MainThread) [homeassistant.config_entries] Config entry '192.168.7.195' for wled integration not ready yet: Invalid response from API: Error occurred while communicating with WLED device at 192.168.7.195; Retrying in background
+2021-09-09 20:34:01 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:34:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NTEyN30.Wuxi03EPpiKsp1Q_CkU_gDhwiWCkmKN48noIzhkc1LTgUkPnoo2OjvNs1xxhHiAaZ8RXlCy3mMWeh7kceZCOXO8pOAD1_E8dpICnFF44Q3KbK11WEKdSha8-XaHkRUZiNvYGoL0ElpAyHFKYvR5knKpXSmWeQDhIB0jJEXSMKY2MOBAnhG0pdcFrG3H17hNXwjm-TBhOzdzLBzUKxX4TuOIYHt2ic0sb2ePG3_cGo-84A7vsWd-kKYePrKgYSRdGey0fMYcWTD2NBAPMcPSZ_QeF85Xv_aQ3Y-N0hJFMC6pqBQOPfaEGcj8kU419iTyQEw4vMpCzp9AqPbip3M2voQ
+2021-09-09 20:34:25 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:34:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NTEyN30.Wuxi03EPpiKsp1Q_CkU_gDhwiWCkmKN48noIzhkc1LTgUkPnoo2OjvNs1xxhHiAaZ8RXlCy3mMWeh7kceZCOXO8pOAD1_E8dpICnFF44Q3KbK11WEKdSha8-XaHkRUZiNvYGoL0ElpAyHFKYvR5knKpXSmWeQDhIB0jJEXSMKY2MOBAnhG0pdcFrG3H17hNXwjm-TBhOzdzLBzUKxX4TuOIYHt2ic0sb2ePG3_cGo-84A7vsWd-kKYePrKgYSRdGey0fMYcWTD2NBAPMcPSZ_QeF85Xv_aQ3Y-N0hJFMC6pqBQOPfaEGcj8kU419iTyQEw4vMpCzp9AqPbip3M2voQ
+2021-09-09 20:34:58 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:34:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NTEyN30.Wuxi03EPpiKsp1Q_CkU_gDhwiWCkmKN48noIzhkc1LTgUkPnoo2OjvNs1xxhHiAaZ8RXlCy3mMWeh7kceZCOXO8pOAD1_E8dpICnFF44Q3KbK11WEKdSha8-XaHkRUZiNvYGoL0ElpAyHFKYvR5knKpXSmWeQDhIB0jJEXSMKY2MOBAnhG0pdcFrG3H17hNXwjm-TBhOzdzLBzUKxX4TuOIYHt2ic0sb2ePG3_cGo-84A7vsWd-kKYePrKgYSRdGey0fMYcWTD2NBAPMcPSZ_QeF85Xv_aQ3Y-N0hJFMC6pqBQOPfaEGcj8kU419iTyQEw4vMpCzp9AqPbip3M2voQ
+2021-09-09 20:35:40 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:35:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NTEyN30.Wuxi03EPpiKsp1Q_CkU_gDhwiWCkmKN48noIzhkc1LTgUkPnoo2OjvNs1xxhHiAaZ8RXlCy3mMWeh7kceZCOXO8pOAD1_E8dpICnFF44Q3KbK11WEKdSha8-XaHkRUZiNvYGoL0ElpAyHFKYvR5knKpXSmWeQDhIB0jJEXSMKY2MOBAnhG0pdcFrG3H17hNXwjm-TBhOzdzLBzUKxX4TuOIYHt2ic0sb2ePG3_cGo-84A7vsWd-kKYePrKgYSRdGey0fMYcWTD2NBAPMcPSZ_QeF85Xv_aQ3Y-N0hJFMC6pqBQOPfaEGcj8kU419iTyQEw4vMpCzp9AqPbip3M2voQ
+2021-09-09 20:38:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:25:05 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:26:25 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:27:46 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:29:07 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:29:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 20:42:59 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:42:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr3zvsVH2gvoYeXMrwVTFF2hBjY5lIgUZhK8E2y2STk4ScQAFjsOTcrpVcbV6jH2vrriGOH1H9acInibLRSiquO1d_sjsGqC4m7-Ye1fX9buqhrpQ6lJ08d2E6cLLcecSIUSFTOf47WMwStwjDfpt316EQkuSQ4m4AxjvTTmfVdHQG4O9X3hGjsH8X2CVPVm_fFzM?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NTY2OH0.JtWqyJimTSpF0nHPUXwlFttK_vxic_ovGWFUEL1a9hqSYQQZ-zmpxeoXGf6NW8U35t5ApxB5ih3tKoBiNn5BMS_deqPbRJ0Pt_0YRWklFi1KTS4aG3eNsxAQh1WT35drs0ED72hn6Y2_uV8Yu3Vi-qV69GbdieTsYaM9TK8j4zOqABcpTQvKmkWNdwbfUXGkwYmyG4oWGJ-BTxAJvfaVvdz9Iu_p9cCqcLYaX4aTDj2iRSm7sp5tqYI1wDlP2mjnrR6dWgO8iVd8Zi6xIM_Lr63ytt6imEL-aximz24DJ0HERnTW6teb1jik8akfAPzk3QCovq_rBZB2RHKQX4oAvA
+2021-09-09 20:43:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:29:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.seventeentrack_packages_delivered is taking over 10 seconds
-2021-09-09 15:30:28 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:30:44 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-09 15:34:09 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:34:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 20:48:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:35:30 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:36:51 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:38:11 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:39:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:39:34 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:40:57 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:42:18 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:43:38 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:44:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:44:59 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:46:20 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:47:43 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:49:03 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:49:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:50:24 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:51:46 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:53:08 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:54:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:54:28 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:55:49 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:57:12 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:58:33 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 15:59:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 15:59:54 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:00:05 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:00:05 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462783666160] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:02:37 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:03:58 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:04:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:05:21 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:06:42 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:08:03 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:09:23 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:09:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:10:44 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:12:00 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.iotawatt_gridexport has unknown unit None
-2021-09-09 16:12:05 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:13:25 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:14:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:14:48 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:16:08 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:17:29 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:18:50 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:19:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:20:10 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:20:40 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 16:21:19 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:19 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:20 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [22462467460784] Error handling message: Unknown error
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 25, in _handle_async_response
-    await func(hass, connection, msg)
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 85, in with_manager
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/energy/websocket_api.py", line 215, in ws_solar_forecast
-    forecast = await forecast_platforms[config_entry.domain](hass, config_entry_id)
-  File "/usr/src/homeassistant/homeassistant/components/forecast_solar/energy.py", line 13, in async_get_solar_forecast
-    coordinator = hass.data[DOMAIN].get(config_entry_id)
-KeyError: 'forecast_solar'
-2021-09-09 16:21:31 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:22:52 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:24:13 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:24:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:25:34 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:26:55 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:28:15 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:29:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:29:37 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:29:52 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 16:31:02 ERROR (MainThread) [homeassistant.components.forecast_solar] Unexpected error fetching forecast_solar data: The Forecast.Solar API is unreachable, 
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
-    self.data = await self._async_update_data()
-  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 147, in _async_update_data
-    return await self.update_method()
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 138, in estimate
-    data = await self._request(
-  File "/usr/local/lib/python3.9/site-packages/forecast_solar/__init__.py", line 105, in _request
-    raise ForecastSolarConnectionError(
-forecast_solar.exceptions.ForecastSolarConnectionError: The Forecast.Solar API is unreachable, 
-2021-09-09 16:32:15 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:32:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMDYxNH0.XmbGsU-K6zhbSjHsrnARiOCwib1I3uJSbwBuvWDa9glvjV5ngXBrX5VsyuyZkqBReX4uDMDsACareAcRxUI7KvcBJ5_vv_Yl8LKwP_cg7YjALWjZmJd4TsZOl7309Qkm9TpLMo2jfva4y97KoDbtaYWBYuxOAT2V1JFqi8InbQ6bKO3YyeZhA1yaBj_r78y5TGSWgJQyYqkGGztZCg3ToCWYybknEv29KpJHF1qw0kv0zdfI3s1FjhCa9zTVYyYHo4oPzg6XMQugNGul5yscqfqDMqBEN_f-ax2-KF4QZTu12c2LKrgdUSdP7yco5s9EHgQq0YaVn_IGX-UUI2F48g
-2021-09-09 16:34:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:36:55 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:36:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMDg4NH0.CZHI-c9dO8wpeqnR0ON0osFe_7xYP8q-UF6roZNtg76bgYy2qvBqMUjXi3zfvPoCpHqO-RN4NG3r8QYQGYvcGICDMJSxF9gn4D0pt65sbWHC6Ahc6o9pj0bToZoM1WBUThhOytgTZ7L6mib-d8ApjdOPWjFmFOjFcHj2l-EMDUz8bSK-vmaqSuamAXpRx3Hw1R3EaPuwTX_XqoOrING9GP4N3capj_nICK-WdZMyMUT0UeqooRg2gXTHddskM97Iu7nYcvGPevlYLyILcucuPRiILad6RAUZWO4A8qGWZz4kSkFx3ViDge7x3_V7GX2MELwKduvSJ8qgwqLJTuyHYA
-2021-09-09 16:37:36 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:37:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMDg4NH0.CZHI-c9dO8wpeqnR0ON0osFe_7xYP8q-UF6roZNtg76bgYy2qvBqMUjXi3zfvPoCpHqO-RN4NG3r8QYQGYvcGICDMJSxF9gn4D0pt65sbWHC6Ahc6o9pj0bToZoM1WBUThhOytgTZ7L6mib-d8ApjdOPWjFmFOjFcHj2l-EMDUz8bSK-vmaqSuamAXpRx3Hw1R3EaPuwTX_XqoOrING9GP4N3capj_nICK-WdZMyMUT0UeqooRg2gXTHddskM97Iu7nYcvGPevlYLyILcucuPRiILad6RAUZWO4A8qGWZz4kSkFx3ViDge7x3_V7GX2MELwKduvSJ8qgwqLJTuyHYA
-2021-09-09 16:39:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:41:46 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:41:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMTE1NX0.TNZC3YP3bdziSLJBBM7WtoUmQg5yWgcfbf3EwAKUJoi14QQcfbEFfeFKZdZ8ghv26dc5psQGbhkh9C0IQFOnYmvYTJk_uY4A0kqZXCX44F99nNY8f8niMLqjHCcERRjkmCMS5qHU1MP5QePOP5Gz3zavkgBn-5DRvxqmJwjGZar5VVv5EHwOLiqLsaPkN0zIlP-ICbUo3KMydZTU-L71LdCEXnQBzHlBgHOFYfdtDdM5OhZ_DLFqrnAz7hlMOBznZ2BjSUhqB7zXOTyB_IC9dQ7BkVi7RoQCjBnmjoKZQETgp-c8izLomYfiwBwyjmtXFRoH8Fv8izBOxV3XoLO__w
-2021-09-09 16:44:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:49:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:54:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 16:54:42 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:54:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxry_Z9Je9kVzNq3w12s5d0POO3GuuwXBEsTJ7RpR1n7sScQAFjsOT7aVypiYDoMMdsvVYKjI3jB-ibV54icp_cJD7jWcuPXKsxXcrQkvDvW2yGHbNPwbAF0e8Mb19zNKO5SdPha1i3A2RcOwjVihEluj1ozab_r-adkWGrgVFWXLCaGABVsrN-dj5tK5REe2tz5t3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMTk2N30.gYpDcPiGnGtrn37N467bUk7AkADRYQPYvlvBetE1P5oj0IK_Z3ZLdYweu8Kzm8lIOJyb1sHBEMq8KdjPyAUrdCXjK3DTrVQCx7AxXzs_9kmiBTufhicd5Kk8i0uoO4h-hzSvLg0tqCLEmEYTVOfE1mhOpAP6lU-WCMDo5f1IFmnfieABaUG9jwaQc4rTjkUzONqieovmbUEUGGubWWIHy599bh5cMMeULt11LUtft2mEUg4Mfv68UEu7O5eRvAi1u3AlWKJhz-_i3Z1oJMI4qxJlcM0-wWPY4D3xFZiL9ImSI8POLvUnwiIRz4yDiHDMt1yG6bIw0ImLP-G0faUSYw
-2021-09-09 16:55:29 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:55:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMTk2N30.gYpDcPiGnGtrn37N467bUk7AkADRYQPYvlvBetE1P5oj0IK_Z3ZLdYweu8Kzm8lIOJyb1sHBEMq8KdjPyAUrdCXjK3DTrVQCx7AxXzs_9kmiBTufhicd5Kk8i0uoO4h-hzSvLg0tqCLEmEYTVOfE1mhOpAP6lU-WCMDo5f1IFmnfieABaUG9jwaQc4rTjkUzONqieovmbUEUGGubWWIHy599bh5cMMeULt11LUtft2mEUg4Mfv68UEu7O5eRvAi1u3AlWKJhz-_i3Z1oJMI4qxJlcM0-wWPY4D3xFZiL9ImSI8POLvUnwiIRz4yDiHDMt1yG6bIw0ImLP-G0faUSYw
-2021-09-09 16:56:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 16:56:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxrwAHwW13iwO_pKF6w1XzdpBbv3tO6vO5cq7PUvNWaLsScQAFjsOTMLX9dSQHmeGVAmwGUG8Yy_UbXq-xhNvJNqVv8DHpkkUAVWxEgiuBpk8Hnp384h5IXxI9z_NSjWO_03ulEo6e0y5vTcd-kWnBp4c1uz6VXQh7jv83g0AgM3zfbmb5U6lyBpulZqlS69mz8qMG?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTIzMTk2N30.gYpDcPiGnGtrn37N467bUk7AkADRYQPYvlvBetE1P5oj0IK_Z3ZLdYweu8Kzm8lIOJyb1sHBEMq8KdjPyAUrdCXjK3DTrVQCx7AxXzs_9kmiBTufhicd5Kk8i0uoO4h-hzSvLg0tqCLEmEYTVOfE1mhOpAP6lU-WCMDo5f1IFmnfieABaUG9jwaQc4rTjkUzONqieovmbUEUGGubWWIHy599bh5cMMeULt11LUtft2mEUg4Mfv68UEu7O5eRvAi1u3AlWKJhz-_i3Z1oJMI4qxJlcM0-wWPY4D3xFZiL9ImSI8POLvUnwiIRz4yDiHDMt1yG6bIw0ImLP-G0faUSYw
-2021-09-09 16:59:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:02:38 ERROR (stream_worker) [libav.tls] Error in the pull function.
-2021-09-09 17:02:38 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-09 17:02:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
-2021-09-09 17:02:42 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-09 17:02:44 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-09 17:04:22 ERROR (SyncWorker_1) [homeassistant.components.co2signal] Unexpected exception
+2021-09-09 20:49:17 ERROR (SyncWorker_2) [homeassistant.components.co2signal] Unexpected exception
 Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/components/co2signal/__init__.py", line 119, in get_data
     data = CO2Signal.get_latest(
@@ -945,111 +59,49 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 400, in raw_decode
     return self.scan_once(s, idx=_w(s, idx).end())
 simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-2021-09-09 17:04:22 ERROR (MainThread) [homeassistant.components.co2signal] Error fetching co2signal data: 
-2021-09-09 17:04:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 20:49:17 ERROR (MainThread) [homeassistant.components.co2signal] Error fetching co2signal data: 
+2021-09-09 20:50:36 WARNING (Thread-10) [pychromecast.socket_client] [Liam Home Mini(192.168.6.222):8009] Heartbeat timeout, resetting connection
+2021-09-09 20:50:43 ERROR (Thread-10) [pychromecast.socket_client] [Liam Home Mini(192.168.6.222):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.6.222', 8009)), retrying in 5.0s
+2021-09-09 20:51:44 WARNING (MainThread) [homeassistant.components.template.template_entity] Template loop detected while processing event: <Event state_changed[L]: entity_id=sensor.entities_count, old_state=<state sensor.entities_count=725; friendly_name=Number of Entities @ 2021-09-09T20:49:44.788148-07:00>, new_state=<state sensor.entities_count=724; friendly_name=Number of Entities @ 2021-09-09T20:50:44.794992-07:00>>, skipping template render for Template[{{ states | rejectattr('state', 'eq', 'unavailable') | list | count}}]
+2021-09-09 20:52:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:52:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NjIxMH0.Cg461pfb3piJDX-EHKcOlvEmDXmUnJh4z284VNEvetTZ-NvMwO7c5H_iOF9gJM-mVsUhbwybwVVO4vigelvNlQvBl8x69kbEq2R1dV8rlxmxbPeER8RX0c3plHnn0h31-ahoOke61p3rrlUPeGLaUEM-g094qaOMHaTEzV6x-IN4m5IzCJIeXB7U8LSQy5Kgi0Z_cxYPpHioPzhhqKWPRgGkjdThNtLy27yL0IsfueZ_nIL_UjC85etv-kQ1g3GFZhnzXPYJnmbPl5cuhyrnVwp66_5dhTdluKeRdeMRwa3yBjfUpFuWm55jorV_T6PeDvkovu_lXRTcHNVx9IQRpA
+2021-09-09 20:53:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:09:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 20:53:35 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-09 20:53:42 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:53:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxr3ACnS5aOb98j37KDKsoPQUygQ7bCkAmrdKmHMABGp4ScQAFjsOT7fgcc8k59nBnLGliiUrAS_LHOhqgEIPAlMoH8rbVf_2CCG_TjCvVBMlmC9gMMcCeifcgaMB2pUNNGHdfwIJ27rOQIZ_ZC9dBFbizvqM_nW7X5K4uVuZvYslOteS6h_zqkanwU_qaPlYRdRh2?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NjIxMH0.Cg461pfb3piJDX-EHKcOlvEmDXmUnJh4z284VNEvetTZ-NvMwO7c5H_iOF9gJM-mVsUhbwybwVVO4vigelvNlQvBl8x69kbEq2R1dV8rlxmxbPeER8RX0c3plHnn0h31-ahoOke61p3rrlUPeGLaUEM-g094qaOMHaTEzV6x-IN4m5IzCJIeXB7U8LSQy5Kgi0Z_cxYPpHioPzhhqKWPRgGkjdThNtLy27yL0IsfueZ_nIL_UjC85etv-kQ1g3GFZhnzXPYJnmbPl5cuhyrnVwp66_5dhTdluKeRdeMRwa3yBjfUpFuWm55jorV_T6PeDvkovu_lXRTcHNVx9IQRpA
+2021-09-09 20:56:41 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
+2021-09-09 20:56:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-bravo.dropcam.com:443/sdm_live_stream/CiQA2vuxr3zvsVH2gvoYeXMrwVTFF2hBjY5lIgUZhK8E2y2STk4ScQAFjsOTcrpVcbV6jH2vrriGOH1H9acInibLRSiquO1d_sjsGqC4m7-Ye1fX9buqhrpQ6lJ08d2E6cLLcecSIUSFTOf47WMwStwjDfpt316EQkuSQ4m4AxjvTTmfVdHQG4O9X3hGjsH8X2CVPVm_fFzM?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NjQ4MH0.T_662xdQFxNRPAs-yqUQxCQKZ4ujqDVU0v18eDXdmFAD3L4yoNrmAoAF22PtvyV6ppjfpWz9fpL4CVQZ5GpVWbt4ho2UJfbLY1CKZCyV1AxeKckiivrojDdbIHT4HKm9cE0sDJnqyPV7xFbsDkNF4zGLiQJevJHzfw79eebcB-jlAaCMzc2yn_zMM74IEwGJfftoMIAZ0Dsmrlb-bjVjARqT_18qzGYvDfv0IfzB7BepUQQZe5tUZOIbJWLglSwTQVIrnLEBwtA8_BH_2hR4kyoD4d6l06hEyu8CJiY9YbNLhLwIiEfAAXRJmS1pVeK4EfL9A9qawELqyoFqEMoCiw
+2021-09-09 20:58:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:14:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:03:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:17:35 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 17:19:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:04:17 ERROR (SyncWorker_1) [homeassistant.components.co2signal] Unexpected exception
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:24:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:29:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:34:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:39:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:44:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:46:14 ERROR (MainThread) [frontend.js.latest.202108300] https://3hn0pigkolfj5459ps2gnq0jwb6qgqmq.ui.nabu.casa/frontend_latest/core.9dd583b2.js:1:7650 Uncaught Error: Suspend promise not set
-2021-09-09 17:49:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:54:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 17:59:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:04:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:09:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:14:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:19:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:24:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:29:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:34:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:39:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:40:23 ERROR (MainThread) [iotawattpy.connection] Err: 
-2021-09-09 18:40:23 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+  File "/usr/src/homeassistant/homeassistant/components/co2signal/__init__.py", line 119, in get_data
+    data = CO2Signal.get_latest(
+  File "/usr/local/lib/python3.9/site-packages/CO2Signal/co2signal.py", line 34, in get_latest
+    latest_data = (requests
+  File "/usr/local/lib/python3.9/site-packages/requests/models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/__init__.py", line 525, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-09-09 21:06:58 ERROR (MainThread) [iotawattpy.connection] Err: All connection attempts failed
+2021-09-09 21:06:58 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
     self.data = await self._async_update_data()
@@ -1060,136 +112,446 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
     results = response.text
 AttributeError: 'NoneType' object has no attribute 'text'
-2021-09-09 18:44:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:08:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:49:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:08:45 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:12:01 WARNING (Recorder) [homeassistant.components.sensor.recorder] sensor.iotawatt_simexport has unknown unit None
+2021-09-09 21:13:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 18:54:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:14:57 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-09 21:18:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:00:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:18:52 ERROR (stream_worker) [libav.tls] Error in the pull function.
+2021-09-09 21:18:52 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-09 21:18:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-09-09 21:18:53 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-09 21:19:17 ERROR (SyncWorker_10) [homeassistant.components.co2signal] Unexpected exception
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/co2signal/__init__.py", line 119, in get_data
+    data = CO2Signal.get_latest(
+  File "/usr/local/lib/python3.9/site-packages/CO2Signal/co2signal.py", line 34, in get_latest
+    latest_data = (requests
+  File "/usr/local/lib/python3.9/site-packages/requests/models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/__init__.py", line 525, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-09-09 21:23:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:01:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
-2021-09-09 19:03:22 ERROR (MainThread) [homeassistant.components.roku.coordinator] Error fetching roku data: Invalid response from API: Timeout occurred while connecting to device
-2021-09-09 19:05:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:24:28 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:24:43 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:24:58 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:25:13 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:25:28 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
+2021-09-09 21:27:29 WARNING (bellows.thread_0) [bellows.uart] Reset future is None
+2021-09-09 21:27:30 WARNING (bellows.thread_0) [bellows.uart] Reset future is None
+2021-09-09 21:28:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:05:10 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
-2021-09-09 19:08:32 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities scene.kitchen_sink_on
-2021-09-09 19:08:36 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
-2021-09-09 19:10:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:28:29 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS observation station SAUC1 data: 503, message='Service Unavailable', url=URL('https://api.weather.gov/stations/SAUC1/observations')
+2021-09-09 21:33:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:15:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:34:17 ERROR (SyncWorker_6) [homeassistant.components.co2signal] Unexpected exception
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/co2signal/__init__.py", line 119, in get_data
+    data = CO2Signal.get_latest(
+  File "/usr/local/lib/python3.9/site-packages/CO2Signal/co2signal.py", line 34, in get_latest
+    latest_data = (requests
+  File "/usr/local/lib/python3.9/site-packages/requests/models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/__init__.py", line 525, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/local/lib/python3.9/site-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-09-09 21:37:53 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2021-09-09 21:38:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:20:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:43:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:22:16 ERROR (stream_worker) [libav.tls] Error in the pull function.
-2021-09-09 19:22:16 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-09 19:22:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
-2021-09-09 19:22:46 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
-2021-09-09 19:23:24 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 19:23:26 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
-2021-09-09 19:25:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:48:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:30:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:53:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:35:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 21:58:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:35:49 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
-2021-09-09 19:40:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:03:30 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:42:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Stream has no video
-2021-09-09 19:45:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:08:31 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:50:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:13:32 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 19:51:13 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 19:51:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxry_Z9Je9kVzNq3w12s5d0POO3GuuwXBEsTJ7RpR1n7sScQAFjsOT7aVypiYDoMMdsvVYKjI3jB-ibV54icp_cJD7jWcuPXKsxXcrQkvDvW2yGHbNPwbAF0e8Mb19zNKO5SdPha1i3A2RcOwjVihEluj1ozab_r-adkWGrgVFWXLCaGABVsrN-dj5tK5REe2tz5t3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0MjUyMH0.G7iUs3MCI6UEDKjkZBmz7odVnN-x9fF5_wzLqPXB8mSEalgE3AoAggGXPty9s5mHxQxwWFIaQXq_v4MkaGj990mz0gzYrVQgHP-O_Mpi5k_-U3u7OjDJkav4BPdoYXytMs6WUwJbzP6xAdFabfgd_5Mlwa6hlLIUtjpAthi26JiEgnHmnY-Sl0Ne3B0yba7LRGCKf4DZZsPlgaapKTTR3H0AKrliCJEA2KBMrILS7E_YhXsiYkYI_8IwbcI6l8snA-Kmrc10HAdRVV3bDRb_HDeE7keVtry5Kd590WJcZHDdtBld1lBNkM5nBN5EeczUBfLLIJF97VLF4alCctSn0A
-2021-09-09 19:55:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:13:47 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2021-09-09 22:18:33 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:00:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:23:34 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:05:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:28:35 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:10:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:33:36 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:12:17 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 20:12:32 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 20:12:47 WARNING (MainThread) [bellows.zigbee.application] Watchdog heartbeat timeout: 
-2021-09-09 20:15:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:38:37 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:18:29 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 20:18:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxry_Z9Je9kVzNq3w12s5d0POO3GuuwXBEsTJ7RpR1n7sScQAFjsOT7aVypiYDoMMdsvVYKjI3jB-ibV54icp_cJD7jWcuPXKsxXcrQkvDvW2yGHbNPwbAF0e8Mb19zNKO5SdPha1i3A2RcOwjVihEluj1ozab_r-adkWGrgVFWXLCaGABVsrN-dj5tK5REe2tz5t3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NDE0NX0.Gaxh39l7Nz_nFnTBPKbSjh_kHk2rQpbqz4PEsHMcvd7yBG5_PzpAVG570eJmFiJu68sCffvPUE0QV1Axn9isAeN__u31JMp8Ve6SzAyPqv7LSOc4bot2ZnMuq2v-lxs5uNgHt2qldB3YS86wddyEsC-NylCqhxdRcnLZ88mSXqainL2p7IgQLQz_EPCQhgwj-F7gYVW09KivYSeplnz27VaH7MtvMsM7BaSv1PaBu4V52dh6hAR78E-ziKEEu5NLbd3UEuY-7ydJ0FWXUmi6rRwEc2Xq1YH8MVcQdR0YQwXF6wdjJmlaz8kSAcPJgz3LOkTkaAyJmbQN_XmRhoYmVQ
-2021-09-09 20:19:40 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 20:19:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxry_Z9Je9kVzNq3w12s5d0POO3GuuwXBEsTJ7RpR1n7sScQAFjsOT7aVypiYDoMMdsvVYKjI3jB-ibV54icp_cJD7jWcuPXKsxXcrQkvDvW2yGHbNPwbAF0e8Mb19zNKO5SdPha1i3A2RcOwjVihEluj1ozab_r-adkWGrgVFWXLCaGABVsrN-dj5tK5REe2tz5t3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NDE0NX0.Gaxh39l7Nz_nFnTBPKbSjh_kHk2rQpbqz4PEsHMcvd7yBG5_PzpAVG570eJmFiJu68sCffvPUE0QV1Axn9isAeN__u31JMp8Ve6SzAyPqv7LSOc4bot2ZnMuq2v-lxs5uNgHt2qldB3YS86wddyEsC-NylCqhxdRcnLZ88mSXqainL2p7IgQLQz_EPCQhgwj-F7gYVW09KivYSeplnz27VaH7MtvMsM7BaSv1PaBu4V52dh6hAR78E-ziKEEu5NLbd3UEuY-7ydJ0FWXUmi6rRwEc2Xq1YH8MVcQdR0YQwXF6wdjJmlaz8kSAcPJgz3LOkTkaAyJmbQN_XmRhoYmVQ
-2021-09-09 20:20:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:43:38 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:21:03 ERROR (stream_worker) [libav.rtsp] method DESCRIBE failed: 404 Not Found
-2021-09-09 20:21:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsps://stream-uc2-delta.dropcam.com:443/sdm_live_stream/CiQA2vuxry_Z9Je9kVzNq3w12s5d0POO3GuuwXBEsTJ7RpR1n7sScQAFjsOT7aVypiYDoMMdsvVYKjI3jB-ibV54icp_cJD7jWcuPXKsxXcrQkvDvW2yGHbNPwbAF0e8Mb19zNKO5SdPha1i3A2RcOwjVihEluj1ozab_r-adkWGrgVFWXLCaGABVsrN-dj5tK5REe2tz5t3?auth=g.0.eyJraWQiOiIyMzhiNTUxZmMyM2EyM2Y4M2E2ZTE3MmJjZTg0YmU3ZjgxMzAzMmM4IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJuZXN0LXNlY3VyaXR5LWF1dGhwcm94eSIsInN1YiI6Im5lc3RfaWQ6bmVzdC1waG9lbml4LXByb2Q6MjEyMTgxNDEiLCJwb2wiOiIzcC1vYXV0aC1zY29wZS1BUElfU0RNX1NFUlZJQ0UtY2xpZW50LTIwMjQyNzMxODczNS1qNXQ5bWMyMzZqaG85YXMycWY0dTZxY3NmYW1kaGJ0ci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImV4cCI6MTYzMTI0NDE0NX0.Gaxh39l7Nz_nFnTBPKbSjh_kHk2rQpbqz4PEsHMcvd7yBG5_PzpAVG570eJmFiJu68sCffvPUE0QV1Axn9isAeN__u31JMp8Ve6SzAyPqv7LSOc4bot2ZnMuq2v-lxs5uNgHt2qldB3YS86wddyEsC-NylCqhxdRcnLZ88mSXqainL2p7IgQLQz_EPCQhgwj-F7gYVW09KivYSeplnz27VaH7MtvMsM7BaSv1PaBu4V52dh6hAR78E-ziKEEu5NLbd3UEuY-7ydJ0FWXUmi6rRwEc2Xq1YH8MVcQdR0YQwXF6wdjJmlaz8kSAcPJgz3LOkTkaAyJmbQN_XmRhoYmVQ
-2021-09-09 20:25:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:48:39 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
 TypeError: update() takes 1 positional argument but 2 were given
-2021-09-09 20:30:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+2021-09-09 22:53:40 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 22:57:51 ERROR (stream_worker) [libav.tls] Error in the pull function.
+2021-09-09 22:57:51 ERROR (stream_worker) [libav.tls] The specified session has been invalidated for some reason.
+2021-09-09 22:57:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-09-09 22:58:41 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:00:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.sophia_wled
+2021-09-09 23:03:42 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:08:43 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:13:44 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:18:45 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:23:46 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:23:48 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-09 23:23:48 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-09 23:28:47 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:33:48 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:38:49 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:43:24 ERROR (MainThread) [homeassistant.components.nws] Error requesting NWS forecast station SAUC1 data: 500, message='Internal Server Error', url=URL('https://api.weather.gov/gridpoints/LOX/146,60/forecast')
+2021-09-09 23:43:50 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:48:51 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:49:00 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities light.hue_lightstrip_2
+2021-09-09 23:53:52 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-09 23:58:53 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:03:54 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:08:55 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:13:56 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:18:57 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:23:58 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:28:59 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:34:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:36:52 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:36:52 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'mappingproxy object' has no attribute 'iss_position' when rendering '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude | float }}"}'
+2021-09-10 00:36:52 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] ISS Location Update: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-10 00:36:52 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] Error while executing automation automation.iss_location_update: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-10 00:38:51 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:38:52 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:38:52 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'mappingproxy object' has no attribute 'iss_position' when rendering '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude | float }}"}'
+2021-09-10 00:38:52 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] ISS Location Update: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-10 00:38:52 ERROR (MainThread) [homeassistant.components.automation.iss_location_update] Error while executing automation automation.iss_location_update: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'iss_position'
+2021-09-10 00:39:01 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:39:05 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:39:20 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:39:26 WARNING (MainThread) [homeassistant.components.rest.sensor] REST result could not be parsed as JSON
+2021-09-10 00:44:02 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:49:03 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:54:04 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 00:59:05 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:04:06 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:09:07 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:14:08 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:19:09 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:24:10 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:29:11 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:34:12 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:39:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:44:14 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:49:15 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:54:16 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 01:59:17 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:04:18 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:09:19 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:14:20 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:19:21 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:24:22 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:29:23 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:34:24 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:39:25 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:44:26 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:49:27 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:53:29 ERROR (MainThread) [iotawattpy.connection] Err: 
+2021-09-10 02:53:29 ERROR (MainThread) [homeassistant.components.iotawatt.coordinator] Unexpected error fetching 192.168.20.195 data: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 187, in _async_refresh
+    self.data = await self._async_update_data()
+  File "/usr/src/homeassistant/homeassistant/components/iotawatt/coordinator.py", line 55, in _async_update_data
+    await self.api.update()
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 66, in update
+    await self._refreshSensors(timespan)
+  File "/usr/local/lib/python3.9/site-packages/iotawattpy/iotawatt.py", line 100, in _refreshSensors
+    results = response.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2021-09-10 02:54:28 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: update() takes 1 positional argument but 2 were given
+2021-09-10 02:59:29 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
     result = self.fn(*self.args, **self.kwargs)
