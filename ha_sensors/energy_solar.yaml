@@ -1,15 +1,5 @@
 - platform: template
   sensors:
-    solar_combined_power:
-      value_template: "{{ (states('sensor.shelly_em_b05a54_meter_power_0') | float) + (states('sensor.shelly_em_b05a54_meter_power_1') | float) }}"
-      unit_of_measurement: 'W'
-      friendly_name: 'Solar Meter Power Combined'
-      device_class: power
-    solar_combined_energy:
-      value_template: "{{ (states('sensor.shelly_em_b05a54_meter_energy_0') | float) + (states('sensor.shelly_em_b05a54_meter_energy_1') | float) }}"
-      unit_of_measurement: kWh
-      friendly_name: 'Solar Meter Energy Combined'
-      device_class: energy
     total_monitored_dev:
       value_template: >-
         {{ (states('sensor.aidans31_energy_power') | float)

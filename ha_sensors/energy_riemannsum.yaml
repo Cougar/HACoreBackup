@@ -10,6 +10,11 @@
   round: 2
 - platform: integration
   source: sensor.mainsexport
-  name: iotawatt_export_to_grid_kwh
+  name: iotawatt_exporttogrid_kwh
+  unit_prefix: k
+  round: 2
+- platform: integration
+  source: sensor.mainsexport
+  name: iotawatt_gridexport
   unit_prefix: k
   round: 2

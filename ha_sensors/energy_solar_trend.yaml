@@ -1,4 +1,0 @@
--platform: trend
-sensors:
-  solar_trend:
-    entity_id: sensor.solar_energy
