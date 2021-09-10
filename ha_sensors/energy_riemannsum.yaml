@@ -18,3 +18,8 @@
   name: iotawatt_gridexport
   unit_prefix: k
   round: 2
+- platform: integration
+  source: sensor.simexport
+  name: iotawatt_simexport
+  unit_prefix: k
+  round: 2
