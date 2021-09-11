@@ -19,3 +19,11 @@
       unit_of_measurement: 'W'
       friendly_name: 'Total Monitored Power Combined'
       device_class: power
+    daily_solar_savings:
+      value_template: >-
+        {{ (states.sensor.daily_solar_energy.state | float * 0.20) | round(2) }}
+    telsa_combined:
+      value_template: "{{ (states('sensor.shelly_em_b05a54_meter_power_0') | float) + (states('sensor.shelly_em_b05a54_meter_power_1') | float) }}"
+      unit_of_measurement: 'W'
+      friendly_name: 'Tesla Power Combined'
+      device_class: power
