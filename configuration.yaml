@@ -86,3 +86,18 @@ utility_meter:
   yearly_mains_energy:
     source: sensor.iotawatt_total_sce_kwh
     cycle: yearly
+  daily_tesla_energy:
+    source: sensor.tesla_combined_kwh
+    cycle: daily
+  weekly_tesla_energy:
+    source: sensor.tesla_combined_kwh
+    cycle: weekly
+  monthly_tesla_energy:
+    source: sensor.tesla_combined_kwh
+    cycle: monthly
+  quarterly_tesla_energy:
+    source: sensor.tesla_combined_kwh
+    cycle: quarterly
+  yearly_tesla_energy:
+    source: sensor.tesla_combined_kwh
+    cycle: yearly

@@ -1,0 +1,3 @@
+source: sensor.tesla_combined_kwh
+name: daily_tesla_energy
+cycle: daily
