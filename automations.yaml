@@ -1031,3 +1031,26 @@
     entity_id: light.sophia_wled
     domain: light
   mode: single
+- id: '1631584691166'
+  alias: Stop google idle
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /2
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: media_player.googlehome9543
+      state: 'off'
+    - condition: state
+      entity_id: media_player.googlehome9543
+      state: idle
+  action:
+  - service: media_player.play_media
+    data:
+      media_content_id: media-source://media_source/local/1-second-of-silence.mp3
+      media_content_type: music
+    target:
+      entity_id: media_player.googlehome9543
+  mode: single
