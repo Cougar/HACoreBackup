@@ -1032,7 +1032,7 @@
     domain: light
   mode: single
 - id: '1631584691166'
-  alias: Stop google idle
+  alias: 'Utilities: Stop google idle - googlehome9543'
   description: ''
   trigger:
   - platform: time_pattern
@@ -1045,6 +1045,29 @@
       state: 'off'
     - condition: state
       entity_id: media_player.googlehome9543
+      state: idle
+  action:
+  - service: media_player.play_media
+    data:
+      media_content_id: media-source://media_source/local/1-second-of-silence.mp3
+      media_content_type: music
+    target:
+      entity_id: media_player.googlehome9543
+  mode: single
+- id: '1631635613842'
+  alias: 'Utilities: Stop google idle - kitchen'
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /2
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      state: 'off'
+      entity_id: media_player.googlehome5821
+    - condition: state
+      entity_id: media_player.googlehome5821
       state: idle
   action:
   - service: media_player.play_media

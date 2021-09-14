@@ -16,8 +16,8 @@ trigger:
 
 condition:
   - condition: time
-    after: '09:29:00'
-    before: '21:30:00'
+    after: '07:00:00'
+    before: '23:00:00'
 #  - condition: or  #Either we are home or Guest_Mode is on.
 #    conditions:
 #      - condition: state
@@ -38,7 +38,7 @@ action:
   - service: media_player.play_media
     data:
       entity_id: >
-        media_player.googlehome9543, media_player.kitchen_home
+        media_player.googlehome9543, media_player.googlehome5821
       media_content_id: >
         {% if now().strftime("%M")|int == 30 %}
         https://raw.githubusercontent.com/brianmccarty/Home-AssistantConfig/master/config/sounds/cuckoo-clock-01.wav
