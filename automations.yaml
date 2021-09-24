@@ -1100,3 +1100,35 @@
     target:
       entity_id: media_player.googlehome9543
   mode: single
+- id: '1632507197274'
+  alias: Aqara Magic Cube
+  description: ''
+  use_blueprint:
+    path: brent/zha-aqara-magic-cube-57-actions.yaml
+    input:
+      remote: de3ec5d1f17ef8b25bfe9532ea448805
+      cube_flip_1:
+      - type: turn_on
+        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
+        entity_id: switch.brianofficeledbar
+        domain: switch
+      cube_flip_2: []
+      cube_flip_4:
+      - type: turn_off
+        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
+        entity_id: switch.brianofficeledbar
+        domain: switch
+- id: '1632507789431'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: zigbee2mqtt/MagicCube
+  condition:
+  - condition: template
+    value_template: '{{ "flip180" == trigger.payload_json.action }}'
+  action:
+  - service: switch.toggle
+    target:
+      entity_id: switch.brianofficeledbar
+  mode: single

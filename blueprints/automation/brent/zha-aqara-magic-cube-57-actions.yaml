@@ -8,8 +8,8 @@ blueprint:
       description: Select the Aqara Magic Cube device
       selector:
         device:
-          integration: zha
-          manufacturer: LUMI
+          integration: mqtt
+          manufacturer: Xiaomi
     flip_90:
       name: Flip 90 degrees
       description: 'Actions to run when cube flips 90 degrees.
