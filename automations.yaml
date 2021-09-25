@@ -116,7 +116,7 @@
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    entity_id: binary_sensor.laundry_motion_occupancy
     to: 'on'
   condition:
   - condition: state
@@ -132,7 +132,7 @@
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.laundryroommotion_a7254423_ias_zone
+    entity_id: binary_sensor.laundry_motion_occupancy
     to: 'off'
     from: 'on'
   condition: []
@@ -1119,7 +1119,7 @@
         entity_id: switch.brianofficeledbar
         domain: switch
 - id: '1632507789431'
-  alias: New Automation
+  alias: Office - Brian - Cube 180 Light Toggle
   description: ''
   trigger:
   - platform: mqtt
@@ -1131,4 +1131,32 @@
   - service: switch.toggle
     target:
       entity_id: switch.brianofficeledbar
+  mode: single
+- id: '1632527534244'
+  alias: Office - Brian - Cube Left Rotate - Speaker Power Off
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: zigbee2mqtt/MagicCube
+  condition:
+  - condition: template
+    value_template: '{{ "rotate_left" == trigger.payload_json.action }}'
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.gosund_wp9_1
+  mode: single
+- id: '1632527571877'
+  alias: Office - Brian - Cube Left Rotate - Speaker Power On
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: zigbee2mqtt/MagicCube
+  condition:
+  - condition: template
+    value_template: '{{ "rotate_right" == trigger.payload_json.action }}'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.gosund_wp9_1
   mode: single
