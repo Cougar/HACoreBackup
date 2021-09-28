@@ -1155,3 +1155,27 @@
     target:
       entity_id: switch.gosund_wp9_1
   mode: single
+- id: '1632801572689'
+  alias: Aidan Off
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:00:00
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.aidan_pc1
+  mode: single
+- id: '1632801609839'
+  alias: Aidan On
+  description: ''
+  trigger:
+  - platform: time
+    at: 06:00:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.aidan_pc1
+  mode: single
