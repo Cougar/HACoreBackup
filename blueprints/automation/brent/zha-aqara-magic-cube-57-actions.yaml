@@ -8,8 +8,8 @@ blueprint:
       description: Select the Aqara Magic Cube device
       selector:
         device:
-          integration: mqtt
-          manufacturer: Xiaomi
+          integration: zha
+          manufacturer: LUMI
     flip_90:
       name: Flip 90 degrees
       description: 'Actions to run when cube flips 90 degrees.
@@ -448,6 +448,9 @@ action:
     from_face: "\n{% if command == \"flip\" and flip_degrees == 90 %}\n\n  {{ ((value\
       \ - flip90 - (trigger.event.data.args.activated_face - 1)) / 8) + 1 | int }}\n\
       \n{% endif %}\n"
+    relative_degrees: "\n{% if command == \"rotate_right\" or command == \"rotate_left\"\
+      \ %}\n\n  {{ trigger.event.data.args.relative_degrees | float }}\n\n{% endif\
+      \ %}\n"
 - choose:
   - conditions:
     - '{{ command == ''rotate_right'' }}'
@@ -581,7 +584,7 @@ action:
       - conditions: '{{ activated_face == 6 }}'
         sequence: !input 'three_to_six'
   - conditions:
-    - '{{ value == knock + activated_face - 1 }}'
+    - '{{ command == ''knock'' and not knock_any_side }}'
     sequence:
     - choose:
       - conditions: '{{ activated_face == 1 }}'
