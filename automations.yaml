@@ -691,30 +691,7 @@
     event: sunset
   condition: []
   action:
-  - type: turn_on
-    device_id: 2a828858a9bd7a45b0880961613d6190
-    entity_id: light.outsidelight
-    domain: light
-  - service: light.turn_on
-    target:
-      entity_id: light.porchlight
-    data:
-      brightness_pct: 40
-  - type: turn_on
-    device_id: 112ba05910558f51eb5ed1c26baecfa9
-    entity_id: light.fireplacelight
-    domain: light
-    brightness_pct: 76
-  - service: light.turn_on
-    data:
-      brightness: 8
-      color_temp: 370
-    target:
-      entity_id: light.kitchensink
-  - type: turn_on
-    device_id: 93ab05e23b299762055d1349646d0a16
-    entity_id: switch.garagepowertoolswitch
-    domain: switch
+  - scene: scene.sunset
   mode: single
 - id: '1628393139476'
   alias: 'Office - Amber: Light on Accent On'

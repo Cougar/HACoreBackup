@@ -22,20 +22,14 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'off'
-    light.kitchensink:
-      min_mireds: 150
-      max_mireds: 500
-      effect_list:
-      - blink
-      - breathe
-      - okay
-      - channel_change
-      - finish_effect
-      - stop_effect
+    light.kitchen_sink_2aea0203_level_light_color_on_off:
+      min_mireds: 153
+      max_mireds: 370
       supported_color_modes:
       - color_temp
-      friendly_name: KitchenSink
-      supported_features: 47
+      off_brightness:
+      friendly_name: Kitchen_Sink 2aea0203 level, light_color, on_off
+      supported_features: 43
       state: 'off'
   icon: mdi:weather-sunset-up
 - id: '1628378245893'
@@ -67,20 +61,13 @@
     switch.garagepowertoolswitch:
       friendly_name: GaragePowerToolSwitch
       state: 'on'
-    light.kitchensink:
-      min_mireds: 150
-      max_mireds: 500
-      effect_list:
-      - blink
-      - breathe
-      - okay
-      - channel_change
-      - finish_effect
-      - stop_effect
+    light.kitchen_sink_2aea0203_level_light_color_on_off:
+      min_mireds: 153
+      max_mireds: 370
       supported_color_modes:
       - color_temp
       color_mode: color_temp
-      brightness: 110
+      brightness: 3
       color_temp: 370
       hs_color:
       - 28.391
@@ -92,8 +79,9 @@
       xy_color:
       - 0.526
       - 0.387
-      friendly_name: KitchenSink
-      supported_features: 47
+      off_brightness:
+      friendly_name: Kitchen_Sink 2aea0203 level, light_color, on_off
+      supported_features: 43
       state: 'on'
   icon: mdi:weather-sunset-down
 - id: '1630351513157'
