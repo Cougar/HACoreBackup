@@ -1167,3 +1167,29 @@
       - service: switch.turn_off
         target:
           entity_id: switch.gosund_wp9_1
+- id: '1639292603851'
+  alias: XMAS Tree On
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:00:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 1d03b9be54971bebdbb071be2ee60ec2
+    entity_id: switch.s31_temp01
+    domain: switch
+  mode: single
+- id: '1639292630646'
+  alias: XMAS Tree Off
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:59:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 1d03b9be54971bebdbb071be2ee60ec2
+    entity_id: switch.s31_temp01
+    domain: switch
+  mode: single
