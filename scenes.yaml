@@ -19,18 +19,14 @@
       friendly_name: FirePlaceLight
       supported_features: 0
       state: 'off'
-    switch.garagepowertoolswitch:
-      friendly_name: GaragePowerToolSwitch
-      state: 'off'
     light.kitchen_sink_2aea0203_level_light_color_on_off:
       min_mireds: 153
       max_mireds: 370
       supported_color_modes:
       - color_temp
-      off_brightness:
       friendly_name: Kitchen_Sink 2aea0203 level, light_color, on_off
       supported_features: 43
-      state: 'off'
+      state: unavailable
   icon: mdi:weather-sunset-up
 - id: '1628378245893'
   name: Sunset scene
@@ -58,31 +54,14 @@
       friendly_name: FirePlaceLight
       supported_features: 0
       state: 'on'
-    switch.garagepowertoolswitch:
-      friendly_name: GaragePowerToolSwitch
-      state: 'on'
     light.kitchen_sink_2aea0203_level_light_color_on_off:
       min_mireds: 153
       max_mireds: 370
       supported_color_modes:
       - color_temp
-      color_mode: color_temp
-      brightness: 3
-      color_temp: 370
-      hs_color:
-      - 28.391
-      - 65.659
-      rgb_color:
-      - 255
-      - 166
-      - 87
-      xy_color:
-      - 0.526
-      - 0.387
-      off_brightness:
       friendly_name: Kitchen_Sink 2aea0203 level, light_color, on_off
       supported_features: 43
-      state: 'on'
+      state: unavailable
   icon: mdi:weather-sunset-down
 - id: '1630351513157'
   name: AmberOfficeNight
