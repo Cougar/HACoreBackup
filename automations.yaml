@@ -682,6 +682,10 @@
   condition: []
   action:
   - scene: scene.sunrise
+  - type: turn_off
+    device_id: 3328961ff5b24d843add974265a358e0
+    entity_id: switch.shelly_2_5_68c63afb1f0e_relay_0
+    domain: switch
   mode: single
 - id: '1628378324806'
   alias: Sunset
@@ -692,6 +696,10 @@
   condition: []
   action:
   - scene: scene.sunset
+  - type: turn_on
+    device_id: 3328961ff5b24d843add974265a358e0
+    entity_id: switch.shelly_2_5_68c63afb1f0e_relay_0
+    domain: switch
   mode: single
 - id: '1628393139476'
   alias: 'Office - Amber: Light on Accent On'
