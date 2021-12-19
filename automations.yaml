@@ -1166,7 +1166,7 @@
       cube_flip_180:
       - type: toggle
         device_id: 4e17e97b1f978fb30965feb2ea46c2b5
-        entity_id: switch.sonoff_basic_relay
+        entity_id: switch.esphome_basic_01_relay
         domain: switch
       rotate_right:
       - service: switch.turn_on
