@@ -116,3 +116,103 @@
       friendly_name: LB_AmberOffice_01
       supported_features: 36
       state: 'on'
+- id: '1640315728781'
+  name: Scene_BrianOfficeSilentCareOn
+  entities:
+    light.silentcare01:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 222
+      color_temp: 330
+      hs_color:
+      - 27.777
+      - 56.086
+      rgb_color:
+      - 255
+      - 178
+      - 111
+      xy_color:
+      - 0.494
+      - 0.383
+      effect: None
+      friendly_name: SilentCare01
+      supported_features: 36
+      state: 'on'
+    light.silentcare02:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 232
+      color_temp: 330
+      hs_color:
+      - 27.777
+      - 56.086
+      rgb_color:
+      - 255
+      - 178
+      - 111
+      xy_color:
+      - 0.494
+      - 0.383
+      effect: None
+      friendly_name: SilentCare02
+      supported_features: 36
+      state: 'on'
+    switch.basic_office_brianled_relay:
+      friendly_name: basic_office_brianled Relay
+      state: 'on'
+- id: '1640315772189'
+  name: Scene_BrianOfficeSilentCareOff
+  entities:
+    light.silentcare01:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: SilentCare01
+      supported_features: 36
+      state: 'off'
+    light.silentcare02:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: SilentCare02
+      supported_features: 36
+      state: 'off'
+    switch.basic_office_brianled_relay:
+      friendly_name: basic_office_brianled Relay
+      state: 'off'

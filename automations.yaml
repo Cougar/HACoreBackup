@@ -1071,24 +1071,6 @@
     target:
       entity_id: media_player.googlehome9543
   mode: single
-- id: '1632507197274'
-  alias: Aqara Magic Cube
-  description: ''
-  use_blueprint:
-    path: brent/zha-aqara-magic-cube-57-actions.yaml
-    input:
-      remote: de3ec5d1f17ef8b25bfe9532ea448805
-      cube_flip_1:
-      - type: turn_on
-        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
-        entity_id: switch.brianofficeledbar
-        domain: switch
-      cube_flip_2: []
-      cube_flip_4:
-      - type: turn_off
-        device_id: 4e17e97b1f978fb30965feb2ea46c2b5
-        entity_id: switch.brianofficeledbar
-        domain: switch
 - id: '1632507789431'
   alias: Office - Brian - Cube 180 Light Toggle
   description: ''
@@ -1168,6 +1150,16 @@
         device_id: 4e17e97b1f978fb30965feb2ea46c2b5
         entity_id: switch.basic_office_brianled_relay
         domain: switch
+      - type: turn_on
+        device_id: 1baa8c5c30b7f0f96d01cb68eefd6072
+        entity_id: light.silentcare01
+        domain: light
+        brightness_pct: 330
+      - type: turn_on
+        device_id: e15ec0a9eefa399b130e3c58f61b6521
+        entity_id: light.silentcare02
+        domain: light
+        brightness_pct: 330
       rotate_right:
       - service: switch.turn_on
         target:
@@ -1202,3 +1194,20 @@
     entity_id: switch.plug_xmas_tree_relay
     domain: switch
   mode: single
+- id: '1640320126385'
+  alias: Aqara Magic Cube
+  description: ''
+  use_blueprint:
+    path: brent/zha-aqara-magic-cube-57-actions.yaml
+    input:
+      remote: b3ce2b1c1dc23e7ec88ae1c852649300
+      flip_180: true
+      cube_flip_180:
+      - condition: state
+        entity_id: switch.basic_office_brianled_relay
+        state: 'on'
+      - scene: scene.brianofficesilentcareoff
+      - condition: state
+        entity_id: switch.basic_office_brianled_relay
+        state: 'off'
+      - scene: scene.brianofficesilentcareon
