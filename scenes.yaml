@@ -7,12 +7,6 @@
       friendly_name: OutsideLight
       supported_features: 0
       state: 'off'
-    light.porchlight:
-      supported_color_modes:
-      - brightness
-      friendly_name: PorchLight
-      supported_features: 0
-      state: 'off'
     light.kitchen_sink_2aea0203_level_light_color_on_off:
       min_mireds: 153
       max_mireds: 370
@@ -25,7 +19,13 @@
     light.tas_mj03:
       supported_color_modes:
       - brightness
-      friendly_name: tas-MJ03
+      friendly_name: FirePlaceLight
+      supported_features: 32
+      state: 'off'
+    light.tas_mj02:
+      supported_color_modes:
+      - brightness
+      friendly_name: PorchLight
       supported_features: 32
       state: 'off'
   icon: mdi:weather-sunset-up
@@ -39,21 +39,13 @@
       friendly_name: OutsideLight
       supported_features: 0
       state: 'on'
-    light.porchlight:
-      supported_color_modes:
-      - brightness
-      color_mode: brightness
-      brightness: 102
-      friendly_name: PorchLight
-      supported_features: 0
-      state: 'on'
     light.kitchen_sink_2aea0203_level_light_color_on_off:
       min_mireds: 153
       max_mireds: 370
       supported_color_modes:
       - color_temp
       color_mode: color_temp
-      brightness: 254
+      brightness: 69
       color_temp: 370
       hs_color:
       - 28.391
@@ -74,7 +66,15 @@
       - brightness
       color_mode: brightness
       brightness: 178
-      friendly_name: tas-MJ03
+      friendly_name: FirePlaceLight
+      supported_features: 32
+      state: 'on'
+    light.tas_mj02:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 102
+      friendly_name: PorchLight
       supported_features: 32
       state: 'on'
   icon: mdi:weather-sunset-down
