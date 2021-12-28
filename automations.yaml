@@ -1206,22 +1206,15 @@
       flip_any: true
       cube_flip_2:
       - scene: scene.brianofficesilentcareoff
-      cube_flip_3:
-      - service: switch.toggle
+      cube_flip_3: []
+      cube_flip_4: []
+      cube_flip_5: []
+      cube_flip_6: []
+      rotate_right:
+      - service: switch.turn_on
         target:
           entity_id: switch.gosund_wp9_1
-      cube_flip_4:
-      - service: tts.google_translate_say
-        data:
-          entity_id: media_player.googlehome9543
-          message: '4'
-      cube_flip_5:
-      - service: tts.google_translate_say
-        data:
-          entity_id: media_player.googlehome9543
-          message: '5'
-      cube_flip_6:
-      - service: tts.google_translate_say
-        data:
-          entity_id: media_player.googlehome9543
-          message: '6'
+      rotate_left:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.gosund_wp9_1
