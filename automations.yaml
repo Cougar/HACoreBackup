@@ -1194,20 +1194,34 @@
     entity_id: switch.plug_xmas_tree_relay
     domain: switch
   mode: single
-- id: '1640320126385'
+- id: '1640653408036'
   alias: Aqara Magic Cube
   description: ''
   use_blueprint:
     path: brent/zha-aqara-magic-cube-57-actions.yaml
     input:
       remote: b3ce2b1c1dc23e7ec88ae1c852649300
-      flip_180: true
-      cube_flip_180:
-      - condition: state
-        entity_id: switch.basic_office_brianled_relay
-        state: 'on'
-      - scene: scene.brianofficesilentcareoff
-      - condition: state
-        entity_id: switch.basic_office_brianled_relay
-        state: 'off'
+      cube_flip_1:
       - scene: scene.brianofficesilentcareon
+      flip_any: true
+      cube_flip_2:
+      - scene: scene.brianofficesilentcareoff
+      cube_flip_3:
+      - service: switch.toggle
+        target:
+          entity_id: switch.gosund_wp9_1
+      cube_flip_4:
+      - service: tts.google_translate_say
+        data:
+          entity_id: media_player.googlehome9543
+          message: '4'
+      cube_flip_5:
+      - service: tts.google_translate_say
+        data:
+          entity_id: media_player.googlehome9543
+          message: '5'
+      cube_flip_6:
+      - service: tts.google_translate_say
+        data:
+          entity_id: media_player.googlehome9543
+          message: '6'
