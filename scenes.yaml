@@ -231,3 +231,66 @@
     switch.basic_office_brianled_relay:
       friendly_name: basic_office_brianled Relay
       state: 'off'
+- id: '1640844979461'
+  name: Scene_BrianOfficeSilentCareOnOrange
+  entities:
+    light.silentcare01:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 15
+      - 87
+      rgb_color:
+      - 255
+      - 88
+      - 33
+      xy_color:
+      - 0.647
+      - 0.332
+      effect: None
+      friendly_name: SilentCare01
+      supported_features: 36
+      state: 'on'
+    light.silentcare02:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - None
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 15
+      - 87
+      rgb_color:
+      - 255
+      - 88
+      - 33
+      xy_color:
+      - 0.647
+      - 0.332
+      effect: None
+      friendly_name: SilentCare02
+      supported_features: 36
+      state: 'on'
+    switch.basic_office_brianled_relay:
+      icon: mdi:wall-sconce-flat-variant
+      friendly_name: basic_office_brianled Relay
+      state: 'off'

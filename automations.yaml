@@ -1206,7 +1206,8 @@
       flip_any: true
       cube_flip_2:
       - scene: scene.brianofficesilentcareoff
-      cube_flip_3: []
+      cube_flip_3:
+      - scene: scene.scene_brianofficesilentcareonorange
       cube_flip_4: []
       cube_flip_5: []
       cube_flip_6: []
