@@ -58,7 +58,7 @@
       - 0.526
       - 0.387
       off_brightness:
-      friendly_name: Kitchen_Sink 2aea0203 level, light_color, on_off
+      friendly_name: Kitchen_Sink
       supported_features: 43
       state: 'on'
     light.tas_mj03:
