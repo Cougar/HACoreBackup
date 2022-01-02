@@ -1,0 +1,13 @@
+id: fdd2810a-d7aa-4493-b1d6-ff245797b25e
+alias: Patio2CancelTimerWhenOff
+description: ''
+trigger:
+  - platform: state
+    entity_id: light.patiolight2
+    to: 'off'
+condition: []
+action:
+  - service: timer.cancel
+    target:
+      entity_id: timer.patio2_light_on_countdown
+mode: single
