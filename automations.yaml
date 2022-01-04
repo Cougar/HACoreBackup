@@ -1203,9 +1203,17 @@
       remote: b3ce2b1c1dc23e7ec88ae1c852649300
       cube_flip_1:
       - scene: scene.brianofficesilentcareon
+      - type: turn_on
+        device_id: 980ba9232f8245683fe21da1b86a86f0
+        entity_id: switch.sonoff_s31_relay_2
+        domain: switch
       flip_any: true
       cube_flip_2:
       - scene: scene.brianofficesilentcareoff
+      - type: turn_off
+        device_id: 980ba9232f8245683fe21da1b86a86f0
+        entity_id: switch.sonoff_s31_relay_2
+        domain: switch
       cube_flip_3:
       - scene: scene.scene_brianofficesilentcareonorange
       cube_flip_4: []
