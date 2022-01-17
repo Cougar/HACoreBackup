@@ -1216,14 +1216,21 @@
         domain: switch
       cube_flip_3:
       - scene: scene.scene_brianofficesilentcareonorange
-      cube_flip_4: []
+      cube_flip_4:
+      - type: turn_on
+        device_id: 62086df16b75fd274d90e43c6eae0a51
+        entity_id: light.brianofficelight
+        domain: light
+        brightness_pct: 40
       cube_flip_5: []
       cube_flip_6: []
       rotate_right:
-      - service: switch.turn_on
-        target:
-          entity_id: switch.gosund_wp9_1
+      - device_id: 62086df16b75fd274d90e43c6eae0a51
+        domain: light
+        entity_id: light.brianofficelight
+        type: brightness_increase
       rotate_left:
-      - service: switch.turn_off
-        target:
-          entity_id: switch.gosund_wp9_1
+      - device_id: 62086df16b75fd274d90e43c6eae0a51
+        domain: light
+        entity_id: light.brianofficelight
+        type: brightness_decrease
